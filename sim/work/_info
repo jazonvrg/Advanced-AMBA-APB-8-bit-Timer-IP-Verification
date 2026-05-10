@@ -1,0 +1,286 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/ictc/student_data/vannghia_1108/project_dva/project1/sim
+T_opt
+!s110 1778151864
+V=4:We[l]H1Jb_CN]W2gi@1
+04 9 4 work testbench fast 0
+=1-bc2411209e67-69fc71b8-c52af-18dd5
+o-quiet -auto_acc_if_foreign -work work -debugdb +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;10.6d_1;65
+Ydut_if
+Z2 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z3 !s110 1778151862
+!i10b 1
+!s100 XFElfcPY8dUK0V`:hkoU02
+IQO9fhnzEaK3BdM4f8abG23
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+!s105 dut_interface_sv_unit
+S1
+R0
+w1777428529
+8../tb/dut_interface.sv
+F../tb/dut_interface.sv
+L0 1
+Z5 OL;L;10.6d_1;65
+r1
+!s85 0
+31
+Z6 !s108 1778151862.000000
+Z7 !s107 ../testcase/count_down_interrupt_test.sv|../testcase/count_up_interrupt_test.sv|../testcase/underflow_test.sv|../testcase/overflow_test.sv|../testcase/load_test.sv|../testcase/count_down_test.sv|../testcase/count_up_test.sv|../testcase/timer_enable_test.sv|../testcase/divide_8_test.sv|../testcase/divide_4_test.sv|../testcase/divide_2_test.sv|../testcase/no_divide_test.sv|../testcase/reset_test.sv|../testcase/rsv_test.sv|../testcase/tie_test.sv|../testcase/tsr_test.sv|../testcase/tdr_test.sv|../testcase/tcr_test.sv|../testcase/default_value_register_test.sv|../testcase/base_test.sv|../tb/environment.sv|../tb/scoreboard.sv|../tb/monitor.sv|../tb/driver.sv|../tb/stimulus.sv|../tb/packet.sv|../tb/testbench.sv|../testcase/test_pkg.sv|../tb/timer_pkg.sv|../tb/dut_interface.sv|../rtl/timer_top.v|../rtl/timer_counter.vp|../rtl/timer_interrupt.vp|../rtl/timer_clock_divisor.vp|../rtl/timer_register.vp|
+Z8 !s90 -coveropt|3|+cover=bcestf|-sv|-f|compile.f|
+!i113 0
+Z9 !s102 -coveropt 3 +cover=bcestf
+Z10 o-coveropt 3 +cover=bcestf -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z11 !s92 -coveropt 3 +cover=bcestf -sv +incdir+../tb +incdir+../testcase -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+Xtest_pkg
+Z12 !s115 dut_if
+R2
+Z13 DXx4 work 9 timer_pkg 0 22 DY48AQ66O6T1Q`90i2_l]1
+R3
+!i10b 1
+!s100 m?IYieUWeAL]8lAoJNoYJ1
+IR36A3U9`dzRHP>O0GOC2B0
+VR36A3U9`dzRHP>O0GOC2B0
+S1
+R0
+w1778151853
+8../testcase/test_pkg.sv
+F../testcase/test_pkg.sv
+F../testcase/base_test.sv
+F../testcase/default_value_register_test.sv
+F../testcase/tcr_test.sv
+F../testcase/tdr_test.sv
+F../testcase/tsr_test.sv
+F../testcase/tie_test.sv
+F../testcase/rsv_test.sv
+F../testcase/reset_test.sv
+F../testcase/no_divide_test.sv
+F../testcase/divide_2_test.sv
+F../testcase/divide_4_test.sv
+F../testcase/divide_8_test.sv
+F../testcase/timer_enable_test.sv
+F../testcase/count_up_test.sv
+F../testcase/count_down_test.sv
+F../testcase/load_test.sv
+F../testcase/overflow_test.sv
+F../testcase/underflow_test.sv
+F../testcase/count_up_interrupt_test.sv
+F../testcase/count_down_interrupt_test.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R10
+R11
+R1
+vtestbench
+R2
+R13
+DXx4 work 8 test_pkg 0 22 R36A3U9`dzRHP>O0GOC2B0
+R3
+!i10b 1
+!s100 3<X[j`Q30XkLlVNkJ1]mP2
+IW`CQ29iNbL?He9nj]clB12
+R4
+!s105 testbench_sv_unit
+S1
+R0
+w1777867925
+8../tb/testbench.sv
+F../tb/testbench.sv
+L0 3
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R10
+R11
+R1
+vtimer_clock_divisor
+R2
+R3
+!i10b 1
+!s100 C4FhMgOo47ojXXR[hilPE3
+IJI6Z8BJB5Y0?gX28LU5Vb0
+R4
+!i119 1
+!s105 timer_clock_divisor_vp_unit
+S1
+R0
+Z14 w1776414492
+8../rtl/timer_clock_divisor.vp
+F../rtl/timer_clock_divisor.vp
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R10
+R11
+R1
+vtimer_counter
+R2
+R3
+!i10b 1
+!s100 K4oVb<bX<MU8J>hWJ=Zz72
+IUA?eC?AOaCcOM9m8W:8Tf0
+R4
+!i119 1
+!s105 timer_counter_vp_unit
+S1
+R0
+w1777099481
+8../rtl/timer_counter.vp
+F../rtl/timer_counter.vp
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R10
+R11
+R1
+vtimer_interrupt
+R2
+R3
+!i10b 1
+!s100 3:gB4R]z4X42UTbUeOmBn3
+I4nC4NW;5S2V^4P<VkmfTo1
+R4
+!i119 1
+!s105 timer_interrupt_vp_unit
+S1
+R0
+R14
+8../rtl/timer_interrupt.vp
+F../rtl/timer_interrupt.vp
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R10
+R11
+R1
+Xtimer_pkg
+R12
+R2
+R3
+!i10b 1
+!s100 kcmlFl7SLN0`o_o4]N[fZ1
+IDY48AQ66O6T1Q`90i2_l]1
+VDY48AQ66O6T1Q`90i2_l]1
+S1
+R0
+w1778151156
+8../tb/timer_pkg.sv
+F../tb/timer_pkg.sv
+F../tb/packet.sv
+F../tb/stimulus.sv
+F../tb/driver.sv
+F../tb/monitor.sv
+F../tb/scoreboard.sv
+F../tb/environment.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R10
+R11
+R1
+vtimer_register
+R2
+R3
+!i10b 1
+!s100 WVcAI6ll_F_0@o4AS`?cV3
+Ifn;8NK>B2g_jLW^M4Sjm:1
+R4
+!i119 1
+!s105 timer_register_vp_unit
+S1
+R0
+R14
+8../rtl/timer_register.vp
+F../rtl/timer_register.vp
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R10
+R11
+R1
+vtimer_top
+R2
+R3
+!i10b 1
+!s100 D`m?KbYO10>_3]U8;Y5DP3
+IIiUVWjV_k7Q__^o`99=Ja1
+R4
+!s105 timer_top_v_unit
+S1
+R0
+w1777014350
+8../rtl/timer_top.v
+F../rtl/timer_top.v
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R10
+R11
+R1

@@ -1,0 +1,28 @@
+module timer_counter(pclk,
+                     presetn,
+										 clk_in,
+										 load,
+										 count_down,
+										 timer_en,
+									   s_ovf,
+                     s_udf,
+                     reg_TDR
+                    );
+`protected
+
+    MTI!#2-RVYB;T_@U,i+>rI[#_X*@z?]CZo?G5=#Q?'7"#G;7F=3C<7KQ<H5i}K'n@IQ7m2EBTrEp
+    V*Aw~D-IGb5+tCRpY#YT}ij#7=x7kEj2O$o#DB'zpB)zVDDzL&}Q>;5Jj~$RJTjO-Gil[*"N5|,R
+    _jQUw2@YK@yn_Op]2B1|w{^URo;a)V8mB3@=RxkBi^K[+~eG<7#6ms_7\$k3b^Ik^B\B=(vCij2U
+    K{][[~^}v1|us,x"31@RFaY[#2[AWr<W+sVTTn7_@K[v!pT2BVrBpTs,v=Ho~O=J@)woiuvHOi}l
+    RmBx\+Z{-=eVI{LIp-ZvH^Ybl1D5=Co{D$kW0QJm@V_@~=>ACarAH[$#-'3D[vCGx$@T@o/:I;Q*
+    $2!k}37\^i['U9u1?C2oXu>rLlCu+{U7Ho.OCY5l3;3e!1e52C5%=Ujie;_$=;AA5UBs.AV[iOET
+    <h.,7ip\-7K6*i[*92+QAjo^l1Z=;sD_]R?ejo#Q\wCO=$\3{xnv*IER;}5n2w*KY<+xTkR^v}r_
+    W~R]GsAg{-[IaTZ2xHZ=QQ$_x->~tk>G_B2}R=X*op,j~5?=ur?JnCi]@Pra[R?]5E,<a[[;n5I,
+    ]=PzJu[P_+P'3'['C*>iIX5$=+UsA~}<}7CNgw{m3nU'w}m;>pIk}mp]@^j1<|XXZWq9o^'[@EXE
+    {<Em,zzxI*>E]sVa1HGw,]Z215ZG\R=rD~o_anZ+UnQoVk~#DB,KQY@eH-o?'o<\$>Q?RT{W&e~o
+    UgmY}KrIkraUxA9[#j[a+*AAa!BqvWr$1Ys<5W3K=v5Ilaz{JC{zBJW+-O1>Ik-Tw']VthEKa-lQ
+    E[?[r@jj!}BJ<[lI-uBBYZ\vkWQ{X^(zCkxX}T2<THr#jQ3]$ABnX[#s!Rswlln$u<o[D~w?AsYB
+    ^$>7aw5\^3!j+]Zn.3=Re\Z-}+U'r}OR1+sV?5\3;1e+7q^BkRu9fs;HTi{Rx-a[iH[k74zJeoEV
+    T
+`endprotected
+endmodule

@@ -1,0 +1,14 @@
+module timer_interrupt( udf,
+												ovf,
+												underflow_en,
+												overflow_en,
+											  interrupt
+											);
+`protected
+
+    MTI!#W]uZ0BVp'Q3VjVQJ>{-GX~>s[<]!![X}iN13E[C!Z;s\,;'IO\*1=Ok$#!=?3r!C}T}gT$Y
+    Wp*2YK<BO$Z+$'u$^DGvXNs_jnX'\}8*=^I_sZ~X5KpwEna.?VG5-XEZVk\@=C5;k-GeRCVave<x
+    J-znluKC7~mHUoJ>QB1ZzpTJ*T2?vxi[+Uo}GKm5=un{AHJAvu>lUTGm^{{o~s-aBo<<};R]-rQs
+    ]s\$,p\;w]l+^DZYV=+2nGCpjR1<N/E~Cup!,7pm7EkpA#t,bD3]uwB~C{[
+`endprotected
+endmodule

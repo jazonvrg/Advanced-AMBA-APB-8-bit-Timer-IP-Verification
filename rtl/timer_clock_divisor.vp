@@ -1,0 +1,17 @@
+module timer_clock_divisor( presetn,
+                            ker_clk,
+														clkdiv,
+														clk_out
+													);
+`protected
+
+    MTI!#3-;uv5HHr_[=Exzp}aWQ,l{Xa]IW{aYCFl~Yv|Q@s$|~<Em}P;-[$E~X{^>s+Z^KC;VW~Uj
+    vEk5\5neiGVV++;nBi}e{<2*k1_cP15n'5$j<U{\3r>o@meAx7IBn_W}'i1Wo]i],5BBa[udlO=^
+    Zrl[PY$\QIp@KE[][TIh2XVGD)<Ioprf#_31i{en:Q"em2,iexT>[@=[<_Dj=^7$'JKGC}v?[G!$
+    }'U1b[q[e_H?GV[z~_{<=\TzIG'+jR?+C<lBtE3SIGV_[rQ;lhRYv_7i@Z_!@D^=+uT>@]^TxppK
+    w*iQGuZlJ-#eC*w$WQhek<~=EYKr@G,2lG@9-j}~|iX[YleaURVuk?{AXE{RkSGpYKnA$=<<_zu\
+    BT}3HBpIiQ0*uA?]AzJ$_kBN![lzl,>]r]O,gW7K~Wr!WekaW{a,rnY*#p3q'aA+$+v,2U]U=jWp
+    R~O-*+*m<w;nWQR^\J[\se]#U\{OD6IV*1awA!vzEQ_kI~Fl>,=YCDuR]>E!Yk5r"+C2_?RC^kGC
+    @Xj}Ym=w^?,Zaxjh*7Yp\<uzneV^Knz#aD?[j=/eZ<Tk5I#6}-Q@|MAHaEX^7A
+`endprotected
+endmodule

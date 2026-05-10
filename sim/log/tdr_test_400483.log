@@ -1,0 +1,2861 @@
+# vsim -sv_seed 400483 -coverage -coveranalysis -debugDB -l tdr_test_400483.log -voptargs="+acc" -assertdebug -c testbench -do "coverage save -codeAll -cvg -onexit tdr_test.ucdb; log -r /*;run -all;" "+tdr_test" 
+# Start time: 18:04:35 on May 07,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# //  Questa Sim-64
+# //  Version 10.6d_1 linux_x86_64 Apr 11 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.dut_if(fast)
+# Loading work.timer_pkg(fast)
+# Loading work.test_pkg(fast)
+# Loading work.testbench(fast)
+# Loading work.dut_if(fast)
+# Loading work.timer_top(fast)
+# Loading work.timer_register(fast)
+# Loading work.timer_clock_divisor(fast)
+# Loading work.timer_counter(fast)
+# Loading work.timer_interrupt(fast)
+# ** Note: (vsim-8716) Reusing existing debug database vsim.dbg.
+# coverage save -codeAll -cvg -onexit tdr_test.ucdb
+#  log -r /*
+# run -all
+# 0: [environment] build
+# ==========================================================================
+# ========================== TEST NAME: tdr_test ===========================
+# ==========================================================================
+# 11: [stimulus] Sent packet to driver
+# 11: [driver] Get packet from stimulus
+# 50000: [monitor] Captured APB transaction
+# 50000: [testcase] Write addr = 00000010, data = 00111000
+# 50000: [scoreboard] Get packet from monitor
+# 50000: [stimulus] Sent packet to driver
+# 50000: [driver] Get packet from stimulus
+# 110000: [monitor] Captured APB transaction
+# 110000: [testcase] Read addr = 00000010
+# 110000: [scoreboard] Get packet from monitor
+# 110000: [compare] PASSED! Data matching. Exp: 00111000, Act: 00111000
+# 110011: [stimulus] Sent packet to driver
+# 110011: [driver] Get packet from stimulus
+# 170000: [monitor] Captured APB transaction
+# 170000: [testcase] Write addr = 00000010, data = 00100111
+# 170000: [scoreboard] Get packet from monitor
+# 170000: [stimulus] Sent packet to driver
+# 170000: [driver] Get packet from stimulus
+# 230000: [monitor] Captured APB transaction
+# 230000: [testcase] Read addr = 00000010
+# 230000: [scoreboard] Get packet from monitor
+# 230000: [compare] PASSED! Data matching. Exp: 00100111, Act: 00100111
+# 230011: [stimulus] Sent packet to driver
+# 230011: [driver] Get packet from stimulus
+# 290000: [monitor] Captured APB transaction
+# 290000: [testcase] Write addr = 00000010, data = 00100010
+# 290000: [scoreboard] Get packet from monitor
+# 290000: [stimulus] Sent packet to driver
+# 290000: [driver] Get packet from stimulus
+# 350000: [monitor] Captured APB transaction
+# 350000: [testcase] Read addr = 00000010
+# 350000: [scoreboard] Get packet from monitor
+# 350000: [compare] PASSED! Data matching. Exp: 00100010, Act: 00100010
+# 350011: [stimulus] Sent packet to driver
+# 350011: [driver] Get packet from stimulus
+# 410000: [monitor] Captured APB transaction
+# 410000: [testcase] Write addr = 00000010, data = 00101001
+# 410000: [scoreboard] Get packet from monitor
+# 410000: [stimulus] Sent packet to driver
+# 410000: [driver] Get packet from stimulus
+# 470000: [monitor] Captured APB transaction
+# 470000: [testcase] Read addr = 00000010
+# 470000: [scoreboard] Get packet from monitor
+# 470000: [compare] PASSED! Data matching. Exp: 00101001, Act: 00101001
+# 470011: [stimulus] Sent packet to driver
+# 470011: [driver] Get packet from stimulus
+# 530000: [monitor] Captured APB transaction
+# 530000: [testcase] Write addr = 00000010, data = 11010100
+# 530000: [scoreboard] Get packet from monitor
+# 530000: [stimulus] Sent packet to driver
+# 530000: [driver] Get packet from stimulus
+# 590000: [monitor] Captured APB transaction
+# 590000: [testcase] Read addr = 00000010
+# 590000: [scoreboard] Get packet from monitor
+# 590000: [compare] PASSED! Data matching. Exp: 11010100, Act: 11010100
+# 590011: [stimulus] Sent packet to driver
+# 590011: [driver] Get packet from stimulus
+# 650000: [monitor] Captured APB transaction
+# 650000: [testcase] Write addr = 00000010, data = 11010011
+# 650000: [scoreboard] Get packet from monitor
+# 650000: [stimulus] Sent packet to driver
+# 650000: [driver] Get packet from stimulus
+# 710000: [monitor] Captured APB transaction
+# 710000: [testcase] Read addr = 00000010
+# 710000: [scoreboard] Get packet from monitor
+# 710000: [compare] PASSED! Data matching. Exp: 11010011, Act: 11010011
+# 710011: [stimulus] Sent packet to driver
+# 710011: [driver] Get packet from stimulus
+# 770000: [monitor] Captured APB transaction
+# 770000: [testcase] Write addr = 00000010, data = 11011110
+# 770000: [scoreboard] Get packet from monitor
+# 770000: [stimulus] Sent packet to driver
+# 770000: [driver] Get packet from stimulus
+# 830000: [monitor] Captured APB transaction
+# 830000: [testcase] Read addr = 00000010
+# 830000: [scoreboard] Get packet from monitor
+# 830000: [compare] PASSED! Data matching. Exp: 11011110, Act: 11011110
+# 830011: [stimulus] Sent packet to driver
+# 830011: [driver] Get packet from stimulus
+# 890000: [monitor] Captured APB transaction
+# 890000: [testcase] Write addr = 00000010, data = 11000101
+# 890000: [scoreboard] Get packet from monitor
+# 890000: [stimulus] Sent packet to driver
+# 890000: [driver] Get packet from stimulus
+# 950000: [monitor] Captured APB transaction
+# 950000: [testcase] Read addr = 00000010
+# 950000: [scoreboard] Get packet from monitor
+# 950000: [compare] PASSED! Data matching. Exp: 11000101, Act: 11000101
+# 950011: [stimulus] Sent packet to driver
+# 950011: [driver] Get packet from stimulus
+# 1010000: [monitor] Captured APB transaction
+# 1010000: [testcase] Write addr = 00000010, data = 11000000
+# 1010000: [scoreboard] Get packet from monitor
+# 1010000: [stimulus] Sent packet to driver
+# 1010000: [driver] Get packet from stimulus
+# 1070000: [monitor] Captured APB transaction
+# 1070000: [testcase] Read addr = 00000010
+# 1070000: [scoreboard] Get packet from monitor
+# 1070000: [compare] PASSED! Data matching. Exp: 11000000, Act: 11000000
+# 1070011: [stimulus] Sent packet to driver
+# 1070011: [driver] Get packet from stimulus
+# 1130000: [monitor] Captured APB transaction
+# 1130000: [testcase] Write addr = 00000010, data = 11001111
+# 1130000: [scoreboard] Get packet from monitor
+# 1130000: [stimulus] Sent packet to driver
+# 1130000: [driver] Get packet from stimulus
+# 1190000: [monitor] Captured APB transaction
+# 1190000: [testcase] Read addr = 00000010
+# 1190000: [scoreboard] Get packet from monitor
+# 1190000: [compare] PASSED! Data matching. Exp: 11001111, Act: 11001111
+# 1190011: [stimulus] Sent packet to driver
+# 1190011: [driver] Get packet from stimulus
+# 1250000: [monitor] Captured APB transaction
+# 1250000: [testcase] Write addr = 00000010, data = 11001010
+# 1250000: [scoreboard] Get packet from monitor
+# 1250000: [stimulus] Sent packet to driver
+# 1250000: [driver] Get packet from stimulus
+# 1310000: [monitor] Captured APB transaction
+# 1310000: [testcase] Read addr = 00000010
+# 1310000: [scoreboard] Get packet from monitor
+# 1310000: [compare] PASSED! Data matching. Exp: 11001010, Act: 11001010
+# 1310011: [stimulus] Sent packet to driver
+# 1310011: [driver] Get packet from stimulus
+# 1370000: [monitor] Captured APB transaction
+# 1370000: [testcase] Write addr = 00000010, data = 11110001
+# 1370000: [scoreboard] Get packet from monitor
+# 1370000: [stimulus] Sent packet to driver
+# 1370000: [driver] Get packet from stimulus
+# 1430000: [monitor] Captured APB transaction
+# 1430000: [testcase] Read addr = 00000010
+# 1430000: [scoreboard] Get packet from monitor
+# 1430000: [compare] PASSED! Data matching. Exp: 11110001, Act: 11110001
+# 1430011: [stimulus] Sent packet to driver
+# 1430011: [driver] Get packet from stimulus
+# 1490000: [monitor] Captured APB transaction
+# 1490000: [testcase] Write addr = 00000010, data = 11111100
+# 1490000: [scoreboard] Get packet from monitor
+# 1490000: [stimulus] Sent packet to driver
+# 1490000: [driver] Get packet from stimulus
+# 1550000: [monitor] Captured APB transaction
+# 1550000: [testcase] Read addr = 00000010
+# 1550000: [scoreboard] Get packet from monitor
+# 1550000: [compare] PASSED! Data matching. Exp: 11111100, Act: 11111100
+# 1550011: [stimulus] Sent packet to driver
+# 1550011: [driver] Get packet from stimulus
+# 1610000: [monitor] Captured APB transaction
+# 1610000: [testcase] Write addr = 00000010, data = 11111011
+# 1610000: [scoreboard] Get packet from monitor
+# 1610000: [stimulus] Sent packet to driver
+# 1610000: [driver] Get packet from stimulus
+# 1670000: [monitor] Captured APB transaction
+# 1670000: [testcase] Read addr = 00000010
+# 1670000: [scoreboard] Get packet from monitor
+# 1670000: [compare] PASSED! Data matching. Exp: 11111011, Act: 11111011
+# 1670011: [stimulus] Sent packet to driver
+# 1670011: [driver] Get packet from stimulus
+# 1730000: [monitor] Captured APB transaction
+# 1730000: [testcase] Write addr = 00000010, data = 11100110
+# 1730000: [scoreboard] Get packet from monitor
+# 1730000: [stimulus] Sent packet to driver
+# 1730000: [driver] Get packet from stimulus
+# 1790000: [monitor] Captured APB transaction
+# 1790000: [testcase] Read addr = 00000010
+# 1790000: [scoreboard] Get packet from monitor
+# 1790000: [compare] PASSED! Data matching. Exp: 11100110, Act: 11100110
+# 1790011: [stimulus] Sent packet to driver
+# 1790011: [driver] Get packet from stimulus
+# 1850000: [monitor] Captured APB transaction
+# 1850000: [testcase] Write addr = 00000010, data = 11101101
+# 1850000: [scoreboard] Get packet from monitor
+# 1850000: [stimulus] Sent packet to driver
+# 1850000: [driver] Get packet from stimulus
+# 1910000: [monitor] Captured APB transaction
+# 1910000: [testcase] Read addr = 00000010
+# 1910000: [scoreboard] Get packet from monitor
+# 1910000: [compare] PASSED! Data matching. Exp: 11101101, Act: 11101101
+# 1910011: [stimulus] Sent packet to driver
+# 1910011: [driver] Get packet from stimulus
+# 1970000: [monitor] Captured APB transaction
+# 1970000: [testcase] Write addr = 00000010, data = 11101000
+# 1970000: [scoreboard] Get packet from monitor
+# 1970000: [stimulus] Sent packet to driver
+# 1970000: [driver] Get packet from stimulus
+# 2030000: [monitor] Captured APB transaction
+# 2030000: [testcase] Read addr = 00000010
+# 2030000: [scoreboard] Get packet from monitor
+# 2030000: [compare] PASSED! Data matching. Exp: 11101000, Act: 11101000
+# 2030011: [stimulus] Sent packet to driver
+# 2030011: [driver] Get packet from stimulus
+# 2090000: [monitor] Captured APB transaction
+# 2090000: [testcase] Write addr = 00000010, data = 10010111
+# 2090000: [scoreboard] Get packet from monitor
+# 2090000: [stimulus] Sent packet to driver
+# 2090000: [driver] Get packet from stimulus
+# 2150000: [monitor] Captured APB transaction
+# 2150000: [testcase] Read addr = 00000010
+# 2150000: [scoreboard] Get packet from monitor
+# 2150000: [compare] PASSED! Data matching. Exp: 10010111, Act: 10010111
+# 2150011: [stimulus] Sent packet to driver
+# 2150011: [driver] Get packet from stimulus
+# 2210000: [monitor] Captured APB transaction
+# 2210000: [testcase] Write addr = 00000010, data = 10010010
+# 2210000: [scoreboard] Get packet from monitor
+# 2210000: [stimulus] Sent packet to driver
+# 2210000: [driver] Get packet from stimulus
+# 2270000: [monitor] Captured APB transaction
+# 2270000: [testcase] Read addr = 00000010
+# 2270000: [scoreboard] Get packet from monitor
+# 2270000: [compare] PASSED! Data matching. Exp: 10010010, Act: 10010010
+# 2270011: [stimulus] Sent packet to driver
+# 2270011: [driver] Get packet from stimulus
+# 2330000: [monitor] Captured APB transaction
+# 2330000: [testcase] Write addr = 00000010, data = 10011001
+# 2330000: [scoreboard] Get packet from monitor
+# 2330000: [stimulus] Sent packet to driver
+# 2330000: [driver] Get packet from stimulus
+# 2390000: [monitor] Captured APB transaction
+# 2390000: [testcase] Read addr = 00000010
+# 2390000: [scoreboard] Get packet from monitor
+# 2390000: [compare] PASSED! Data matching. Exp: 10011001, Act: 10011001
+# 2390011: [stimulus] Sent packet to driver
+# 2390011: [driver] Get packet from stimulus
+# 2450000: [monitor] Captured APB transaction
+# 2450000: [testcase] Write addr = 00000010, data = 10000100
+# 2450000: [scoreboard] Get packet from monitor
+# 2450000: [stimulus] Sent packet to driver
+# 2450000: [driver] Get packet from stimulus
+# 2510000: [monitor] Captured APB transaction
+# 2510000: [testcase] Read addr = 00000010
+# 2510000: [scoreboard] Get packet from monitor
+# 2510000: [compare] PASSED! Data matching. Exp: 10000100, Act: 10000100
+# 2510011: [stimulus] Sent packet to driver
+# 2510011: [driver] Get packet from stimulus
+# 2570000: [monitor] Captured APB transaction
+# 2570000: [testcase] Write addr = 00000010, data = 10000011
+# 2570000: [scoreboard] Get packet from monitor
+# 2570000: [stimulus] Sent packet to driver
+# 2570000: [driver] Get packet from stimulus
+# 2630000: [monitor] Captured APB transaction
+# 2630000: [testcase] Read addr = 00000010
+# 2630000: [scoreboard] Get packet from monitor
+# 2630000: [compare] PASSED! Data matching. Exp: 10000011, Act: 10000011
+# 2630011: [stimulus] Sent packet to driver
+# 2630011: [driver] Get packet from stimulus
+# 2690000: [monitor] Captured APB transaction
+# 2690000: [testcase] Write addr = 00000010, data = 10001110
+# 2690000: [scoreboard] Get packet from monitor
+# 2690000: [stimulus] Sent packet to driver
+# 2690000: [driver] Get packet from stimulus
+# 2750000: [monitor] Captured APB transaction
+# 2750000: [testcase] Read addr = 00000010
+# 2750000: [scoreboard] Get packet from monitor
+# 2750000: [compare] PASSED! Data matching. Exp: 10001110, Act: 10001110
+# 2750011: [stimulus] Sent packet to driver
+# 2750011: [driver] Get packet from stimulus
+# 2810000: [monitor] Captured APB transaction
+# 2810000: [testcase] Write addr = 00000010, data = 10110101
+# 2810000: [scoreboard] Get packet from monitor
+# 2810000: [stimulus] Sent packet to driver
+# 2810000: [driver] Get packet from stimulus
+# 2870000: [monitor] Captured APB transaction
+# 2870000: [testcase] Read addr = 00000010
+# 2870000: [scoreboard] Get packet from monitor
+# 2870000: [compare] PASSED! Data matching. Exp: 10110101, Act: 10110101
+# 2870011: [stimulus] Sent packet to driver
+# 2870011: [driver] Get packet from stimulus
+# 2930000: [monitor] Captured APB transaction
+# 2930000: [testcase] Write addr = 00000010, data = 10110000
+# 2930000: [scoreboard] Get packet from monitor
+# 2930000: [stimulus] Sent packet to driver
+# 2930000: [driver] Get packet from stimulus
+# 2990000: [monitor] Captured APB transaction
+# 2990000: [testcase] Read addr = 00000010
+# 2990000: [scoreboard] Get packet from monitor
+# 2990000: [compare] PASSED! Data matching. Exp: 10110000, Act: 10110000
+# 2990011: [stimulus] Sent packet to driver
+# 2990011: [driver] Get packet from stimulus
+# 3050000: [monitor] Captured APB transaction
+# 3050000: [testcase] Write addr = 00000010, data = 10111111
+# 3050000: [scoreboard] Get packet from monitor
+# 3050000: [stimulus] Sent packet to driver
+# 3050000: [driver] Get packet from stimulus
+# 3110000: [monitor] Captured APB transaction
+# 3110000: [testcase] Read addr = 00000010
+# 3110000: [scoreboard] Get packet from monitor
+# 3110000: [compare] PASSED! Data matching. Exp: 10111111, Act: 10111111
+# 3110011: [stimulus] Sent packet to driver
+# 3110011: [driver] Get packet from stimulus
+# 3170000: [monitor] Captured APB transaction
+# 3170000: [testcase] Write addr = 00000010, data = 10111010
+# 3170000: [scoreboard] Get packet from monitor
+# 3170000: [stimulus] Sent packet to driver
+# 3170000: [driver] Get packet from stimulus
+# 3230000: [monitor] Captured APB transaction
+# 3230000: [testcase] Read addr = 00000010
+# 3230000: [scoreboard] Get packet from monitor
+# 3230000: [compare] PASSED! Data matching. Exp: 10111010, Act: 10111010
+# 3230011: [stimulus] Sent packet to driver
+# 3230011: [driver] Get packet from stimulus
+# 3290000: [monitor] Captured APB transaction
+# 3290000: [testcase] Write addr = 00000010, data = 10100001
+# 3290000: [scoreboard] Get packet from monitor
+# 3290000: [stimulus] Sent packet to driver
+# 3290000: [driver] Get packet from stimulus
+# 3350000: [monitor] Captured APB transaction
+# 3350000: [testcase] Read addr = 00000010
+# 3350000: [scoreboard] Get packet from monitor
+# 3350000: [compare] PASSED! Data matching. Exp: 10100001, Act: 10100001
+# 3350011: [stimulus] Sent packet to driver
+# 3350011: [driver] Get packet from stimulus
+# 3410000: [monitor] Captured APB transaction
+# 3410000: [testcase] Write addr = 00000010, data = 10101100
+# 3410000: [scoreboard] Get packet from monitor
+# 3410000: [stimulus] Sent packet to driver
+# 3410000: [driver] Get packet from stimulus
+# 3470000: [monitor] Captured APB transaction
+# 3470000: [testcase] Read addr = 00000010
+# 3470000: [scoreboard] Get packet from monitor
+# 3470000: [compare] PASSED! Data matching. Exp: 10101100, Act: 10101100
+# 3470011: [stimulus] Sent packet to driver
+# 3470011: [driver] Get packet from stimulus
+# 3530000: [monitor] Captured APB transaction
+# 3530000: [testcase] Write addr = 00000010, data = 10101011
+# 3530000: [scoreboard] Get packet from monitor
+# 3530000: [stimulus] Sent packet to driver
+# 3530000: [driver] Get packet from stimulus
+# 3590000: [monitor] Captured APB transaction
+# 3590000: [testcase] Read addr = 00000010
+# 3590000: [scoreboard] Get packet from monitor
+# 3590000: [compare] PASSED! Data matching. Exp: 10101011, Act: 10101011
+# 3590011: [stimulus] Sent packet to driver
+# 3590011: [driver] Get packet from stimulus
+# 3650000: [monitor] Captured APB transaction
+# 3650000: [testcase] Write addr = 00000010, data = 01010100
+# 3650000: [scoreboard] Get packet from monitor
+# 3650000: [stimulus] Sent packet to driver
+# 3650000: [driver] Get packet from stimulus
+# 3710000: [monitor] Captured APB transaction
+# 3710000: [testcase] Read addr = 00000010
+# 3710000: [scoreboard] Get packet from monitor
+# 3710000: [compare] PASSED! Data matching. Exp: 01010100, Act: 01010100
+# 3710011: [stimulus] Sent packet to driver
+# 3710011: [driver] Get packet from stimulus
+# 3770000: [monitor] Captured APB transaction
+# 3770000: [testcase] Write addr = 00000010, data = 01010011
+# 3770000: [scoreboard] Get packet from monitor
+# 3770000: [stimulus] Sent packet to driver
+# 3770000: [driver] Get packet from stimulus
+# 3830000: [monitor] Captured APB transaction
+# 3830000: [testcase] Read addr = 00000010
+# 3830000: [scoreboard] Get packet from monitor
+# 3830000: [compare] PASSED! Data matching. Exp: 01010011, Act: 01010011
+# 3830011: [stimulus] Sent packet to driver
+# 3830011: [driver] Get packet from stimulus
+# 3890000: [monitor] Captured APB transaction
+# 3890000: [testcase] Write addr = 00000010, data = 01011110
+# 3890000: [scoreboard] Get packet from monitor
+# 3890000: [stimulus] Sent packet to driver
+# 3890000: [driver] Get packet from stimulus
+# 3950000: [monitor] Captured APB transaction
+# 3950000: [testcase] Read addr = 00000010
+# 3950000: [scoreboard] Get packet from monitor
+# 3950000: [compare] PASSED! Data matching. Exp: 01011110, Act: 01011110
+# 3950011: [stimulus] Sent packet to driver
+# 3950011: [driver] Get packet from stimulus
+# 4010000: [monitor] Captured APB transaction
+# 4010000: [testcase] Write addr = 00000010, data = 01000101
+# 4010000: [scoreboard] Get packet from monitor
+# 4010000: [stimulus] Sent packet to driver
+# 4010000: [driver] Get packet from stimulus
+# 4070000: [monitor] Captured APB transaction
+# 4070000: [testcase] Read addr = 00000010
+# 4070000: [scoreboard] Get packet from monitor
+# 4070000: [compare] PASSED! Data matching. Exp: 01000101, Act: 01000101
+# 4070011: [stimulus] Sent packet to driver
+# 4070011: [driver] Get packet from stimulus
+# 4130000: [monitor] Captured APB transaction
+# 4130000: [testcase] Write addr = 00000010, data = 01000000
+# 4130000: [scoreboard] Get packet from monitor
+# 4130000: [stimulus] Sent packet to driver
+# 4130000: [driver] Get packet from stimulus
+# 4190000: [monitor] Captured APB transaction
+# 4190000: [testcase] Read addr = 00000010
+# 4190000: [scoreboard] Get packet from monitor
+# 4190000: [compare] PASSED! Data matching. Exp: 01000000, Act: 01000000
+# 4190011: [stimulus] Sent packet to driver
+# 4190011: [driver] Get packet from stimulus
+# 4250000: [monitor] Captured APB transaction
+# 4250000: [testcase] Write addr = 00000010, data = 01001111
+# 4250000: [scoreboard] Get packet from monitor
+# 4250000: [stimulus] Sent packet to driver
+# 4250000: [driver] Get packet from stimulus
+# 4310000: [monitor] Captured APB transaction
+# 4310000: [testcase] Read addr = 00000010
+# 4310000: [scoreboard] Get packet from monitor
+# 4310000: [compare] PASSED! Data matching. Exp: 01001111, Act: 01001111
+# 4310011: [stimulus] Sent packet to driver
+# 4310011: [driver] Get packet from stimulus
+# 4370000: [monitor] Captured APB transaction
+# 4370000: [testcase] Write addr = 00000010, data = 01001010
+# 4370000: [scoreboard] Get packet from monitor
+# 4370000: [stimulus] Sent packet to driver
+# 4370000: [driver] Get packet from stimulus
+# 4430000: [monitor] Captured APB transaction
+# 4430000: [testcase] Read addr = 00000010
+# 4430000: [scoreboard] Get packet from monitor
+# 4430000: [compare] PASSED! Data matching. Exp: 01001010, Act: 01001010
+# 4430011: [stimulus] Sent packet to driver
+# 4430011: [driver] Get packet from stimulus
+# 4490000: [monitor] Captured APB transaction
+# 4490000: [testcase] Write addr = 00000010, data = 01110001
+# 4490000: [scoreboard] Get packet from monitor
+# 4490000: [stimulus] Sent packet to driver
+# 4490000: [driver] Get packet from stimulus
+# 4550000: [monitor] Captured APB transaction
+# 4550000: [testcase] Read addr = 00000010
+# 4550000: [scoreboard] Get packet from monitor
+# 4550000: [compare] PASSED! Data matching. Exp: 01110001, Act: 01110001
+# 4550011: [stimulus] Sent packet to driver
+# 4550011: [driver] Get packet from stimulus
+# 4610000: [monitor] Captured APB transaction
+# 4610000: [testcase] Write addr = 00000010, data = 01111100
+# 4610000: [scoreboard] Get packet from monitor
+# 4610000: [stimulus] Sent packet to driver
+# 4610000: [driver] Get packet from stimulus
+# 4670000: [monitor] Captured APB transaction
+# 4670000: [testcase] Read addr = 00000010
+# 4670000: [scoreboard] Get packet from monitor
+# 4670000: [compare] PASSED! Data matching. Exp: 01111100, Act: 01111100
+# 4670011: [stimulus] Sent packet to driver
+# 4670011: [driver] Get packet from stimulus
+# 4730000: [monitor] Captured APB transaction
+# 4730000: [testcase] Write addr = 00000010, data = 01111011
+# 4730000: [scoreboard] Get packet from monitor
+# 4730000: [stimulus] Sent packet to driver
+# 4730000: [driver] Get packet from stimulus
+# 4790000: [monitor] Captured APB transaction
+# 4790000: [testcase] Read addr = 00000010
+# 4790000: [scoreboard] Get packet from monitor
+# 4790000: [compare] PASSED! Data matching. Exp: 01111011, Act: 01111011
+# 4790011: [stimulus] Sent packet to driver
+# 4790011: [driver] Get packet from stimulus
+# 4850000: [monitor] Captured APB transaction
+# 4850000: [testcase] Write addr = 00000010, data = 01100110
+# 4850000: [scoreboard] Get packet from monitor
+# 4850000: [stimulus] Sent packet to driver
+# 4850000: [driver] Get packet from stimulus
+# 4910000: [monitor] Captured APB transaction
+# 4910000: [testcase] Read addr = 00000010
+# 4910000: [scoreboard] Get packet from monitor
+# 4910000: [compare] PASSED! Data matching. Exp: 01100110, Act: 01100110
+# 4910011: [stimulus] Sent packet to driver
+# 4910011: [driver] Get packet from stimulus
+# 4970000: [monitor] Captured APB transaction
+# 4970000: [testcase] Write addr = 00000010, data = 01101101
+# 4970000: [scoreboard] Get packet from monitor
+# 4970000: [stimulus] Sent packet to driver
+# 4970000: [driver] Get packet from stimulus
+# 5030000: [monitor] Captured APB transaction
+# 5030000: [testcase] Read addr = 00000010
+# 5030000: [scoreboard] Get packet from monitor
+# 5030000: [compare] PASSED! Data matching. Exp: 01101101, Act: 01101101
+# 5030011: [stimulus] Sent packet to driver
+# 5030011: [driver] Get packet from stimulus
+# 5090000: [monitor] Captured APB transaction
+# 5090000: [testcase] Write addr = 00000010, data = 01101000
+# 5090000: [scoreboard] Get packet from monitor
+# 5090000: [stimulus] Sent packet to driver
+# 5090000: [driver] Get packet from stimulus
+# 5150000: [monitor] Captured APB transaction
+# 5150000: [testcase] Read addr = 00000010
+# 5150000: [scoreboard] Get packet from monitor
+# 5150000: [compare] PASSED! Data matching. Exp: 01101000, Act: 01101000
+# 5150011: [stimulus] Sent packet to driver
+# 5150011: [driver] Get packet from stimulus
+# 5210000: [monitor] Captured APB transaction
+# 5210000: [testcase] Write addr = 00000010, data = 00010111
+# 5210000: [scoreboard] Get packet from monitor
+# 5210000: [stimulus] Sent packet to driver
+# 5210000: [driver] Get packet from stimulus
+# 5270000: [monitor] Captured APB transaction
+# 5270000: [testcase] Read addr = 00000010
+# 5270000: [scoreboard] Get packet from monitor
+# 5270000: [compare] PASSED! Data matching. Exp: 00010111, Act: 00010111
+# 5270011: [stimulus] Sent packet to driver
+# 5270011: [driver] Get packet from stimulus
+# 5330000: [monitor] Captured APB transaction
+# 5330000: [testcase] Write addr = 00000010, data = 00010010
+# 5330000: [scoreboard] Get packet from monitor
+# 5330000: [stimulus] Sent packet to driver
+# 5330000: [driver] Get packet from stimulus
+# 5390000: [monitor] Captured APB transaction
+# 5390000: [testcase] Read addr = 00000010
+# 5390000: [scoreboard] Get packet from monitor
+# 5390000: [compare] PASSED! Data matching. Exp: 00010010, Act: 00010010
+# 5390011: [stimulus] Sent packet to driver
+# 5390011: [driver] Get packet from stimulus
+# 5450000: [monitor] Captured APB transaction
+# 5450000: [testcase] Write addr = 00000010, data = 00011001
+# 5450000: [scoreboard] Get packet from monitor
+# 5450000: [stimulus] Sent packet to driver
+# 5450000: [driver] Get packet from stimulus
+# 5510000: [monitor] Captured APB transaction
+# 5510000: [testcase] Read addr = 00000010
+# 5510000: [scoreboard] Get packet from monitor
+# 5510000: [compare] PASSED! Data matching. Exp: 00011001, Act: 00011001
+# 5510011: [stimulus] Sent packet to driver
+# 5510011: [driver] Get packet from stimulus
+# 5570000: [monitor] Captured APB transaction
+# 5570000: [testcase] Write addr = 00000010, data = 00000100
+# 5570000: [scoreboard] Get packet from monitor
+# 5570000: [stimulus] Sent packet to driver
+# 5570000: [driver] Get packet from stimulus
+# 5630000: [monitor] Captured APB transaction
+# 5630000: [testcase] Read addr = 00000010
+# 5630000: [scoreboard] Get packet from monitor
+# 5630000: [compare] PASSED! Data matching. Exp: 00000100, Act: 00000100
+# 5630011: [stimulus] Sent packet to driver
+# 5630011: [driver] Get packet from stimulus
+# 5690000: [monitor] Captured APB transaction
+# 5690000: [testcase] Write addr = 00000010, data = 00000011
+# 5690000: [scoreboard] Get packet from monitor
+# 5690000: [stimulus] Sent packet to driver
+# 5690000: [driver] Get packet from stimulus
+# 5750000: [monitor] Captured APB transaction
+# 5750000: [testcase] Read addr = 00000010
+# 5750000: [scoreboard] Get packet from monitor
+# 5750000: [compare] PASSED! Data matching. Exp: 00000011, Act: 00000011
+# 5750011: [stimulus] Sent packet to driver
+# 5750011: [driver] Get packet from stimulus
+# 5810000: [monitor] Captured APB transaction
+# 5810000: [testcase] Write addr = 00000010, data = 00001110
+# 5810000: [scoreboard] Get packet from monitor
+# 5810000: [stimulus] Sent packet to driver
+# 5810000: [driver] Get packet from stimulus
+# 5870000: [monitor] Captured APB transaction
+# 5870000: [testcase] Read addr = 00000010
+# 5870000: [scoreboard] Get packet from monitor
+# 5870000: [compare] PASSED! Data matching. Exp: 00001110, Act: 00001110
+# 5870011: [stimulus] Sent packet to driver
+# 5870011: [driver] Get packet from stimulus
+# 5930000: [monitor] Captured APB transaction
+# 5930000: [testcase] Write addr = 00000010, data = 00110101
+# 5930000: [scoreboard] Get packet from monitor
+# 5930000: [stimulus] Sent packet to driver
+# 5930000: [driver] Get packet from stimulus
+# 5990000: [monitor] Captured APB transaction
+# 5990000: [testcase] Read addr = 00000010
+# 5990000: [scoreboard] Get packet from monitor
+# 5990000: [compare] PASSED! Data matching. Exp: 00110101, Act: 00110101
+# 5990011: [stimulus] Sent packet to driver
+# 5990011: [driver] Get packet from stimulus
+# 6050000: [monitor] Captured APB transaction
+# 6050000: [testcase] Write addr = 00000010, data = 00110000
+# 6050000: [scoreboard] Get packet from monitor
+# 6050000: [stimulus] Sent packet to driver
+# 6050000: [driver] Get packet from stimulus
+# 6110000: [monitor] Captured APB transaction
+# 6110000: [testcase] Read addr = 00000010
+# 6110000: [scoreboard] Get packet from monitor
+# 6110000: [compare] PASSED! Data matching. Exp: 00110000, Act: 00110000
+# 6110011: [stimulus] Sent packet to driver
+# 6110011: [driver] Get packet from stimulus
+# 6170000: [monitor] Captured APB transaction
+# 6170000: [testcase] Write addr = 00000010, data = 00111111
+# 6170000: [scoreboard] Get packet from monitor
+# 6170000: [stimulus] Sent packet to driver
+# 6170000: [driver] Get packet from stimulus
+# 6230000: [monitor] Captured APB transaction
+# 6230000: [testcase] Read addr = 00000010
+# 6230000: [scoreboard] Get packet from monitor
+# 6230000: [compare] PASSED! Data matching. Exp: 00111111, Act: 00111111
+# 6230011: [stimulus] Sent packet to driver
+# 6230011: [driver] Get packet from stimulus
+# 6290000: [monitor] Captured APB transaction
+# 6290000: [testcase] Write addr = 00000010, data = 00111010
+# 6290000: [scoreboard] Get packet from monitor
+# 6290000: [stimulus] Sent packet to driver
+# 6290000: [driver] Get packet from stimulus
+# 6350000: [monitor] Captured APB transaction
+# 6350000: [testcase] Read addr = 00000010
+# 6350000: [scoreboard] Get packet from monitor
+# 6350000: [compare] PASSED! Data matching. Exp: 00111010, Act: 00111010
+# 6350011: [stimulus] Sent packet to driver
+# 6350011: [driver] Get packet from stimulus
+# 6410000: [monitor] Captured APB transaction
+# 6410000: [testcase] Write addr = 00000010, data = 00100001
+# 6410000: [scoreboard] Get packet from monitor
+# 6410000: [stimulus] Sent packet to driver
+# 6410000: [driver] Get packet from stimulus
+# 6470000: [monitor] Captured APB transaction
+# 6470000: [testcase] Read addr = 00000010
+# 6470000: [scoreboard] Get packet from monitor
+# 6470000: [compare] PASSED! Data matching. Exp: 00100001, Act: 00100001
+# 6470011: [stimulus] Sent packet to driver
+# 6470011: [driver] Get packet from stimulus
+# 6530000: [monitor] Captured APB transaction
+# 6530000: [testcase] Write addr = 00000010, data = 00101100
+# 6530000: [scoreboard] Get packet from monitor
+# 6530000: [stimulus] Sent packet to driver
+# 6530000: [driver] Get packet from stimulus
+# 6590000: [monitor] Captured APB transaction
+# 6590000: [testcase] Read addr = 00000010
+# 6590000: [scoreboard] Get packet from monitor
+# 6590000: [compare] PASSED! Data matching. Exp: 00101100, Act: 00101100
+# 6590011: [stimulus] Sent packet to driver
+# 6590011: [driver] Get packet from stimulus
+# 6650000: [monitor] Captured APB transaction
+# 6650000: [testcase] Write addr = 00000010, data = 00101011
+# 6650000: [scoreboard] Get packet from monitor
+# 6650000: [stimulus] Sent packet to driver
+# 6650000: [driver] Get packet from stimulus
+# 6710000: [monitor] Captured APB transaction
+# 6710000: [testcase] Read addr = 00000010
+# 6710000: [scoreboard] Get packet from monitor
+# 6710000: [compare] PASSED! Data matching. Exp: 00101011, Act: 00101011
+# 6710011: [stimulus] Sent packet to driver
+# 6710011: [driver] Get packet from stimulus
+# 6770000: [monitor] Captured APB transaction
+# 6770000: [testcase] Write addr = 00000010, data = 11010110
+# 6770000: [scoreboard] Get packet from monitor
+# 6770000: [stimulus] Sent packet to driver
+# 6770000: [driver] Get packet from stimulus
+# 6830000: [monitor] Captured APB transaction
+# 6830000: [testcase] Read addr = 00000010
+# 6830000: [scoreboard] Get packet from monitor
+# 6830000: [compare] PASSED! Data matching. Exp: 11010110, Act: 11010110
+# 6830011: [stimulus] Sent packet to driver
+# 6830011: [driver] Get packet from stimulus
+# 6890000: [monitor] Captured APB transaction
+# 6890000: [testcase] Write addr = 00000010, data = 11011101
+# 6890000: [scoreboard] Get packet from monitor
+# 6890000: [stimulus] Sent packet to driver
+# 6890000: [driver] Get packet from stimulus
+# 6950000: [monitor] Captured APB transaction
+# 6950000: [testcase] Read addr = 00000010
+# 6950000: [scoreboard] Get packet from monitor
+# 6950000: [compare] PASSED! Data matching. Exp: 11011101, Act: 11011101
+# 6950011: [stimulus] Sent packet to driver
+# 6950011: [driver] Get packet from stimulus
+# 7010000: [monitor] Captured APB transaction
+# 7010000: [testcase] Write addr = 00000010, data = 11011000
+# 7010000: [scoreboard] Get packet from monitor
+# 7010000: [stimulus] Sent packet to driver
+# 7010000: [driver] Get packet from stimulus
+# 7070000: [monitor] Captured APB transaction
+# 7070000: [testcase] Read addr = 00000010
+# 7070000: [scoreboard] Get packet from monitor
+# 7070000: [compare] PASSED! Data matching. Exp: 11011000, Act: 11011000
+# 7070011: [stimulus] Sent packet to driver
+# 7070011: [driver] Get packet from stimulus
+# 7130000: [monitor] Captured APB transaction
+# 7130000: [testcase] Write addr = 00000010, data = 11000111
+# 7130000: [scoreboard] Get packet from monitor
+# 7130000: [stimulus] Sent packet to driver
+# 7130000: [driver] Get packet from stimulus
+# 7190000: [monitor] Captured APB transaction
+# 7190000: [testcase] Read addr = 00000010
+# 7190000: [scoreboard] Get packet from monitor
+# 7190000: [compare] PASSED! Data matching. Exp: 11000111, Act: 11000111
+# 7190011: [stimulus] Sent packet to driver
+# 7190011: [driver] Get packet from stimulus
+# 7250000: [monitor] Captured APB transaction
+# 7250000: [testcase] Write addr = 00000010, data = 11000010
+# 7250000: [scoreboard] Get packet from monitor
+# 7250000: [stimulus] Sent packet to driver
+# 7250000: [driver] Get packet from stimulus
+# 7310000: [monitor] Captured APB transaction
+# 7310000: [testcase] Read addr = 00000010
+# 7310000: [scoreboard] Get packet from monitor
+# 7310000: [compare] PASSED! Data matching. Exp: 11000010, Act: 11000010
+# 7310011: [stimulus] Sent packet to driver
+# 7310011: [driver] Get packet from stimulus
+# 7370000: [monitor] Captured APB transaction
+# 7370000: [testcase] Write addr = 00000010, data = 11001001
+# 7370000: [scoreboard] Get packet from monitor
+# 7370000: [stimulus] Sent packet to driver
+# 7370000: [driver] Get packet from stimulus
+# 7430000: [monitor] Captured APB transaction
+# 7430000: [testcase] Read addr = 00000010
+# 7430000: [scoreboard] Get packet from monitor
+# 7430000: [compare] PASSED! Data matching. Exp: 11001001, Act: 11001001
+# 7430011: [stimulus] Sent packet to driver
+# 7430011: [driver] Get packet from stimulus
+# 7490000: [monitor] Captured APB transaction
+# 7490000: [testcase] Write addr = 00000010, data = 11110100
+# 7490000: [scoreboard] Get packet from monitor
+# 7490000: [stimulus] Sent packet to driver
+# 7490000: [driver] Get packet from stimulus
+# 7550000: [monitor] Captured APB transaction
+# 7550000: [testcase] Read addr = 00000010
+# 7550000: [scoreboard] Get packet from monitor
+# 7550000: [compare] PASSED! Data matching. Exp: 11110100, Act: 11110100
+# 7550011: [stimulus] Sent packet to driver
+# 7550011: [driver] Get packet from stimulus
+# 7610000: [monitor] Captured APB transaction
+# 7610000: [testcase] Write addr = 00000010, data = 11110011
+# 7610000: [scoreboard] Get packet from monitor
+# 7610000: [stimulus] Sent packet to driver
+# 7610000: [driver] Get packet from stimulus
+# 7670000: [monitor] Captured APB transaction
+# 7670000: [testcase] Read addr = 00000010
+# 7670000: [scoreboard] Get packet from monitor
+# 7670000: [compare] PASSED! Data matching. Exp: 11110011, Act: 11110011
+# 7670011: [stimulus] Sent packet to driver
+# 7670011: [driver] Get packet from stimulus
+# 7730000: [monitor] Captured APB transaction
+# 7730000: [testcase] Write addr = 00000010, data = 11111110
+# 7730000: [scoreboard] Get packet from monitor
+# 7730000: [stimulus] Sent packet to driver
+# 7730000: [driver] Get packet from stimulus
+# 7790000: [monitor] Captured APB transaction
+# 7790000: [testcase] Read addr = 00000010
+# 7790000: [scoreboard] Get packet from monitor
+# 7790000: [compare] PASSED! Data matching. Exp: 11111110, Act: 11111110
+# 7790011: [stimulus] Sent packet to driver
+# 7790011: [driver] Get packet from stimulus
+# 7850000: [monitor] Captured APB transaction
+# 7850000: [testcase] Write addr = 00000010, data = 11100101
+# 7850000: [scoreboard] Get packet from monitor
+# 7850000: [stimulus] Sent packet to driver
+# 7850000: [driver] Get packet from stimulus
+# 7910000: [monitor] Captured APB transaction
+# 7910000: [testcase] Read addr = 00000010
+# 7910000: [scoreboard] Get packet from monitor
+# 7910000: [compare] PASSED! Data matching. Exp: 11100101, Act: 11100101
+# 7910011: [stimulus] Sent packet to driver
+# 7910011: [driver] Get packet from stimulus
+# 7970000: [monitor] Captured APB transaction
+# 7970000: [testcase] Write addr = 00000010, data = 11100000
+# 7970000: [scoreboard] Get packet from monitor
+# 7970000: [stimulus] Sent packet to driver
+# 7970000: [driver] Get packet from stimulus
+# 8030000: [monitor] Captured APB transaction
+# 8030000: [testcase] Read addr = 00000010
+# 8030000: [scoreboard] Get packet from monitor
+# 8030000: [compare] PASSED! Data matching. Exp: 11100000, Act: 11100000
+# 8030011: [stimulus] Sent packet to driver
+# 8030011: [driver] Get packet from stimulus
+# 8090000: [monitor] Captured APB transaction
+# 8090000: [testcase] Write addr = 00000010, data = 11101111
+# 8090000: [scoreboard] Get packet from monitor
+# 8090000: [stimulus] Sent packet to driver
+# 8090000: [driver] Get packet from stimulus
+# 8150000: [monitor] Captured APB transaction
+# 8150000: [testcase] Read addr = 00000010
+# 8150000: [scoreboard] Get packet from monitor
+# 8150000: [compare] PASSED! Data matching. Exp: 11101111, Act: 11101111
+# 8150011: [stimulus] Sent packet to driver
+# 8150011: [driver] Get packet from stimulus
+# 8210000: [monitor] Captured APB transaction
+# 8210000: [testcase] Write addr = 00000010, data = 11101010
+# 8210000: [scoreboard] Get packet from monitor
+# 8210000: [stimulus] Sent packet to driver
+# 8210000: [driver] Get packet from stimulus
+# 8270000: [monitor] Captured APB transaction
+# 8270000: [testcase] Read addr = 00000010
+# 8270000: [scoreboard] Get packet from monitor
+# 8270000: [compare] PASSED! Data matching. Exp: 11101010, Act: 11101010
+# 8270011: [stimulus] Sent packet to driver
+# 8270011: [driver] Get packet from stimulus
+# 8330000: [monitor] Captured APB transaction
+# 8330000: [testcase] Write addr = 00000010, data = 10010001
+# 8330000: [scoreboard] Get packet from monitor
+# 8330000: [stimulus] Sent packet to driver
+# 8330000: [driver] Get packet from stimulus
+# 8390000: [monitor] Captured APB transaction
+# 8390000: [testcase] Read addr = 00000010
+# 8390000: [scoreboard] Get packet from monitor
+# 8390000: [compare] PASSED! Data matching. Exp: 10010001, Act: 10010001
+# 8390011: [stimulus] Sent packet to driver
+# 8390011: [driver] Get packet from stimulus
+# 8450000: [monitor] Captured APB transaction
+# 8450000: [testcase] Write addr = 00000010, data = 10011100
+# 8450000: [scoreboard] Get packet from monitor
+# 8450000: [stimulus] Sent packet to driver
+# 8450000: [driver] Get packet from stimulus
+# 8510000: [monitor] Captured APB transaction
+# 8510000: [testcase] Read addr = 00000010
+# 8510000: [scoreboard] Get packet from monitor
+# 8510000: [compare] PASSED! Data matching. Exp: 10011100, Act: 10011100
+# 8510011: [stimulus] Sent packet to driver
+# 8510011: [driver] Get packet from stimulus
+# 8570000: [monitor] Captured APB transaction
+# 8570000: [testcase] Write addr = 00000010, data = 10011011
+# 8570000: [scoreboard] Get packet from monitor
+# 8570000: [stimulus] Sent packet to driver
+# 8570000: [driver] Get packet from stimulus
+# 8630000: [monitor] Captured APB transaction
+# 8630000: [testcase] Read addr = 00000010
+# 8630000: [scoreboard] Get packet from monitor
+# 8630000: [compare] PASSED! Data matching. Exp: 10011011, Act: 10011011
+# 8630011: [stimulus] Sent packet to driver
+# 8630011: [driver] Get packet from stimulus
+# 8690000: [monitor] Captured APB transaction
+# 8690000: [testcase] Write addr = 00000010, data = 10000110
+# 8690000: [scoreboard] Get packet from monitor
+# 8690000: [stimulus] Sent packet to driver
+# 8690000: [driver] Get packet from stimulus
+# 8750000: [monitor] Captured APB transaction
+# 8750000: [testcase] Read addr = 00000010
+# 8750000: [scoreboard] Get packet from monitor
+# 8750000: [compare] PASSED! Data matching. Exp: 10000110, Act: 10000110
+# 8750011: [stimulus] Sent packet to driver
+# 8750011: [driver] Get packet from stimulus
+# 8810000: [monitor] Captured APB transaction
+# 8810000: [testcase] Write addr = 00000010, data = 10001101
+# 8810000: [scoreboard] Get packet from monitor
+# 8810000: [stimulus] Sent packet to driver
+# 8810000: [driver] Get packet from stimulus
+# 8870000: [monitor] Captured APB transaction
+# 8870000: [testcase] Read addr = 00000010
+# 8870000: [scoreboard] Get packet from monitor
+# 8870000: [compare] PASSED! Data matching. Exp: 10001101, Act: 10001101
+# 8870011: [stimulus] Sent packet to driver
+# 8870011: [driver] Get packet from stimulus
+# 8930000: [monitor] Captured APB transaction
+# 8930000: [testcase] Write addr = 00000010, data = 10001000
+# 8930000: [scoreboard] Get packet from monitor
+# 8930000: [stimulus] Sent packet to driver
+# 8930000: [driver] Get packet from stimulus
+# 8990000: [monitor] Captured APB transaction
+# 8990000: [testcase] Read addr = 00000010
+# 8990000: [scoreboard] Get packet from monitor
+# 8990000: [compare] PASSED! Data matching. Exp: 10001000, Act: 10001000
+# 8990011: [stimulus] Sent packet to driver
+# 8990011: [driver] Get packet from stimulus
+# 9050000: [monitor] Captured APB transaction
+# 9050000: [testcase] Write addr = 00000010, data = 10110111
+# 9050000: [scoreboard] Get packet from monitor
+# 9050000: [stimulus] Sent packet to driver
+# 9050000: [driver] Get packet from stimulus
+# 9110000: [monitor] Captured APB transaction
+# 9110000: [testcase] Read addr = 00000010
+# 9110000: [scoreboard] Get packet from monitor
+# 9110000: [compare] PASSED! Data matching. Exp: 10110111, Act: 10110111
+# 9110011: [stimulus] Sent packet to driver
+# 9110011: [driver] Get packet from stimulus
+# 9170000: [monitor] Captured APB transaction
+# 9170000: [testcase] Write addr = 00000010, data = 10110010
+# 9170000: [scoreboard] Get packet from monitor
+# 9170000: [stimulus] Sent packet to driver
+# 9170000: [driver] Get packet from stimulus
+# 9230000: [monitor] Captured APB transaction
+# 9230000: [testcase] Read addr = 00000010
+# 9230000: [scoreboard] Get packet from monitor
+# 9230000: [compare] PASSED! Data matching. Exp: 10110010, Act: 10110010
+# 9230011: [stimulus] Sent packet to driver
+# 9230011: [driver] Get packet from stimulus
+# 9290000: [monitor] Captured APB transaction
+# 9290000: [testcase] Write addr = 00000010, data = 10111001
+# 9290000: [scoreboard] Get packet from monitor
+# 9290000: [stimulus] Sent packet to driver
+# 9290000: [driver] Get packet from stimulus
+# 9350000: [monitor] Captured APB transaction
+# 9350000: [testcase] Read addr = 00000010
+# 9350000: [scoreboard] Get packet from monitor
+# 9350000: [compare] PASSED! Data matching. Exp: 10111001, Act: 10111001
+# 9350011: [stimulus] Sent packet to driver
+# 9350011: [driver] Get packet from stimulus
+# 9410000: [monitor] Captured APB transaction
+# 9410000: [testcase] Write addr = 00000010, data = 10100100
+# 9410000: [scoreboard] Get packet from monitor
+# 9410000: [stimulus] Sent packet to driver
+# 9410000: [driver] Get packet from stimulus
+# 9470000: [monitor] Captured APB transaction
+# 9470000: [testcase] Read addr = 00000010
+# 9470000: [scoreboard] Get packet from monitor
+# 9470000: [compare] PASSED! Data matching. Exp: 10100100, Act: 10100100
+# 9470011: [stimulus] Sent packet to driver
+# 9470011: [driver] Get packet from stimulus
+# 9530000: [monitor] Captured APB transaction
+# 9530000: [testcase] Write addr = 00000010, data = 10100011
+# 9530000: [scoreboard] Get packet from monitor
+# 9530000: [stimulus] Sent packet to driver
+# 9530000: [driver] Get packet from stimulus
+# 9590000: [monitor] Captured APB transaction
+# 9590000: [testcase] Read addr = 00000010
+# 9590000: [scoreboard] Get packet from monitor
+# 9590000: [compare] PASSED! Data matching. Exp: 10100011, Act: 10100011
+# 9590011: [stimulus] Sent packet to driver
+# 9590011: [driver] Get packet from stimulus
+# 9650000: [monitor] Captured APB transaction
+# 9650000: [testcase] Write addr = 00000010, data = 10101110
+# 9650000: [scoreboard] Get packet from monitor
+# 9650000: [stimulus] Sent packet to driver
+# 9650000: [driver] Get packet from stimulus
+# 9710000: [monitor] Captured APB transaction
+# 9710000: [testcase] Read addr = 00000010
+# 9710000: [scoreboard] Get packet from monitor
+# 9710000: [compare] PASSED! Data matching. Exp: 10101110, Act: 10101110
+# 9710011: [stimulus] Sent packet to driver
+# 9710011: [driver] Get packet from stimulus
+# 9770000: [monitor] Captured APB transaction
+# 9770000: [testcase] Write addr = 00000010, data = 01010110
+# 9770000: [scoreboard] Get packet from monitor
+# 9770000: [stimulus] Sent packet to driver
+# 9770000: [driver] Get packet from stimulus
+# 9830000: [monitor] Captured APB transaction
+# 9830000: [testcase] Read addr = 00000010
+# 9830000: [scoreboard] Get packet from monitor
+# 9830000: [compare] PASSED! Data matching. Exp: 01010110, Act: 01010110
+# 9830011: [stimulus] Sent packet to driver
+# 9830011: [driver] Get packet from stimulus
+# 9890000: [monitor] Captured APB transaction
+# 9890000: [testcase] Write addr = 00000010, data = 01011101
+# 9890000: [scoreboard] Get packet from monitor
+# 9890000: [stimulus] Sent packet to driver
+# 9890000: [driver] Get packet from stimulus
+# 9950000: [monitor] Captured APB transaction
+# 9950000: [testcase] Read addr = 00000010
+# 9950000: [scoreboard] Get packet from monitor
+# 9950000: [compare] PASSED! Data matching. Exp: 01011101, Act: 01011101
+# 9950011: [stimulus] Sent packet to driver
+# 9950011: [driver] Get packet from stimulus
+# 10010000: [monitor] Captured APB transaction
+# 10010000: [testcase] Write addr = 00000010, data = 01011000
+# 10010000: [scoreboard] Get packet from monitor
+# 10010000: [stimulus] Sent packet to driver
+# 10010000: [driver] Get packet from stimulus
+# 10070000: [monitor] Captured APB transaction
+# 10070000: [testcase] Read addr = 00000010
+# 10070000: [scoreboard] Get packet from monitor
+# 10070000: [compare] PASSED! Data matching. Exp: 01011000, Act: 01011000
+# 10070011: [stimulus] Sent packet to driver
+# 10070011: [driver] Get packet from stimulus
+# 10130000: [monitor] Captured APB transaction
+# 10130000: [testcase] Write addr = 00000010, data = 01000111
+# 10130000: [scoreboard] Get packet from monitor
+# 10130000: [stimulus] Sent packet to driver
+# 10130000: [driver] Get packet from stimulus
+# 10190000: [monitor] Captured APB transaction
+# 10190000: [testcase] Read addr = 00000010
+# 10190000: [scoreboard] Get packet from monitor
+# 10190000: [compare] PASSED! Data matching. Exp: 01000111, Act: 01000111
+# 10190011: [stimulus] Sent packet to driver
+# 10190011: [driver] Get packet from stimulus
+# 10250000: [monitor] Captured APB transaction
+# 10250000: [testcase] Write addr = 00000010, data = 01000010
+# 10250000: [scoreboard] Get packet from monitor
+# 10250000: [stimulus] Sent packet to driver
+# 10250000: [driver] Get packet from stimulus
+# 10310000: [monitor] Captured APB transaction
+# 10310000: [testcase] Read addr = 00000010
+# 10310000: [scoreboard] Get packet from monitor
+# 10310000: [compare] PASSED! Data matching. Exp: 01000010, Act: 01000010
+# 10310011: [stimulus] Sent packet to driver
+# 10310011: [driver] Get packet from stimulus
+# 10370000: [monitor] Captured APB transaction
+# 10370000: [testcase] Write addr = 00000010, data = 01001001
+# 10370000: [scoreboard] Get packet from monitor
+# 10370000: [stimulus] Sent packet to driver
+# 10370000: [driver] Get packet from stimulus
+# 10430000: [monitor] Captured APB transaction
+# 10430000: [testcase] Read addr = 00000010
+# 10430000: [scoreboard] Get packet from monitor
+# 10430000: [compare] PASSED! Data matching. Exp: 01001001, Act: 01001001
+# 10430011: [stimulus] Sent packet to driver
+# 10430011: [driver] Get packet from stimulus
+# 10490000: [monitor] Captured APB transaction
+# 10490000: [testcase] Write addr = 00000010, data = 01110100
+# 10490000: [scoreboard] Get packet from monitor
+# 10490000: [stimulus] Sent packet to driver
+# 10490000: [driver] Get packet from stimulus
+# 10550000: [monitor] Captured APB transaction
+# 10550000: [testcase] Read addr = 00000010
+# 10550000: [scoreboard] Get packet from monitor
+# 10550000: [compare] PASSED! Data matching. Exp: 01110100, Act: 01110100
+# 10550011: [stimulus] Sent packet to driver
+# 10550011: [driver] Get packet from stimulus
+# 10610000: [monitor] Captured APB transaction
+# 10610000: [testcase] Write addr = 00000010, data = 01110011
+# 10610000: [scoreboard] Get packet from monitor
+# 10610000: [stimulus] Sent packet to driver
+# 10610000: [driver] Get packet from stimulus
+# 10670000: [monitor] Captured APB transaction
+# 10670000: [testcase] Read addr = 00000010
+# 10670000: [scoreboard] Get packet from monitor
+# 10670000: [compare] PASSED! Data matching. Exp: 01110011, Act: 01110011
+# 10670011: [stimulus] Sent packet to driver
+# 10670011: [driver] Get packet from stimulus
+# 10730000: [monitor] Captured APB transaction
+# 10730000: [testcase] Write addr = 00000010, data = 01111110
+# 10730000: [scoreboard] Get packet from monitor
+# 10730000: [stimulus] Sent packet to driver
+# 10730000: [driver] Get packet from stimulus
+# 10790000: [monitor] Captured APB transaction
+# 10790000: [testcase] Read addr = 00000010
+# 10790000: [scoreboard] Get packet from monitor
+# 10790000: [compare] PASSED! Data matching. Exp: 01111110, Act: 01111110
+# 10790011: [stimulus] Sent packet to driver
+# 10790011: [driver] Get packet from stimulus
+# 10850000: [monitor] Captured APB transaction
+# 10850000: [testcase] Write addr = 00000010, data = 01100101
+# 10850000: [scoreboard] Get packet from monitor
+# 10850000: [stimulus] Sent packet to driver
+# 10850000: [driver] Get packet from stimulus
+# 10910000: [monitor] Captured APB transaction
+# 10910000: [testcase] Read addr = 00000010
+# 10910000: [scoreboard] Get packet from monitor
+# 10910000: [compare] PASSED! Data matching. Exp: 01100101, Act: 01100101
+# 10910011: [stimulus] Sent packet to driver
+# 10910011: [driver] Get packet from stimulus
+# 10970000: [monitor] Captured APB transaction
+# 10970000: [testcase] Write addr = 00000010, data = 01100000
+# 10970000: [scoreboard] Get packet from monitor
+# 10970000: [stimulus] Sent packet to driver
+# 10970000: [driver] Get packet from stimulus
+# 11030000: [monitor] Captured APB transaction
+# 11030000: [testcase] Read addr = 00000010
+# 11030000: [scoreboard] Get packet from monitor
+# 11030000: [compare] PASSED! Data matching. Exp: 01100000, Act: 01100000
+# 11030011: [stimulus] Sent packet to driver
+# 11030011: [driver] Get packet from stimulus
+# 11090000: [monitor] Captured APB transaction
+# 11090000: [testcase] Write addr = 00000010, data = 01101111
+# 11090000: [scoreboard] Get packet from monitor
+# 11090000: [stimulus] Sent packet to driver
+# 11090000: [driver] Get packet from stimulus
+# 11150000: [monitor] Captured APB transaction
+# 11150000: [testcase] Read addr = 00000010
+# 11150000: [scoreboard] Get packet from monitor
+# 11150000: [compare] PASSED! Data matching. Exp: 01101111, Act: 01101111
+# 11150011: [stimulus] Sent packet to driver
+# 11150011: [driver] Get packet from stimulus
+# 11210000: [monitor] Captured APB transaction
+# 11210000: [testcase] Write addr = 00000010, data = 01101010
+# 11210000: [scoreboard] Get packet from monitor
+# 11210000: [stimulus] Sent packet to driver
+# 11210000: [driver] Get packet from stimulus
+# 11270000: [monitor] Captured APB transaction
+# 11270000: [testcase] Read addr = 00000010
+# 11270000: [scoreboard] Get packet from monitor
+# 11270000: [compare] PASSED! Data matching. Exp: 01101010, Act: 01101010
+# 11270011: [stimulus] Sent packet to driver
+# 11270011: [driver] Get packet from stimulus
+# 11330000: [monitor] Captured APB transaction
+# 11330000: [testcase] Write addr = 00000010, data = 00010001
+# 11330000: [scoreboard] Get packet from monitor
+# 11330000: [stimulus] Sent packet to driver
+# 11330000: [driver] Get packet from stimulus
+# 11390000: [monitor] Captured APB transaction
+# 11390000: [testcase] Read addr = 00000010
+# 11390000: [scoreboard] Get packet from monitor
+# 11390000: [compare] PASSED! Data matching. Exp: 00010001, Act: 00010001
+# 11390011: [stimulus] Sent packet to driver
+# 11390011: [driver] Get packet from stimulus
+# 11450000: [monitor] Captured APB transaction
+# 11450000: [testcase] Write addr = 00000010, data = 00011100
+# 11450000: [scoreboard] Get packet from monitor
+# 11450000: [stimulus] Sent packet to driver
+# 11450000: [driver] Get packet from stimulus
+# 11510000: [monitor] Captured APB transaction
+# 11510000: [testcase] Read addr = 00000010
+# 11510000: [scoreboard] Get packet from monitor
+# 11510000: [compare] PASSED! Data matching. Exp: 00011100, Act: 00011100
+# 11510011: [stimulus] Sent packet to driver
+# 11510011: [driver] Get packet from stimulus
+# 11570000: [monitor] Captured APB transaction
+# 11570000: [testcase] Write addr = 00000010, data = 00011011
+# 11570000: [scoreboard] Get packet from monitor
+# 11570000: [stimulus] Sent packet to driver
+# 11570000: [driver] Get packet from stimulus
+# 11630000: [monitor] Captured APB transaction
+# 11630000: [testcase] Read addr = 00000010
+# 11630000: [scoreboard] Get packet from monitor
+# 11630000: [compare] PASSED! Data matching. Exp: 00011011, Act: 00011011
+# 11630011: [stimulus] Sent packet to driver
+# 11630011: [driver] Get packet from stimulus
+# 11690000: [monitor] Captured APB transaction
+# 11690000: [testcase] Write addr = 00000010, data = 00000110
+# 11690000: [scoreboard] Get packet from monitor
+# 11690000: [stimulus] Sent packet to driver
+# 11690000: [driver] Get packet from stimulus
+# 11750000: [monitor] Captured APB transaction
+# 11750000: [testcase] Read addr = 00000010
+# 11750000: [scoreboard] Get packet from monitor
+# 11750000: [compare] PASSED! Data matching. Exp: 00000110, Act: 00000110
+# 11750011: [stimulus] Sent packet to driver
+# 11750011: [driver] Get packet from stimulus
+# 11810000: [monitor] Captured APB transaction
+# 11810000: [testcase] Write addr = 00000010, data = 00001101
+# 11810000: [scoreboard] Get packet from monitor
+# 11810000: [stimulus] Sent packet to driver
+# 11810000: [driver] Get packet from stimulus
+# 11870000: [monitor] Captured APB transaction
+# 11870000: [testcase] Read addr = 00000010
+# 11870000: [scoreboard] Get packet from monitor
+# 11870000: [compare] PASSED! Data matching. Exp: 00001101, Act: 00001101
+# 11870011: [stimulus] Sent packet to driver
+# 11870011: [driver] Get packet from stimulus
+# 11930000: [monitor] Captured APB transaction
+# 11930000: [testcase] Write addr = 00000010, data = 00001000
+# 11930000: [scoreboard] Get packet from monitor
+# 11930000: [stimulus] Sent packet to driver
+# 11930000: [driver] Get packet from stimulus
+# 11990000: [monitor] Captured APB transaction
+# 11990000: [testcase] Read addr = 00000010
+# 11990000: [scoreboard] Get packet from monitor
+# 11990000: [compare] PASSED! Data matching. Exp: 00001000, Act: 00001000
+# 11990011: [stimulus] Sent packet to driver
+# 11990011: [driver] Get packet from stimulus
+# 12050000: [monitor] Captured APB transaction
+# 12050000: [testcase] Write addr = 00000010, data = 00110111
+# 12050000: [scoreboard] Get packet from monitor
+# 12050000: [stimulus] Sent packet to driver
+# 12050000: [driver] Get packet from stimulus
+# 12110000: [monitor] Captured APB transaction
+# 12110000: [testcase] Read addr = 00000010
+# 12110000: [scoreboard] Get packet from monitor
+# 12110000: [compare] PASSED! Data matching. Exp: 00110111, Act: 00110111
+# 12110011: [stimulus] Sent packet to driver
+# 12110011: [driver] Get packet from stimulus
+# 12170000: [monitor] Captured APB transaction
+# 12170000: [testcase] Write addr = 00000010, data = 00110010
+# 12170000: [scoreboard] Get packet from monitor
+# 12170000: [stimulus] Sent packet to driver
+# 12170000: [driver] Get packet from stimulus
+# 12230000: [monitor] Captured APB transaction
+# 12230000: [testcase] Read addr = 00000010
+# 12230000: [scoreboard] Get packet from monitor
+# 12230000: [compare] PASSED! Data matching. Exp: 00110010, Act: 00110010
+# 12230011: [stimulus] Sent packet to driver
+# 12230011: [driver] Get packet from stimulus
+# 12290000: [monitor] Captured APB transaction
+# 12290000: [testcase] Write addr = 00000010, data = 00111001
+# 12290000: [scoreboard] Get packet from monitor
+# 12290000: [stimulus] Sent packet to driver
+# 12290000: [driver] Get packet from stimulus
+# 12350000: [monitor] Captured APB transaction
+# 12350000: [testcase] Read addr = 00000010
+# 12350000: [scoreboard] Get packet from monitor
+# 12350000: [compare] PASSED! Data matching. Exp: 00111001, Act: 00111001
+# 12350011: [stimulus] Sent packet to driver
+# 12350011: [driver] Get packet from stimulus
+# 12410000: [monitor] Captured APB transaction
+# 12410000: [testcase] Write addr = 00000010, data = 00100100
+# 12410000: [scoreboard] Get packet from monitor
+# 12410000: [stimulus] Sent packet to driver
+# 12410000: [driver] Get packet from stimulus
+# 12470000: [monitor] Captured APB transaction
+# 12470000: [testcase] Read addr = 00000010
+# 12470000: [scoreboard] Get packet from monitor
+# 12470000: [compare] PASSED! Data matching. Exp: 00100100, Act: 00100100
+# 12470011: [stimulus] Sent packet to driver
+# 12470011: [driver] Get packet from stimulus
+# 12530000: [monitor] Captured APB transaction
+# 12530000: [testcase] Write addr = 00000010, data = 00100011
+# 12530000: [scoreboard] Get packet from monitor
+# 12530000: [stimulus] Sent packet to driver
+# 12530000: [driver] Get packet from stimulus
+# 12590000: [monitor] Captured APB transaction
+# 12590000: [testcase] Read addr = 00000010
+# 12590000: [scoreboard] Get packet from monitor
+# 12590000: [compare] PASSED! Data matching. Exp: 00100011, Act: 00100011
+# 12590011: [stimulus] Sent packet to driver
+# 12590011: [driver] Get packet from stimulus
+# 12650000: [monitor] Captured APB transaction
+# 12650000: [testcase] Write addr = 00000010, data = 00101110
+# 12650000: [scoreboard] Get packet from monitor
+# 12650000: [stimulus] Sent packet to driver
+# 12650000: [driver] Get packet from stimulus
+# 12710000: [monitor] Captured APB transaction
+# 12710000: [testcase] Read addr = 00000010
+# 12710000: [scoreboard] Get packet from monitor
+# 12710000: [compare] PASSED! Data matching. Exp: 00101110, Act: 00101110
+# 12710011: [stimulus] Sent packet to driver
+# 12710011: [driver] Get packet from stimulus
+# 12770000: [monitor] Captured APB transaction
+# 12770000: [testcase] Write addr = 00000010, data = 11010101
+# 12770000: [scoreboard] Get packet from monitor
+# 12770000: [stimulus] Sent packet to driver
+# 12770000: [driver] Get packet from stimulus
+# 12830000: [monitor] Captured APB transaction
+# 12830000: [testcase] Read addr = 00000010
+# 12830000: [scoreboard] Get packet from monitor
+# 12830000: [compare] PASSED! Data matching. Exp: 11010101, Act: 11010101
+# 12830011: [stimulus] Sent packet to driver
+# 12830011: [driver] Get packet from stimulus
+# 12890000: [monitor] Captured APB transaction
+# 12890000: [testcase] Write addr = 00000010, data = 11010000
+# 12890000: [scoreboard] Get packet from monitor
+# 12890000: [stimulus] Sent packet to driver
+# 12890000: [driver] Get packet from stimulus
+# 12950000: [monitor] Captured APB transaction
+# 12950000: [testcase] Read addr = 00000010
+# 12950000: [scoreboard] Get packet from monitor
+# 12950000: [compare] PASSED! Data matching. Exp: 11010000, Act: 11010000
+# 12950011: [stimulus] Sent packet to driver
+# 12950011: [driver] Get packet from stimulus
+# 13010000: [monitor] Captured APB transaction
+# 13010000: [testcase] Write addr = 00000010, data = 11011111
+# 13010000: [scoreboard] Get packet from monitor
+# 13010000: [stimulus] Sent packet to driver
+# 13010000: [driver] Get packet from stimulus
+# 13070000: [monitor] Captured APB transaction
+# 13070000: [testcase] Read addr = 00000010
+# 13070000: [scoreboard] Get packet from monitor
+# 13070000: [compare] PASSED! Data matching. Exp: 11011111, Act: 11011111
+# 13070011: [stimulus] Sent packet to driver
+# 13070011: [driver] Get packet from stimulus
+# 13130000: [monitor] Captured APB transaction
+# 13130000: [testcase] Write addr = 00000010, data = 11011010
+# 13130000: [scoreboard] Get packet from monitor
+# 13130000: [stimulus] Sent packet to driver
+# 13130000: [driver] Get packet from stimulus
+# 13190000: [monitor] Captured APB transaction
+# 13190000: [testcase] Read addr = 00000010
+# 13190000: [scoreboard] Get packet from monitor
+# 13190000: [compare] PASSED! Data matching. Exp: 11011010, Act: 11011010
+# 13190011: [stimulus] Sent packet to driver
+# 13190011: [driver] Get packet from stimulus
+# 13250000: [monitor] Captured APB transaction
+# 13250000: [testcase] Write addr = 00000010, data = 11000001
+# 13250000: [scoreboard] Get packet from monitor
+# 13250000: [stimulus] Sent packet to driver
+# 13250000: [driver] Get packet from stimulus
+# 13310000: [monitor] Captured APB transaction
+# 13310000: [testcase] Read addr = 00000010
+# 13310000: [scoreboard] Get packet from monitor
+# 13310000: [compare] PASSED! Data matching. Exp: 11000001, Act: 11000001
+# 13310011: [stimulus] Sent packet to driver
+# 13310011: [driver] Get packet from stimulus
+# 13370000: [monitor] Captured APB transaction
+# 13370000: [testcase] Write addr = 00000010, data = 11001100
+# 13370000: [scoreboard] Get packet from monitor
+# 13370000: [stimulus] Sent packet to driver
+# 13370000: [driver] Get packet from stimulus
+# 13430000: [monitor] Captured APB transaction
+# 13430000: [testcase] Read addr = 00000010
+# 13430000: [scoreboard] Get packet from monitor
+# 13430000: [compare] PASSED! Data matching. Exp: 11001100, Act: 11001100
+# 13430011: [stimulus] Sent packet to driver
+# 13430011: [driver] Get packet from stimulus
+# 13490000: [monitor] Captured APB transaction
+# 13490000: [testcase] Write addr = 00000010, data = 11001011
+# 13490000: [scoreboard] Get packet from monitor
+# 13490000: [stimulus] Sent packet to driver
+# 13490000: [driver] Get packet from stimulus
+# 13550000: [monitor] Captured APB transaction
+# 13550000: [testcase] Read addr = 00000010
+# 13550000: [scoreboard] Get packet from monitor
+# 13550000: [compare] PASSED! Data matching. Exp: 11001011, Act: 11001011
+# 13550011: [stimulus] Sent packet to driver
+# 13550011: [driver] Get packet from stimulus
+# 13610000: [monitor] Captured APB transaction
+# 13610000: [testcase] Write addr = 00000010, data = 11110110
+# 13610000: [scoreboard] Get packet from monitor
+# 13610000: [stimulus] Sent packet to driver
+# 13610000: [driver] Get packet from stimulus
+# 13670000: [monitor] Captured APB transaction
+# 13670000: [testcase] Read addr = 00000010
+# 13670000: [scoreboard] Get packet from monitor
+# 13670000: [compare] PASSED! Data matching. Exp: 11110110, Act: 11110110
+# 13670011: [stimulus] Sent packet to driver
+# 13670011: [driver] Get packet from stimulus
+# 13730000: [monitor] Captured APB transaction
+# 13730000: [testcase] Write addr = 00000010, data = 11111101
+# 13730000: [scoreboard] Get packet from monitor
+# 13730000: [stimulus] Sent packet to driver
+# 13730000: [driver] Get packet from stimulus
+# 13790000: [monitor] Captured APB transaction
+# 13790000: [testcase] Read addr = 00000010
+# 13790000: [scoreboard] Get packet from monitor
+# 13790000: [compare] PASSED! Data matching. Exp: 11111101, Act: 11111101
+# 13790011: [stimulus] Sent packet to driver
+# 13790011: [driver] Get packet from stimulus
+# 13850000: [monitor] Captured APB transaction
+# 13850000: [testcase] Write addr = 00000010, data = 11111000
+# 13850000: [scoreboard] Get packet from monitor
+# 13850000: [stimulus] Sent packet to driver
+# 13850000: [driver] Get packet from stimulus
+# 13910000: [monitor] Captured APB transaction
+# 13910000: [testcase] Read addr = 00000010
+# 13910000: [scoreboard] Get packet from monitor
+# 13910000: [compare] PASSED! Data matching. Exp: 11111000, Act: 11111000
+# 13910011: [stimulus] Sent packet to driver
+# 13910011: [driver] Get packet from stimulus
+# 13970000: [monitor] Captured APB transaction
+# 13970000: [testcase] Write addr = 00000010, data = 11100111
+# 13970000: [scoreboard] Get packet from monitor
+# 13970000: [stimulus] Sent packet to driver
+# 13970000: [driver] Get packet from stimulus
+# 14030000: [monitor] Captured APB transaction
+# 14030000: [testcase] Read addr = 00000010
+# 14030000: [scoreboard] Get packet from monitor
+# 14030000: [compare] PASSED! Data matching. Exp: 11100111, Act: 11100111
+# 14030011: [stimulus] Sent packet to driver
+# 14030011: [driver] Get packet from stimulus
+# 14090000: [monitor] Captured APB transaction
+# 14090000: [testcase] Write addr = 00000010, data = 11100010
+# 14090000: [scoreboard] Get packet from monitor
+# 14090000: [stimulus] Sent packet to driver
+# 14090000: [driver] Get packet from stimulus
+# 14150000: [monitor] Captured APB transaction
+# 14150000: [testcase] Read addr = 00000010
+# 14150000: [scoreboard] Get packet from monitor
+# 14150000: [compare] PASSED! Data matching. Exp: 11100010, Act: 11100010
+# 14150011: [stimulus] Sent packet to driver
+# 14150011: [driver] Get packet from stimulus
+# 14210000: [monitor] Captured APB transaction
+# 14210000: [testcase] Write addr = 00000010, data = 11101001
+# 14210000: [scoreboard] Get packet from monitor
+# 14210000: [stimulus] Sent packet to driver
+# 14210000: [driver] Get packet from stimulus
+# 14270000: [monitor] Captured APB transaction
+# 14270000: [testcase] Read addr = 00000010
+# 14270000: [scoreboard] Get packet from monitor
+# 14270000: [compare] PASSED! Data matching. Exp: 11101001, Act: 11101001
+# 14270011: [stimulus] Sent packet to driver
+# 14270011: [driver] Get packet from stimulus
+# 14330000: [monitor] Captured APB transaction
+# 14330000: [testcase] Write addr = 00000010, data = 10010100
+# 14330000: [scoreboard] Get packet from monitor
+# 14330000: [stimulus] Sent packet to driver
+# 14330000: [driver] Get packet from stimulus
+# 14390000: [monitor] Captured APB transaction
+# 14390000: [testcase] Read addr = 00000010
+# 14390000: [scoreboard] Get packet from monitor
+# 14390000: [compare] PASSED! Data matching. Exp: 10010100, Act: 10010100
+# 14390011: [stimulus] Sent packet to driver
+# 14390011: [driver] Get packet from stimulus
+# 14450000: [monitor] Captured APB transaction
+# 14450000: [testcase] Write addr = 00000010, data = 10010011
+# 14450000: [scoreboard] Get packet from monitor
+# 14450000: [stimulus] Sent packet to driver
+# 14450000: [driver] Get packet from stimulus
+# 14510000: [monitor] Captured APB transaction
+# 14510000: [testcase] Read addr = 00000010
+# 14510000: [scoreboard] Get packet from monitor
+# 14510000: [compare] PASSED! Data matching. Exp: 10010011, Act: 10010011
+# 14510011: [stimulus] Sent packet to driver
+# 14510011: [driver] Get packet from stimulus
+# 14570000: [monitor] Captured APB transaction
+# 14570000: [testcase] Write addr = 00000010, data = 10011110
+# 14570000: [scoreboard] Get packet from monitor
+# 14570000: [stimulus] Sent packet to driver
+# 14570000: [driver] Get packet from stimulus
+# 14630000: [monitor] Captured APB transaction
+# 14630000: [testcase] Read addr = 00000010
+# 14630000: [scoreboard] Get packet from monitor
+# 14630000: [compare] PASSED! Data matching. Exp: 10011110, Act: 10011110
+# 14630011: [stimulus] Sent packet to driver
+# 14630011: [driver] Get packet from stimulus
+# 14690000: [monitor] Captured APB transaction
+# 14690000: [testcase] Write addr = 00000010, data = 10000101
+# 14690000: [scoreboard] Get packet from monitor
+# 14690000: [stimulus] Sent packet to driver
+# 14690000: [driver] Get packet from stimulus
+# 14750000: [monitor] Captured APB transaction
+# 14750000: [testcase] Read addr = 00000010
+# 14750000: [scoreboard] Get packet from monitor
+# 14750000: [compare] PASSED! Data matching. Exp: 10000101, Act: 10000101
+# 14750011: [stimulus] Sent packet to driver
+# 14750011: [driver] Get packet from stimulus
+# 14810000: [monitor] Captured APB transaction
+# 14810000: [testcase] Write addr = 00000010, data = 10000000
+# 14810000: [scoreboard] Get packet from monitor
+# 14810000: [stimulus] Sent packet to driver
+# 14810000: [driver] Get packet from stimulus
+# 14870000: [monitor] Captured APB transaction
+# 14870000: [testcase] Read addr = 00000010
+# 14870000: [scoreboard] Get packet from monitor
+# 14870000: [compare] PASSED! Data matching. Exp: 10000000, Act: 10000000
+# 14870011: [stimulus] Sent packet to driver
+# 14870011: [driver] Get packet from stimulus
+# 14930000: [monitor] Captured APB transaction
+# 14930000: [testcase] Write addr = 00000010, data = 10001111
+# 14930000: [scoreboard] Get packet from monitor
+# 14930000: [stimulus] Sent packet to driver
+# 14930000: [driver] Get packet from stimulus
+# 14990000: [monitor] Captured APB transaction
+# 14990000: [testcase] Read addr = 00000010
+# 14990000: [scoreboard] Get packet from monitor
+# 14990000: [compare] PASSED! Data matching. Exp: 10001111, Act: 10001111
+# 14990011: [stimulus] Sent packet to driver
+# 14990011: [driver] Get packet from stimulus
+# 15050000: [monitor] Captured APB transaction
+# 15050000: [testcase] Write addr = 00000010, data = 10001010
+# 15050000: [scoreboard] Get packet from monitor
+# 15050000: [stimulus] Sent packet to driver
+# 15050000: [driver] Get packet from stimulus
+# 15110000: [monitor] Captured APB transaction
+# 15110000: [testcase] Read addr = 00000010
+# 15110000: [scoreboard] Get packet from monitor
+# 15110000: [compare] PASSED! Data matching. Exp: 10001010, Act: 10001010
+# 15110011: [stimulus] Sent packet to driver
+# 15110011: [driver] Get packet from stimulus
+# 15170000: [monitor] Captured APB transaction
+# 15170000: [testcase] Write addr = 00000010, data = 10110001
+# 15170000: [scoreboard] Get packet from monitor
+# 15170000: [stimulus] Sent packet to driver
+# 15170000: [driver] Get packet from stimulus
+# 15230000: [monitor] Captured APB transaction
+# 15230000: [testcase] Read addr = 00000010
+# 15230000: [scoreboard] Get packet from monitor
+# 15230000: [compare] PASSED! Data matching. Exp: 10110001, Act: 10110001
+# 15230011: [stimulus] Sent packet to driver
+# 15230011: [driver] Get packet from stimulus
+# 15290000: [monitor] Captured APB transaction
+# 15290000: [testcase] Write addr = 00000010, data = 10111100
+# 15290000: [scoreboard] Get packet from monitor
+# 15290000: [stimulus] Sent packet to driver
+# 15290000: [driver] Get packet from stimulus
+# 15350000: [monitor] Captured APB transaction
+# 15350000: [testcase] Read addr = 00000010
+# 15350000: [scoreboard] Get packet from monitor
+# 15350000: [compare] PASSED! Data matching. Exp: 10111100, Act: 10111100
+# 15350011: [stimulus] Sent packet to driver
+# 15350011: [driver] Get packet from stimulus
+# 15410000: [monitor] Captured APB transaction
+# 15410000: [testcase] Write addr = 00000010, data = 10111011
+# 15410000: [scoreboard] Get packet from monitor
+# 15410000: [stimulus] Sent packet to driver
+# 15410000: [driver] Get packet from stimulus
+# 15470000: [monitor] Captured APB transaction
+# 15470000: [testcase] Read addr = 00000010
+# 15470000: [scoreboard] Get packet from monitor
+# 15470000: [compare] PASSED! Data matching. Exp: 10111011, Act: 10111011
+# 15470011: [stimulus] Sent packet to driver
+# 15470011: [driver] Get packet from stimulus
+# 15530000: [monitor] Captured APB transaction
+# 15530000: [testcase] Write addr = 00000010, data = 10100110
+# 15530000: [scoreboard] Get packet from monitor
+# 15530000: [stimulus] Sent packet to driver
+# 15530000: [driver] Get packet from stimulus
+# 15590000: [monitor] Captured APB transaction
+# 15590000: [testcase] Read addr = 00000010
+# 15590000: [scoreboard] Get packet from monitor
+# 15590000: [compare] PASSED! Data matching. Exp: 10100110, Act: 10100110
+# 15590011: [stimulus] Sent packet to driver
+# 15590011: [driver] Get packet from stimulus
+# 15650000: [monitor] Captured APB transaction
+# 15650000: [testcase] Write addr = 00000010, data = 10101101
+# 15650000: [scoreboard] Get packet from monitor
+# 15650000: [stimulus] Sent packet to driver
+# 15650000: [driver] Get packet from stimulus
+# 15710000: [monitor] Captured APB transaction
+# 15710000: [testcase] Read addr = 00000010
+# 15710000: [scoreboard] Get packet from monitor
+# 15710000: [compare] PASSED! Data matching. Exp: 10101101, Act: 10101101
+# 15710011: [stimulus] Sent packet to driver
+# 15710011: [driver] Get packet from stimulus
+# 15770000: [monitor] Captured APB transaction
+# 15770000: [testcase] Write addr = 00000010, data = 10101000
+# 15770000: [scoreboard] Get packet from monitor
+# 15770000: [stimulus] Sent packet to driver
+# 15770000: [driver] Get packet from stimulus
+# 15830000: [monitor] Captured APB transaction
+# 15830000: [testcase] Read addr = 00000010
+# 15830000: [scoreboard] Get packet from monitor
+# 15830000: [compare] PASSED! Data matching. Exp: 10101000, Act: 10101000
+# 15830011: [stimulus] Sent packet to driver
+# 15830011: [driver] Get packet from stimulus
+# 15890000: [monitor] Captured APB transaction
+# 15890000: [testcase] Write addr = 00000010, data = 01010101
+# 15890000: [scoreboard] Get packet from monitor
+# 15890000: [stimulus] Sent packet to driver
+# 15890000: [driver] Get packet from stimulus
+# 15950000: [monitor] Captured APB transaction
+# 15950000: [testcase] Read addr = 00000010
+# 15950000: [scoreboard] Get packet from monitor
+# 15950000: [compare] PASSED! Data matching. Exp: 01010101, Act: 01010101
+# 15950011: [stimulus] Sent packet to driver
+# 15950011: [driver] Get packet from stimulus
+# 16010000: [monitor] Captured APB transaction
+# 16010000: [testcase] Write addr = 00000010, data = 01010000
+# 16010000: [scoreboard] Get packet from monitor
+# 16010000: [stimulus] Sent packet to driver
+# 16010000: [driver] Get packet from stimulus
+# 16070000: [monitor] Captured APB transaction
+# 16070000: [testcase] Read addr = 00000010
+# 16070000: [scoreboard] Get packet from monitor
+# 16070000: [compare] PASSED! Data matching. Exp: 01010000, Act: 01010000
+# 16070011: [stimulus] Sent packet to driver
+# 16070011: [driver] Get packet from stimulus
+# 16130000: [monitor] Captured APB transaction
+# 16130000: [testcase] Write addr = 00000010, data = 01011111
+# 16130000: [scoreboard] Get packet from monitor
+# 16130000: [stimulus] Sent packet to driver
+# 16130000: [driver] Get packet from stimulus
+# 16190000: [monitor] Captured APB transaction
+# 16190000: [testcase] Read addr = 00000010
+# 16190000: [scoreboard] Get packet from monitor
+# 16190000: [compare] PASSED! Data matching. Exp: 01011111, Act: 01011111
+# 16190011: [stimulus] Sent packet to driver
+# 16190011: [driver] Get packet from stimulus
+# 16250000: [monitor] Captured APB transaction
+# 16250000: [testcase] Write addr = 00000010, data = 01011010
+# 16250000: [scoreboard] Get packet from monitor
+# 16250000: [stimulus] Sent packet to driver
+# 16250000: [driver] Get packet from stimulus
+# 16310000: [monitor] Captured APB transaction
+# 16310000: [testcase] Read addr = 00000010
+# 16310000: [scoreboard] Get packet from monitor
+# 16310000: [compare] PASSED! Data matching. Exp: 01011010, Act: 01011010
+# 16310011: [stimulus] Sent packet to driver
+# 16310011: [driver] Get packet from stimulus
+# 16370000: [monitor] Captured APB transaction
+# 16370000: [testcase] Write addr = 00000010, data = 01000001
+# 16370000: [scoreboard] Get packet from monitor
+# 16370000: [stimulus] Sent packet to driver
+# 16370000: [driver] Get packet from stimulus
+# 16430000: [monitor] Captured APB transaction
+# 16430000: [testcase] Read addr = 00000010
+# 16430000: [scoreboard] Get packet from monitor
+# 16430000: [compare] PASSED! Data matching. Exp: 01000001, Act: 01000001
+# 16430011: [stimulus] Sent packet to driver
+# 16430011: [driver] Get packet from stimulus
+# 16490000: [monitor] Captured APB transaction
+# 16490000: [testcase] Write addr = 00000010, data = 01001100
+# 16490000: [scoreboard] Get packet from monitor
+# 16490000: [stimulus] Sent packet to driver
+# 16490000: [driver] Get packet from stimulus
+# 16550000: [monitor] Captured APB transaction
+# 16550000: [testcase] Read addr = 00000010
+# 16550000: [scoreboard] Get packet from monitor
+# 16550000: [compare] PASSED! Data matching. Exp: 01001100, Act: 01001100
+# 16550011: [stimulus] Sent packet to driver
+# 16550011: [driver] Get packet from stimulus
+# 16610000: [monitor] Captured APB transaction
+# 16610000: [testcase] Write addr = 00000010, data = 01001011
+# 16610000: [scoreboard] Get packet from monitor
+# 16610000: [stimulus] Sent packet to driver
+# 16610000: [driver] Get packet from stimulus
+# 16670000: [monitor] Captured APB transaction
+# 16670000: [testcase] Read addr = 00000010
+# 16670000: [scoreboard] Get packet from monitor
+# 16670000: [compare] PASSED! Data matching. Exp: 01001011, Act: 01001011
+# 16670011: [stimulus] Sent packet to driver
+# 16670011: [driver] Get packet from stimulus
+# 16730000: [monitor] Captured APB transaction
+# 16730000: [testcase] Write addr = 00000010, data = 01110110
+# 16730000: [scoreboard] Get packet from monitor
+# 16730000: [stimulus] Sent packet to driver
+# 16730000: [driver] Get packet from stimulus
+# 16790000: [monitor] Captured APB transaction
+# 16790000: [testcase] Read addr = 00000010
+# 16790000: [scoreboard] Get packet from monitor
+# 16790000: [compare] PASSED! Data matching. Exp: 01110110, Act: 01110110
+# 16790011: [stimulus] Sent packet to driver
+# 16790011: [driver] Get packet from stimulus
+# 16850000: [monitor] Captured APB transaction
+# 16850000: [testcase] Write addr = 00000010, data = 01111101
+# 16850000: [scoreboard] Get packet from monitor
+# 16850000: [stimulus] Sent packet to driver
+# 16850000: [driver] Get packet from stimulus
+# 16910000: [monitor] Captured APB transaction
+# 16910000: [testcase] Read addr = 00000010
+# 16910000: [scoreboard] Get packet from monitor
+# 16910000: [compare] PASSED! Data matching. Exp: 01111101, Act: 01111101
+# 16910011: [stimulus] Sent packet to driver
+# 16910011: [driver] Get packet from stimulus
+# 16970000: [monitor] Captured APB transaction
+# 16970000: [testcase] Write addr = 00000010, data = 01111000
+# 16970000: [scoreboard] Get packet from monitor
+# 16970000: [stimulus] Sent packet to driver
+# 16970000: [driver] Get packet from stimulus
+# 17030000: [monitor] Captured APB transaction
+# 17030000: [testcase] Read addr = 00000010
+# 17030000: [scoreboard] Get packet from monitor
+# 17030000: [compare] PASSED! Data matching. Exp: 01111000, Act: 01111000
+# 17030011: [stimulus] Sent packet to driver
+# 17030011: [driver] Get packet from stimulus
+# 17090000: [monitor] Captured APB transaction
+# 17090000: [testcase] Write addr = 00000010, data = 01100111
+# 17090000: [scoreboard] Get packet from monitor
+# 17090000: [stimulus] Sent packet to driver
+# 17090000: [driver] Get packet from stimulus
+# 17150000: [monitor] Captured APB transaction
+# 17150000: [testcase] Read addr = 00000010
+# 17150000: [scoreboard] Get packet from monitor
+# 17150000: [compare] PASSED! Data matching. Exp: 01100111, Act: 01100111
+# 17150011: [stimulus] Sent packet to driver
+# 17150011: [driver] Get packet from stimulus
+# 17210000: [monitor] Captured APB transaction
+# 17210000: [testcase] Write addr = 00000010, data = 01100010
+# 17210000: [scoreboard] Get packet from monitor
+# 17210000: [stimulus] Sent packet to driver
+# 17210000: [driver] Get packet from stimulus
+# 17270000: [monitor] Captured APB transaction
+# 17270000: [testcase] Read addr = 00000010
+# 17270000: [scoreboard] Get packet from monitor
+# 17270000: [compare] PASSED! Data matching. Exp: 01100010, Act: 01100010
+# 17270011: [stimulus] Sent packet to driver
+# 17270011: [driver] Get packet from stimulus
+# 17330000: [monitor] Captured APB transaction
+# 17330000: [testcase] Write addr = 00000010, data = 01101001
+# 17330000: [scoreboard] Get packet from monitor
+# 17330000: [stimulus] Sent packet to driver
+# 17330000: [driver] Get packet from stimulus
+# 17390000: [monitor] Captured APB transaction
+# 17390000: [testcase] Read addr = 00000010
+# 17390000: [scoreboard] Get packet from monitor
+# 17390000: [compare] PASSED! Data matching. Exp: 01101001, Act: 01101001
+# 17390011: [stimulus] Sent packet to driver
+# 17390011: [driver] Get packet from stimulus
+# 17450000: [monitor] Captured APB transaction
+# 17450000: [testcase] Write addr = 00000010, data = 00010100
+# 17450000: [scoreboard] Get packet from monitor
+# 17450000: [stimulus] Sent packet to driver
+# 17450000: [driver] Get packet from stimulus
+# 17510000: [monitor] Captured APB transaction
+# 17510000: [testcase] Read addr = 00000010
+# 17510000: [scoreboard] Get packet from monitor
+# 17510000: [compare] PASSED! Data matching. Exp: 00010100, Act: 00010100
+# 17510011: [stimulus] Sent packet to driver
+# 17510011: [driver] Get packet from stimulus
+# 17570000: [monitor] Captured APB transaction
+# 17570000: [testcase] Write addr = 00000010, data = 00010011
+# 17570000: [scoreboard] Get packet from monitor
+# 17570000: [stimulus] Sent packet to driver
+# 17570000: [driver] Get packet from stimulus
+# 17630000: [monitor] Captured APB transaction
+# 17630000: [testcase] Read addr = 00000010
+# 17630000: [scoreboard] Get packet from monitor
+# 17630000: [compare] PASSED! Data matching. Exp: 00010011, Act: 00010011
+# 17630011: [stimulus] Sent packet to driver
+# 17630011: [driver] Get packet from stimulus
+# 17690000: [monitor] Captured APB transaction
+# 17690000: [testcase] Write addr = 00000010, data = 00011110
+# 17690000: [scoreboard] Get packet from monitor
+# 17690000: [stimulus] Sent packet to driver
+# 17690000: [driver] Get packet from stimulus
+# 17750000: [monitor] Captured APB transaction
+# 17750000: [testcase] Read addr = 00000010
+# 17750000: [scoreboard] Get packet from monitor
+# 17750000: [compare] PASSED! Data matching. Exp: 00011110, Act: 00011110
+# 17750011: [stimulus] Sent packet to driver
+# 17750011: [driver] Get packet from stimulus
+# 17810000: [monitor] Captured APB transaction
+# 17810000: [testcase] Write addr = 00000010, data = 00000101
+# 17810000: [scoreboard] Get packet from monitor
+# 17810000: [stimulus] Sent packet to driver
+# 17810000: [driver] Get packet from stimulus
+# 17870000: [monitor] Captured APB transaction
+# 17870000: [testcase] Read addr = 00000010
+# 17870000: [scoreboard] Get packet from monitor
+# 17870000: [compare] PASSED! Data matching. Exp: 00000101, Act: 00000101
+# 17870011: [stimulus] Sent packet to driver
+# 17870011: [driver] Get packet from stimulus
+# 17930000: [monitor] Captured APB transaction
+# 17930000: [testcase] Write addr = 00000010, data = 00000000
+# 17930000: [scoreboard] Get packet from monitor
+# 17930000: [stimulus] Sent packet to driver
+# 17930000: [driver] Get packet from stimulus
+# 17990000: [monitor] Captured APB transaction
+# 17990000: [testcase] Read addr = 00000010
+# 17990000: [scoreboard] Get packet from monitor
+# 17990000: [compare] PASSED! Data matching. Exp: 00000000, Act: 00000000
+# 17990011: [stimulus] Sent packet to driver
+# 17990011: [driver] Get packet from stimulus
+# 18050000: [monitor] Captured APB transaction
+# 18050000: [testcase] Write addr = 00000010, data = 00001111
+# 18050000: [scoreboard] Get packet from monitor
+# 18050000: [stimulus] Sent packet to driver
+# 18050000: [driver] Get packet from stimulus
+# 18110000: [monitor] Captured APB transaction
+# 18110000: [testcase] Read addr = 00000010
+# 18110000: [scoreboard] Get packet from monitor
+# 18110000: [compare] PASSED! Data matching. Exp: 00001111, Act: 00001111
+# 18110011: [stimulus] Sent packet to driver
+# 18110011: [driver] Get packet from stimulus
+# 18170000: [monitor] Captured APB transaction
+# 18170000: [testcase] Write addr = 00000010, data = 00001010
+# 18170000: [scoreboard] Get packet from monitor
+# 18170000: [stimulus] Sent packet to driver
+# 18170000: [driver] Get packet from stimulus
+# 18230000: [monitor] Captured APB transaction
+# 18230000: [testcase] Read addr = 00000010
+# 18230000: [scoreboard] Get packet from monitor
+# 18230000: [compare] PASSED! Data matching. Exp: 00001010, Act: 00001010
+# 18230011: [stimulus] Sent packet to driver
+# 18230011: [driver] Get packet from stimulus
+# 18290000: [monitor] Captured APB transaction
+# 18290000: [testcase] Write addr = 00000010, data = 00110001
+# 18290000: [scoreboard] Get packet from monitor
+# 18290000: [stimulus] Sent packet to driver
+# 18290000: [driver] Get packet from stimulus
+# 18350000: [monitor] Captured APB transaction
+# 18350000: [testcase] Read addr = 00000010
+# 18350000: [scoreboard] Get packet from monitor
+# 18350000: [compare] PASSED! Data matching. Exp: 00110001, Act: 00110001
+# 18350011: [stimulus] Sent packet to driver
+# 18350011: [driver] Get packet from stimulus
+# 18410000: [monitor] Captured APB transaction
+# 18410000: [testcase] Write addr = 00000010, data = 00111100
+# 18410000: [scoreboard] Get packet from monitor
+# 18410000: [stimulus] Sent packet to driver
+# 18410000: [driver] Get packet from stimulus
+# 18470000: [monitor] Captured APB transaction
+# 18470000: [testcase] Read addr = 00000010
+# 18470000: [scoreboard] Get packet from monitor
+# 18470000: [compare] PASSED! Data matching. Exp: 00111100, Act: 00111100
+# 18470011: [stimulus] Sent packet to driver
+# 18470011: [driver] Get packet from stimulus
+# 18530000: [monitor] Captured APB transaction
+# 18530000: [testcase] Write addr = 00000010, data = 00111011
+# 18530000: [scoreboard] Get packet from monitor
+# 18530000: [stimulus] Sent packet to driver
+# 18530000: [driver] Get packet from stimulus
+# 18590000: [monitor] Captured APB transaction
+# 18590000: [testcase] Read addr = 00000010
+# 18590000: [scoreboard] Get packet from monitor
+# 18590000: [compare] PASSED! Data matching. Exp: 00111011, Act: 00111011
+# 18590011: [stimulus] Sent packet to driver
+# 18590011: [driver] Get packet from stimulus
+# 18650000: [monitor] Captured APB transaction
+# 18650000: [testcase] Write addr = 00000010, data = 00100110
+# 18650000: [scoreboard] Get packet from monitor
+# 18650000: [stimulus] Sent packet to driver
+# 18650000: [driver] Get packet from stimulus
+# 18710000: [monitor] Captured APB transaction
+# 18710000: [testcase] Read addr = 00000010
+# 18710000: [scoreboard] Get packet from monitor
+# 18710000: [compare] PASSED! Data matching. Exp: 00100110, Act: 00100110
+# 18710011: [stimulus] Sent packet to driver
+# 18710011: [driver] Get packet from stimulus
+# 18770000: [monitor] Captured APB transaction
+# 18770000: [testcase] Write addr = 00000010, data = 00101101
+# 18770000: [scoreboard] Get packet from monitor
+# 18770000: [stimulus] Sent packet to driver
+# 18770000: [driver] Get packet from stimulus
+# 18830000: [monitor] Captured APB transaction
+# 18830000: [testcase] Read addr = 00000010
+# 18830000: [scoreboard] Get packet from monitor
+# 18830000: [compare] PASSED! Data matching. Exp: 00101101, Act: 00101101
+# 18830011: [stimulus] Sent packet to driver
+# 18830011: [driver] Get packet from stimulus
+# 18890000: [monitor] Captured APB transaction
+# 18890000: [testcase] Write addr = 00000010, data = 00101000
+# 18890000: [scoreboard] Get packet from monitor
+# 18890000: [stimulus] Sent packet to driver
+# 18890000: [driver] Get packet from stimulus
+# 18950000: [monitor] Captured APB transaction
+# 18950000: [testcase] Read addr = 00000010
+# 18950000: [scoreboard] Get packet from monitor
+# 18950000: [compare] PASSED! Data matching. Exp: 00101000, Act: 00101000
+# 18950011: [stimulus] Sent packet to driver
+# 18950011: [driver] Get packet from stimulus
+# 19010000: [monitor] Captured APB transaction
+# 19010000: [testcase] Write addr = 00000010, data = 11010111
+# 19010000: [scoreboard] Get packet from monitor
+# 19010000: [stimulus] Sent packet to driver
+# 19010000: [driver] Get packet from stimulus
+# 19070000: [monitor] Captured APB transaction
+# 19070000: [testcase] Read addr = 00000010
+# 19070000: [scoreboard] Get packet from monitor
+# 19070000: [compare] PASSED! Data matching. Exp: 11010111, Act: 11010111
+# 19070011: [stimulus] Sent packet to driver
+# 19070011: [driver] Get packet from stimulus
+# 19130000: [monitor] Captured APB transaction
+# 19130000: [testcase] Write addr = 00000010, data = 11010010
+# 19130000: [scoreboard] Get packet from monitor
+# 19130000: [stimulus] Sent packet to driver
+# 19130000: [driver] Get packet from stimulus
+# 19190000: [monitor] Captured APB transaction
+# 19190000: [testcase] Read addr = 00000010
+# 19190000: [scoreboard] Get packet from monitor
+# 19190000: [compare] PASSED! Data matching. Exp: 11010010, Act: 11010010
+# 19190011: [stimulus] Sent packet to driver
+# 19190011: [driver] Get packet from stimulus
+# 19250000: [monitor] Captured APB transaction
+# 19250000: [testcase] Write addr = 00000010, data = 11011001
+# 19250000: [scoreboard] Get packet from monitor
+# 19250000: [stimulus] Sent packet to driver
+# 19250000: [driver] Get packet from stimulus
+# 19310000: [monitor] Captured APB transaction
+# 19310000: [testcase] Read addr = 00000010
+# 19310000: [scoreboard] Get packet from monitor
+# 19310000: [compare] PASSED! Data matching. Exp: 11011001, Act: 11011001
+# 19310011: [stimulus] Sent packet to driver
+# 19310011: [driver] Get packet from stimulus
+# 19370000: [monitor] Captured APB transaction
+# 19370000: [testcase] Write addr = 00000010, data = 11000100
+# 19370000: [scoreboard] Get packet from monitor
+# 19370000: [stimulus] Sent packet to driver
+# 19370000: [driver] Get packet from stimulus
+# 19430000: [monitor] Captured APB transaction
+# 19430000: [testcase] Read addr = 00000010
+# 19430000: [scoreboard] Get packet from monitor
+# 19430000: [compare] PASSED! Data matching. Exp: 11000100, Act: 11000100
+# 19430011: [stimulus] Sent packet to driver
+# 19430011: [driver] Get packet from stimulus
+# 19490000: [monitor] Captured APB transaction
+# 19490000: [testcase] Write addr = 00000010, data = 11000011
+# 19490000: [scoreboard] Get packet from monitor
+# 19490000: [stimulus] Sent packet to driver
+# 19490000: [driver] Get packet from stimulus
+# 19550000: [monitor] Captured APB transaction
+# 19550000: [testcase] Read addr = 00000010
+# 19550000: [scoreboard] Get packet from monitor
+# 19550000: [compare] PASSED! Data matching. Exp: 11000011, Act: 11000011
+# 19550011: [stimulus] Sent packet to driver
+# 19550011: [driver] Get packet from stimulus
+# 19610000: [monitor] Captured APB transaction
+# 19610000: [testcase] Write addr = 00000010, data = 11001110
+# 19610000: [scoreboard] Get packet from monitor
+# 19610000: [stimulus] Sent packet to driver
+# 19610000: [driver] Get packet from stimulus
+# 19670000: [monitor] Captured APB transaction
+# 19670000: [testcase] Read addr = 00000010
+# 19670000: [scoreboard] Get packet from monitor
+# 19670000: [compare] PASSED! Data matching. Exp: 11001110, Act: 11001110
+# 19670011: [stimulus] Sent packet to driver
+# 19670011: [driver] Get packet from stimulus
+# 19730000: [monitor] Captured APB transaction
+# 19730000: [testcase] Write addr = 00000010, data = 11110101
+# 19730000: [scoreboard] Get packet from monitor
+# 19730000: [stimulus] Sent packet to driver
+# 19730000: [driver] Get packet from stimulus
+# 19790000: [monitor] Captured APB transaction
+# 19790000: [testcase] Read addr = 00000010
+# 19790000: [scoreboard] Get packet from monitor
+# 19790000: [compare] PASSED! Data matching. Exp: 11110101, Act: 11110101
+# 19790011: [stimulus] Sent packet to driver
+# 19790011: [driver] Get packet from stimulus
+# 19850000: [monitor] Captured APB transaction
+# 19850000: [testcase] Write addr = 00000010, data = 11110000
+# 19850000: [scoreboard] Get packet from monitor
+# 19850000: [stimulus] Sent packet to driver
+# 19850000: [driver] Get packet from stimulus
+# 19910000: [monitor] Captured APB transaction
+# 19910000: [testcase] Read addr = 00000010
+# 19910000: [scoreboard] Get packet from monitor
+# 19910000: [compare] PASSED! Data matching. Exp: 11110000, Act: 11110000
+# 19910011: [stimulus] Sent packet to driver
+# 19910011: [driver] Get packet from stimulus
+# 19970000: [monitor] Captured APB transaction
+# 19970000: [testcase] Write addr = 00000010, data = 11111111
+# 19970000: [scoreboard] Get packet from monitor
+# 19970000: [stimulus] Sent packet to driver
+# 19970000: [driver] Get packet from stimulus
+# 20030000: [monitor] Captured APB transaction
+# 20030000: [testcase] Read addr = 00000010
+# 20030000: [scoreboard] Get packet from monitor
+# 20030000: [compare] PASSED! Data matching. Exp: 11111111, Act: 11111111
+# 20030011: [stimulus] Sent packet to driver
+# 20030011: [driver] Get packet from stimulus
+# 20090000: [monitor] Captured APB transaction
+# 20090000: [testcase] Write addr = 00000010, data = 11111010
+# 20090000: [scoreboard] Get packet from monitor
+# 20090000: [stimulus] Sent packet to driver
+# 20090000: [driver] Get packet from stimulus
+# 20150000: [monitor] Captured APB transaction
+# 20150000: [testcase] Read addr = 00000010
+# 20150000: [scoreboard] Get packet from monitor
+# 20150000: [compare] PASSED! Data matching. Exp: 11111010, Act: 11111010
+# 20150011: [stimulus] Sent packet to driver
+# 20150011: [driver] Get packet from stimulus
+# 20210000: [monitor] Captured APB transaction
+# 20210000: [testcase] Write addr = 00000010, data = 11100001
+# 20210000: [scoreboard] Get packet from monitor
+# 20210000: [stimulus] Sent packet to driver
+# 20210000: [driver] Get packet from stimulus
+# 20270000: [monitor] Captured APB transaction
+# 20270000: [testcase] Read addr = 00000010
+# 20270000: [scoreboard] Get packet from monitor
+# 20270000: [compare] PASSED! Data matching. Exp: 11100001, Act: 11100001
+# 20270011: [stimulus] Sent packet to driver
+# 20270011: [driver] Get packet from stimulus
+# 20330000: [monitor] Captured APB transaction
+# 20330000: [testcase] Write addr = 00000010, data = 11101100
+# 20330000: [scoreboard] Get packet from monitor
+# 20330000: [stimulus] Sent packet to driver
+# 20330000: [driver] Get packet from stimulus
+# 20390000: [monitor] Captured APB transaction
+# 20390000: [testcase] Read addr = 00000010
+# 20390000: [scoreboard] Get packet from monitor
+# 20390000: [compare] PASSED! Data matching. Exp: 11101100, Act: 11101100
+# 20390011: [stimulus] Sent packet to driver
+# 20390011: [driver] Get packet from stimulus
+# 20450000: [monitor] Captured APB transaction
+# 20450000: [testcase] Write addr = 00000010, data = 11101011
+# 20450000: [scoreboard] Get packet from monitor
+# 20450000: [stimulus] Sent packet to driver
+# 20450000: [driver] Get packet from stimulus
+# 20510000: [monitor] Captured APB transaction
+# 20510000: [testcase] Read addr = 00000010
+# 20510000: [scoreboard] Get packet from monitor
+# 20510000: [compare] PASSED! Data matching. Exp: 11101011, Act: 11101011
+# 20510011: [stimulus] Sent packet to driver
+# 20510011: [driver] Get packet from stimulus
+# 20570000: [monitor] Captured APB transaction
+# 20570000: [testcase] Write addr = 00000010, data = 10010110
+# 20570000: [scoreboard] Get packet from monitor
+# 20570000: [stimulus] Sent packet to driver
+# 20570000: [driver] Get packet from stimulus
+# 20630000: [monitor] Captured APB transaction
+# 20630000: [testcase] Read addr = 00000010
+# 20630000: [scoreboard] Get packet from monitor
+# 20630000: [compare] PASSED! Data matching. Exp: 10010110, Act: 10010110
+# 20630011: [stimulus] Sent packet to driver
+# 20630011: [driver] Get packet from stimulus
+# 20690000: [monitor] Captured APB transaction
+# 20690000: [testcase] Write addr = 00000010, data = 10011101
+# 20690000: [scoreboard] Get packet from monitor
+# 20690000: [stimulus] Sent packet to driver
+# 20690000: [driver] Get packet from stimulus
+# 20750000: [monitor] Captured APB transaction
+# 20750000: [testcase] Read addr = 00000010
+# 20750000: [scoreboard] Get packet from monitor
+# 20750000: [compare] PASSED! Data matching. Exp: 10011101, Act: 10011101
+# 20750011: [stimulus] Sent packet to driver
+# 20750011: [driver] Get packet from stimulus
+# 20810000: [monitor] Captured APB transaction
+# 20810000: [testcase] Write addr = 00000010, data = 10011000
+# 20810000: [scoreboard] Get packet from monitor
+# 20810000: [stimulus] Sent packet to driver
+# 20810000: [driver] Get packet from stimulus
+# 20870000: [monitor] Captured APB transaction
+# 20870000: [testcase] Read addr = 00000010
+# 20870000: [scoreboard] Get packet from monitor
+# 20870000: [compare] PASSED! Data matching. Exp: 10011000, Act: 10011000
+# 20870011: [stimulus] Sent packet to driver
+# 20870011: [driver] Get packet from stimulus
+# 20930000: [monitor] Captured APB transaction
+# 20930000: [testcase] Write addr = 00000010, data = 10000111
+# 20930000: [scoreboard] Get packet from monitor
+# 20930000: [stimulus] Sent packet to driver
+# 20930000: [driver] Get packet from stimulus
+# 20990000: [monitor] Captured APB transaction
+# 20990000: [testcase] Read addr = 00000010
+# 20990000: [scoreboard] Get packet from monitor
+# 20990000: [compare] PASSED! Data matching. Exp: 10000111, Act: 10000111
+# 20990011: [stimulus] Sent packet to driver
+# 20990011: [driver] Get packet from stimulus
+# 21050000: [monitor] Captured APB transaction
+# 21050000: [testcase] Write addr = 00000010, data = 10000010
+# 21050000: [scoreboard] Get packet from monitor
+# 21050000: [stimulus] Sent packet to driver
+# 21050000: [driver] Get packet from stimulus
+# 21110000: [monitor] Captured APB transaction
+# 21110000: [testcase] Read addr = 00000010
+# 21110000: [scoreboard] Get packet from monitor
+# 21110000: [compare] PASSED! Data matching. Exp: 10000010, Act: 10000010
+# 21110011: [stimulus] Sent packet to driver
+# 21110011: [driver] Get packet from stimulus
+# 21170000: [monitor] Captured APB transaction
+# 21170000: [testcase] Write addr = 00000010, data = 10001001
+# 21170000: [scoreboard] Get packet from monitor
+# 21170000: [stimulus] Sent packet to driver
+# 21170000: [driver] Get packet from stimulus
+# 21230000: [monitor] Captured APB transaction
+# 21230000: [testcase] Read addr = 00000010
+# 21230000: [scoreboard] Get packet from monitor
+# 21230000: [compare] PASSED! Data matching. Exp: 10001001, Act: 10001001
+# 21230011: [stimulus] Sent packet to driver
+# 21230011: [driver] Get packet from stimulus
+# 21290000: [monitor] Captured APB transaction
+# 21290000: [testcase] Write addr = 00000010, data = 10110100
+# 21290000: [scoreboard] Get packet from monitor
+# 21290000: [stimulus] Sent packet to driver
+# 21290000: [driver] Get packet from stimulus
+# 21350000: [monitor] Captured APB transaction
+# 21350000: [testcase] Read addr = 00000010
+# 21350000: [scoreboard] Get packet from monitor
+# 21350000: [compare] PASSED! Data matching. Exp: 10110100, Act: 10110100
+# 21350011: [stimulus] Sent packet to driver
+# 21350011: [driver] Get packet from stimulus
+# 21410000: [monitor] Captured APB transaction
+# 21410000: [testcase] Write addr = 00000010, data = 10110011
+# 21410000: [scoreboard] Get packet from monitor
+# 21410000: [stimulus] Sent packet to driver
+# 21410000: [driver] Get packet from stimulus
+# 21470000: [monitor] Captured APB transaction
+# 21470000: [testcase] Read addr = 00000010
+# 21470000: [scoreboard] Get packet from monitor
+# 21470000: [compare] PASSED! Data matching. Exp: 10110011, Act: 10110011
+# 21470011: [stimulus] Sent packet to driver
+# 21470011: [driver] Get packet from stimulus
+# 21530000: [monitor] Captured APB transaction
+# 21530000: [testcase] Write addr = 00000010, data = 10111110
+# 21530000: [scoreboard] Get packet from monitor
+# 21530000: [stimulus] Sent packet to driver
+# 21530000: [driver] Get packet from stimulus
+# 21590000: [monitor] Captured APB transaction
+# 21590000: [testcase] Read addr = 00000010
+# 21590000: [scoreboard] Get packet from monitor
+# 21590000: [compare] PASSED! Data matching. Exp: 10111110, Act: 10111110
+# 21590011: [stimulus] Sent packet to driver
+# 21590011: [driver] Get packet from stimulus
+# 21650000: [monitor] Captured APB transaction
+# 21650000: [testcase] Write addr = 00000010, data = 10100101
+# 21650000: [scoreboard] Get packet from monitor
+# 21650000: [stimulus] Sent packet to driver
+# 21650000: [driver] Get packet from stimulus
+# 21710000: [monitor] Captured APB transaction
+# 21710000: [testcase] Read addr = 00000010
+# 21710000: [scoreboard] Get packet from monitor
+# 21710000: [compare] PASSED! Data matching. Exp: 10100101, Act: 10100101
+# 21710011: [stimulus] Sent packet to driver
+# 21710011: [driver] Get packet from stimulus
+# 21770000: [monitor] Captured APB transaction
+# 21770000: [testcase] Write addr = 00000010, data = 10100000
+# 21770000: [scoreboard] Get packet from monitor
+# 21770000: [stimulus] Sent packet to driver
+# 21770000: [driver] Get packet from stimulus
+# 21830000: [monitor] Captured APB transaction
+# 21830000: [testcase] Read addr = 00000010
+# 21830000: [scoreboard] Get packet from monitor
+# 21830000: [compare] PASSED! Data matching. Exp: 10100000, Act: 10100000
+# 21830011: [stimulus] Sent packet to driver
+# 21830011: [driver] Get packet from stimulus
+# 21890000: [monitor] Captured APB transaction
+# 21890000: [testcase] Write addr = 00000010, data = 10101111
+# 21890000: [scoreboard] Get packet from monitor
+# 21890000: [stimulus] Sent packet to driver
+# 21890000: [driver] Get packet from stimulus
+# 21950000: [monitor] Captured APB transaction
+# 21950000: [testcase] Read addr = 00000010
+# 21950000: [scoreboard] Get packet from monitor
+# 21950000: [compare] PASSED! Data matching. Exp: 10101111, Act: 10101111
+# 21950011: [stimulus] Sent packet to driver
+# 21950011: [driver] Get packet from stimulus
+# 22010000: [monitor] Captured APB transaction
+# 22010000: [testcase] Write addr = 00000010, data = 10101010
+# 22010000: [scoreboard] Get packet from monitor
+# 22010000: [stimulus] Sent packet to driver
+# 22010000: [driver] Get packet from stimulus
+# 22070000: [monitor] Captured APB transaction
+# 22070000: [testcase] Read addr = 00000010
+# 22070000: [scoreboard] Get packet from monitor
+# 22070000: [compare] PASSED! Data matching. Exp: 10101010, Act: 10101010
+# 22070011: [stimulus] Sent packet to driver
+# 22070011: [driver] Get packet from stimulus
+# 22130000: [monitor] Captured APB transaction
+# 22130000: [testcase] Write addr = 00000010, data = 01010111
+# 22130000: [scoreboard] Get packet from monitor
+# 22130000: [stimulus] Sent packet to driver
+# 22130000: [driver] Get packet from stimulus
+# 22190000: [monitor] Captured APB transaction
+# 22190000: [testcase] Read addr = 00000010
+# 22190000: [scoreboard] Get packet from monitor
+# 22190000: [compare] PASSED! Data matching. Exp: 01010111, Act: 01010111
+# 22190011: [stimulus] Sent packet to driver
+# 22190011: [driver] Get packet from stimulus
+# 22250000: [monitor] Captured APB transaction
+# 22250000: [testcase] Write addr = 00000010, data = 01010010
+# 22250000: [scoreboard] Get packet from monitor
+# 22250000: [stimulus] Sent packet to driver
+# 22250000: [driver] Get packet from stimulus
+# 22310000: [monitor] Captured APB transaction
+# 22310000: [testcase] Read addr = 00000010
+# 22310000: [scoreboard] Get packet from monitor
+# 22310000: [compare] PASSED! Data matching. Exp: 01010010, Act: 01010010
+# 22310011: [stimulus] Sent packet to driver
+# 22310011: [driver] Get packet from stimulus
+# 22370000: [monitor] Captured APB transaction
+# 22370000: [testcase] Write addr = 00000010, data = 01011001
+# 22370000: [scoreboard] Get packet from monitor
+# 22370000: [stimulus] Sent packet to driver
+# 22370000: [driver] Get packet from stimulus
+# 22430000: [monitor] Captured APB transaction
+# 22430000: [testcase] Read addr = 00000010
+# 22430000: [scoreboard] Get packet from monitor
+# 22430000: [compare] PASSED! Data matching. Exp: 01011001, Act: 01011001
+# 22430011: [stimulus] Sent packet to driver
+# 22430011: [driver] Get packet from stimulus
+# 22490000: [monitor] Captured APB transaction
+# 22490000: [testcase] Write addr = 00000010, data = 01000100
+# 22490000: [scoreboard] Get packet from monitor
+# 22490000: [stimulus] Sent packet to driver
+# 22490000: [driver] Get packet from stimulus
+# 22550000: [monitor] Captured APB transaction
+# 22550000: [testcase] Read addr = 00000010
+# 22550000: [scoreboard] Get packet from monitor
+# 22550000: [compare] PASSED! Data matching. Exp: 01000100, Act: 01000100
+# 22550011: [stimulus] Sent packet to driver
+# 22550011: [driver] Get packet from stimulus
+# 22610000: [monitor] Captured APB transaction
+# 22610000: [testcase] Write addr = 00000010, data = 01000011
+# 22610000: [scoreboard] Get packet from monitor
+# 22610000: [stimulus] Sent packet to driver
+# 22610000: [driver] Get packet from stimulus
+# 22670000: [monitor] Captured APB transaction
+# 22670000: [testcase] Read addr = 00000010
+# 22670000: [scoreboard] Get packet from monitor
+# 22670000: [compare] PASSED! Data matching. Exp: 01000011, Act: 01000011
+# 22670011: [stimulus] Sent packet to driver
+# 22670011: [driver] Get packet from stimulus
+# 22730000: [monitor] Captured APB transaction
+# 22730000: [testcase] Write addr = 00000010, data = 01001110
+# 22730000: [scoreboard] Get packet from monitor
+# 22730000: [stimulus] Sent packet to driver
+# 22730000: [driver] Get packet from stimulus
+# 22790000: [monitor] Captured APB transaction
+# 22790000: [testcase] Read addr = 00000010
+# 22790000: [scoreboard] Get packet from monitor
+# 22790000: [compare] PASSED! Data matching. Exp: 01001110, Act: 01001110
+# 22790011: [stimulus] Sent packet to driver
+# 22790011: [driver] Get packet from stimulus
+# 22850000: [monitor] Captured APB transaction
+# 22850000: [testcase] Write addr = 00000010, data = 01110101
+# 22850000: [scoreboard] Get packet from monitor
+# 22850000: [stimulus] Sent packet to driver
+# 22850000: [driver] Get packet from stimulus
+# 22910000: [monitor] Captured APB transaction
+# 22910000: [testcase] Read addr = 00000010
+# 22910000: [scoreboard] Get packet from monitor
+# 22910000: [compare] PASSED! Data matching. Exp: 01110101, Act: 01110101
+# 22910011: [stimulus] Sent packet to driver
+# 22910011: [driver] Get packet from stimulus
+# 22970000: [monitor] Captured APB transaction
+# 22970000: [testcase] Write addr = 00000010, data = 01110000
+# 22970000: [scoreboard] Get packet from monitor
+# 22970000: [stimulus] Sent packet to driver
+# 22970000: [driver] Get packet from stimulus
+# 23030000: [monitor] Captured APB transaction
+# 23030000: [testcase] Read addr = 00000010
+# 23030000: [scoreboard] Get packet from monitor
+# 23030000: [compare] PASSED! Data matching. Exp: 01110000, Act: 01110000
+# 23030011: [stimulus] Sent packet to driver
+# 23030011: [driver] Get packet from stimulus
+# 23090000: [monitor] Captured APB transaction
+# 23090000: [testcase] Write addr = 00000010, data = 01111111
+# 23090000: [scoreboard] Get packet from monitor
+# 23090000: [stimulus] Sent packet to driver
+# 23090000: [driver] Get packet from stimulus
+# 23150000: [monitor] Captured APB transaction
+# 23150000: [testcase] Read addr = 00000010
+# 23150000: [scoreboard] Get packet from monitor
+# 23150000: [compare] PASSED! Data matching. Exp: 01111111, Act: 01111111
+# 23150011: [stimulus] Sent packet to driver
+# 23150011: [driver] Get packet from stimulus
+# 23210000: [monitor] Captured APB transaction
+# 23210000: [testcase] Write addr = 00000010, data = 01111010
+# 23210000: [scoreboard] Get packet from monitor
+# 23210000: [stimulus] Sent packet to driver
+# 23210000: [driver] Get packet from stimulus
+# 23270000: [monitor] Captured APB transaction
+# 23270000: [testcase] Read addr = 00000010
+# 23270000: [scoreboard] Get packet from monitor
+# 23270000: [compare] PASSED! Data matching. Exp: 01111010, Act: 01111010
+# 23270011: [stimulus] Sent packet to driver
+# 23270011: [driver] Get packet from stimulus
+# 23330000: [monitor] Captured APB transaction
+# 23330000: [testcase] Write addr = 00000010, data = 01100001
+# 23330000: [scoreboard] Get packet from monitor
+# 23330000: [stimulus] Sent packet to driver
+# 23330000: [driver] Get packet from stimulus
+# 23390000: [monitor] Captured APB transaction
+# 23390000: [testcase] Read addr = 00000010
+# 23390000: [scoreboard] Get packet from monitor
+# 23390000: [compare] PASSED! Data matching. Exp: 01100001, Act: 01100001
+# 23390011: [stimulus] Sent packet to driver
+# 23390011: [driver] Get packet from stimulus
+# 23450000: [monitor] Captured APB transaction
+# 23450000: [testcase] Write addr = 00000010, data = 01101100
+# 23450000: [scoreboard] Get packet from monitor
+# 23450000: [stimulus] Sent packet to driver
+# 23450000: [driver] Get packet from stimulus
+# 23510000: [monitor] Captured APB transaction
+# 23510000: [testcase] Read addr = 00000010
+# 23510000: [scoreboard] Get packet from monitor
+# 23510000: [compare] PASSED! Data matching. Exp: 01101100, Act: 01101100
+# 23510011: [stimulus] Sent packet to driver
+# 23510011: [driver] Get packet from stimulus
+# 23570000: [monitor] Captured APB transaction
+# 23570000: [testcase] Write addr = 00000010, data = 01101011
+# 23570000: [scoreboard] Get packet from monitor
+# 23570000: [stimulus] Sent packet to driver
+# 23570000: [driver] Get packet from stimulus
+# 23630000: [monitor] Captured APB transaction
+# 23630000: [testcase] Read addr = 00000010
+# 23630000: [scoreboard] Get packet from monitor
+# 23630000: [compare] PASSED! Data matching. Exp: 01101011, Act: 01101011
+# 23630011: [stimulus] Sent packet to driver
+# 23630011: [driver] Get packet from stimulus
+# 23690000: [monitor] Captured APB transaction
+# 23690000: [testcase] Write addr = 00000010, data = 00010110
+# 23690000: [scoreboard] Get packet from monitor
+# 23690000: [stimulus] Sent packet to driver
+# 23690000: [driver] Get packet from stimulus
+# 23750000: [monitor] Captured APB transaction
+# 23750000: [testcase] Read addr = 00000010
+# 23750000: [scoreboard] Get packet from monitor
+# 23750000: [compare] PASSED! Data matching. Exp: 00010110, Act: 00010110
+# 23750011: [stimulus] Sent packet to driver
+# 23750011: [driver] Get packet from stimulus
+# 23810000: [monitor] Captured APB transaction
+# 23810000: [testcase] Write addr = 00000010, data = 00011101
+# 23810000: [scoreboard] Get packet from monitor
+# 23810000: [stimulus] Sent packet to driver
+# 23810000: [driver] Get packet from stimulus
+# 23870000: [monitor] Captured APB transaction
+# 23870000: [testcase] Read addr = 00000010
+# 23870000: [scoreboard] Get packet from monitor
+# 23870000: [compare] PASSED! Data matching. Exp: 00011101, Act: 00011101
+# 23870011: [stimulus] Sent packet to driver
+# 23870011: [driver] Get packet from stimulus
+# 23930000: [monitor] Captured APB transaction
+# 23930000: [testcase] Write addr = 00000010, data = 00011000
+# 23930000: [scoreboard] Get packet from monitor
+# 23930000: [stimulus] Sent packet to driver
+# 23930000: [driver] Get packet from stimulus
+# 23990000: [monitor] Captured APB transaction
+# 23990000: [testcase] Read addr = 00000010
+# 23990000: [scoreboard] Get packet from monitor
+# 23990000: [compare] PASSED! Data matching. Exp: 00011000, Act: 00011000
+# 23990011: [stimulus] Sent packet to driver
+# 23990011: [driver] Get packet from stimulus
+# 24050000: [monitor] Captured APB transaction
+# 24050000: [testcase] Write addr = 00000010, data = 00000111
+# 24050000: [scoreboard] Get packet from monitor
+# 24050000: [stimulus] Sent packet to driver
+# 24050000: [driver] Get packet from stimulus
+# 24110000: [monitor] Captured APB transaction
+# 24110000: [testcase] Read addr = 00000010
+# 24110000: [scoreboard] Get packet from monitor
+# 24110000: [compare] PASSED! Data matching. Exp: 00000111, Act: 00000111
+# 24110011: [stimulus] Sent packet to driver
+# 24110011: [driver] Get packet from stimulus
+# 24170000: [monitor] Captured APB transaction
+# 24170000: [testcase] Write addr = 00000010, data = 00000010
+# 24170000: [scoreboard] Get packet from monitor
+# 24170000: [stimulus] Sent packet to driver
+# 24170000: [driver] Get packet from stimulus
+# 24230000: [monitor] Captured APB transaction
+# 24230000: [testcase] Read addr = 00000010
+# 24230000: [scoreboard] Get packet from monitor
+# 24230000: [compare] PASSED! Data matching. Exp: 00000010, Act: 00000010
+# 24230011: [stimulus] Sent packet to driver
+# 24230011: [driver] Get packet from stimulus
+# 24290000: [monitor] Captured APB transaction
+# 24290000: [testcase] Write addr = 00000010, data = 00001001
+# 24290000: [scoreboard] Get packet from monitor
+# 24290000: [stimulus] Sent packet to driver
+# 24290000: [driver] Get packet from stimulus
+# 24350000: [monitor] Captured APB transaction
+# 24350000: [testcase] Read addr = 00000010
+# 24350000: [scoreboard] Get packet from monitor
+# 24350000: [compare] PASSED! Data matching. Exp: 00001001, Act: 00001001
+# 24350011: [stimulus] Sent packet to driver
+# 24350011: [driver] Get packet from stimulus
+# 24410000: [monitor] Captured APB transaction
+# 24410000: [testcase] Write addr = 00000010, data = 00110100
+# 24410000: [scoreboard] Get packet from monitor
+# 24410000: [stimulus] Sent packet to driver
+# 24410000: [driver] Get packet from stimulus
+# 24470000: [monitor] Captured APB transaction
+# 24470000: [testcase] Read addr = 00000010
+# 24470000: [scoreboard] Get packet from monitor
+# 24470000: [compare] PASSED! Data matching. Exp: 00110100, Act: 00110100
+# 24470011: [stimulus] Sent packet to driver
+# 24470011: [driver] Get packet from stimulus
+# 24530000: [monitor] Captured APB transaction
+# 24530000: [testcase] Write addr = 00000010, data = 00110011
+# 24530000: [scoreboard] Get packet from monitor
+# 24530000: [stimulus] Sent packet to driver
+# 24530000: [driver] Get packet from stimulus
+# 24590000: [monitor] Captured APB transaction
+# 24590000: [testcase] Read addr = 00000010
+# 24590000: [scoreboard] Get packet from monitor
+# 24590000: [compare] PASSED! Data matching. Exp: 00110011, Act: 00110011
+# 24590011: [stimulus] Sent packet to driver
+# 24590011: [driver] Get packet from stimulus
+# 24650000: [monitor] Captured APB transaction
+# 24650000: [testcase] Write addr = 00000010, data = 00111110
+# 24650000: [scoreboard] Get packet from monitor
+# 24650000: [stimulus] Sent packet to driver
+# 24650000: [driver] Get packet from stimulus
+# 24710000: [monitor] Captured APB transaction
+# 24710000: [testcase] Read addr = 00000010
+# 24710000: [scoreboard] Get packet from monitor
+# 24710000: [compare] PASSED! Data matching. Exp: 00111110, Act: 00111110
+# 24710011: [stimulus] Sent packet to driver
+# 24710011: [driver] Get packet from stimulus
+# 24770000: [monitor] Captured APB transaction
+# 24770000: [testcase] Write addr = 00000010, data = 00100101
+# 24770000: [scoreboard] Get packet from monitor
+# 24770000: [stimulus] Sent packet to driver
+# 24770000: [driver] Get packet from stimulus
+# 24830000: [monitor] Captured APB transaction
+# 24830000: [testcase] Read addr = 00000010
+# 24830000: [scoreboard] Get packet from monitor
+# 24830000: [compare] PASSED! Data matching. Exp: 00100101, Act: 00100101
+# 24830011: [stimulus] Sent packet to driver
+# 24830011: [driver] Get packet from stimulus
+# 24890000: [monitor] Captured APB transaction
+# 24890000: [testcase] Write addr = 00000010, data = 00100000
+# 24890000: [scoreboard] Get packet from monitor
+# 24890000: [stimulus] Sent packet to driver
+# 24890000: [driver] Get packet from stimulus
+# 24950000: [monitor] Captured APB transaction
+# 24950000: [testcase] Read addr = 00000010
+# 24950000: [scoreboard] Get packet from monitor
+# 24950000: [compare] PASSED! Data matching. Exp: 00100000, Act: 00100000
+# 24950011: [stimulus] Sent packet to driver
+# 24950011: [driver] Get packet from stimulus
+# 25010000: [monitor] Captured APB transaction
+# 25010000: [testcase] Write addr = 00000010, data = 00101111
+# 25010000: [scoreboard] Get packet from monitor
+# 25010000: [stimulus] Sent packet to driver
+# 25010000: [driver] Get packet from stimulus
+# 25070000: [monitor] Captured APB transaction
+# 25070000: [testcase] Read addr = 00000010
+# 25070000: [scoreboard] Get packet from monitor
+# 25070000: [compare] PASSED! Data matching. Exp: 00101111, Act: 00101111
+# 25070011: [stimulus] Sent packet to driver
+# 25070011: [driver] Get packet from stimulus
+# 25130000: [monitor] Captured APB transaction
+# 25130000: [testcase] Write addr = 00000010, data = 00101010
+# 25130000: [scoreboard] Get packet from monitor
+# 25130000: [stimulus] Sent packet to driver
+# 25130000: [driver] Get packet from stimulus
+# 25190000: [monitor] Captured APB transaction
+# 25190000: [testcase] Read addr = 00000010
+# 25190000: [scoreboard] Get packet from monitor
+# 25190000: [compare] PASSED! Data matching. Exp: 00101010, Act: 00101010
+# 25190011: [stimulus] Sent packet to driver
+# 25190011: [driver] Get packet from stimulus
+# 25250000: [monitor] Captured APB transaction
+# 25250000: [testcase] Write addr = 00000010, data = 11010001
+# 25250000: [scoreboard] Get packet from monitor
+# 25250000: [stimulus] Sent packet to driver
+# 25250000: [driver] Get packet from stimulus
+# 25310000: [monitor] Captured APB transaction
+# 25310000: [testcase] Read addr = 00000010
+# 25310000: [scoreboard] Get packet from monitor
+# 25310000: [compare] PASSED! Data matching. Exp: 11010001, Act: 11010001
+# 25310011: [stimulus] Sent packet to driver
+# 25310011: [driver] Get packet from stimulus
+# 25370000: [monitor] Captured APB transaction
+# 25370000: [testcase] Write addr = 00000010, data = 11011100
+# 25370000: [scoreboard] Get packet from monitor
+# 25370000: [stimulus] Sent packet to driver
+# 25370000: [driver] Get packet from stimulus
+# 25430000: [monitor] Captured APB transaction
+# 25430000: [testcase] Read addr = 00000010
+# 25430000: [scoreboard] Get packet from monitor
+# 25430000: [compare] PASSED! Data matching. Exp: 11011100, Act: 11011100
+# 25430011: [stimulus] Sent packet to driver
+# 25430011: [driver] Get packet from stimulus
+# 25490000: [monitor] Captured APB transaction
+# 25490000: [testcase] Write addr = 00000010, data = 11011011
+# 25490000: [scoreboard] Get packet from monitor
+# 25490000: [stimulus] Sent packet to driver
+# 25490000: [driver] Get packet from stimulus
+# 25550000: [monitor] Captured APB transaction
+# 25550000: [testcase] Read addr = 00000010
+# 25550000: [scoreboard] Get packet from monitor
+# 25550000: [compare] PASSED! Data matching. Exp: 11011011, Act: 11011011
+# 25550011: [stimulus] Sent packet to driver
+# 25550011: [driver] Get packet from stimulus
+# 25610000: [monitor] Captured APB transaction
+# 25610000: [testcase] Write addr = 00000010, data = 11000110
+# 25610000: [scoreboard] Get packet from monitor
+# 25610000: [stimulus] Sent packet to driver
+# 25610000: [driver] Get packet from stimulus
+# 25670000: [monitor] Captured APB transaction
+# 25670000: [testcase] Read addr = 00000010
+# 25670000: [scoreboard] Get packet from monitor
+# 25670000: [compare] PASSED! Data matching. Exp: 11000110, Act: 11000110
+# 25670011: [stimulus] Sent packet to driver
+# 25670011: [driver] Get packet from stimulus
+# 25730000: [monitor] Captured APB transaction
+# 25730000: [testcase] Write addr = 00000010, data = 11001101
+# 25730000: [scoreboard] Get packet from monitor
+# 25730000: [stimulus] Sent packet to driver
+# 25730000: [driver] Get packet from stimulus
+# 25790000: [monitor] Captured APB transaction
+# 25790000: [testcase] Read addr = 00000010
+# 25790000: [scoreboard] Get packet from monitor
+# 25790000: [compare] PASSED! Data matching. Exp: 11001101, Act: 11001101
+# 25790011: [stimulus] Sent packet to driver
+# 25790011: [driver] Get packet from stimulus
+# 25850000: [monitor] Captured APB transaction
+# 25850000: [testcase] Write addr = 00000010, data = 11001000
+# 25850000: [scoreboard] Get packet from monitor
+# 25850000: [stimulus] Sent packet to driver
+# 25850000: [driver] Get packet from stimulus
+# 25910000: [monitor] Captured APB transaction
+# 25910000: [testcase] Read addr = 00000010
+# 25910000: [scoreboard] Get packet from monitor
+# 25910000: [compare] PASSED! Data matching. Exp: 11001000, Act: 11001000
+# 25910011: [stimulus] Sent packet to driver
+# 25910011: [driver] Get packet from stimulus
+# 25970000: [monitor] Captured APB transaction
+# 25970000: [testcase] Write addr = 00000010, data = 11110111
+# 25970000: [scoreboard] Get packet from monitor
+# 25970000: [stimulus] Sent packet to driver
+# 25970000: [driver] Get packet from stimulus
+# 26030000: [monitor] Captured APB transaction
+# 26030000: [testcase] Read addr = 00000010
+# 26030000: [scoreboard] Get packet from monitor
+# 26030000: [compare] PASSED! Data matching. Exp: 11110111, Act: 11110111
+# 26030011: [stimulus] Sent packet to driver
+# 26030011: [driver] Get packet from stimulus
+# 26090000: [monitor] Captured APB transaction
+# 26090000: [testcase] Write addr = 00000010, data = 11110010
+# 26090000: [scoreboard] Get packet from monitor
+# 26090000: [stimulus] Sent packet to driver
+# 26090000: [driver] Get packet from stimulus
+# 26150000: [monitor] Captured APB transaction
+# 26150000: [testcase] Read addr = 00000010
+# 26150000: [scoreboard] Get packet from monitor
+# 26150000: [compare] PASSED! Data matching. Exp: 11110010, Act: 11110010
+# 26150011: [stimulus] Sent packet to driver
+# 26150011: [driver] Get packet from stimulus
+# 26210000: [monitor] Captured APB transaction
+# 26210000: [testcase] Write addr = 00000010, data = 11111001
+# 26210000: [scoreboard] Get packet from monitor
+# 26210000: [stimulus] Sent packet to driver
+# 26210000: [driver] Get packet from stimulus
+# 26270000: [monitor] Captured APB transaction
+# 26270000: [testcase] Read addr = 00000010
+# 26270000: [scoreboard] Get packet from monitor
+# 26270000: [compare] PASSED! Data matching. Exp: 11111001, Act: 11111001
+# 26270011: [stimulus] Sent packet to driver
+# 26270011: [driver] Get packet from stimulus
+# 26330000: [monitor] Captured APB transaction
+# 26330000: [testcase] Write addr = 00000010, data = 11100100
+# 26330000: [scoreboard] Get packet from monitor
+# 26330000: [stimulus] Sent packet to driver
+# 26330000: [driver] Get packet from stimulus
+# 26390000: [monitor] Captured APB transaction
+# 26390000: [testcase] Read addr = 00000010
+# 26390000: [scoreboard] Get packet from monitor
+# 26390000: [compare] PASSED! Data matching. Exp: 11100100, Act: 11100100
+# 26390011: [stimulus] Sent packet to driver
+# 26390011: [driver] Get packet from stimulus
+# 26450000: [monitor] Captured APB transaction
+# 26450000: [testcase] Write addr = 00000010, data = 11100011
+# 26450000: [scoreboard] Get packet from monitor
+# 26450000: [stimulus] Sent packet to driver
+# 26450000: [driver] Get packet from stimulus
+# 26510000: [monitor] Captured APB transaction
+# 26510000: [testcase] Read addr = 00000010
+# 26510000: [scoreboard] Get packet from monitor
+# 26510000: [compare] PASSED! Data matching. Exp: 11100011, Act: 11100011
+# 26510011: [stimulus] Sent packet to driver
+# 26510011: [driver] Get packet from stimulus
+# 26570000: [monitor] Captured APB transaction
+# 26570000: [testcase] Write addr = 00000010, data = 11101110
+# 26570000: [scoreboard] Get packet from monitor
+# 26570000: [stimulus] Sent packet to driver
+# 26570000: [driver] Get packet from stimulus
+# 26630000: [monitor] Captured APB transaction
+# 26630000: [testcase] Read addr = 00000010
+# 26630000: [scoreboard] Get packet from monitor
+# 26630000: [compare] PASSED! Data matching. Exp: 11101110, Act: 11101110
+# 26630011: [stimulus] Sent packet to driver
+# 26630011: [driver] Get packet from stimulus
+# 26690000: [monitor] Captured APB transaction
+# 26690000: [testcase] Write addr = 00000010, data = 10010101
+# 26690000: [scoreboard] Get packet from monitor
+# 26690000: [stimulus] Sent packet to driver
+# 26690000: [driver] Get packet from stimulus
+# 26750000: [monitor] Captured APB transaction
+# 26750000: [testcase] Read addr = 00000010
+# 26750000: [scoreboard] Get packet from monitor
+# 26750000: [compare] PASSED! Data matching. Exp: 10010101, Act: 10010101
+# 26750011: [stimulus] Sent packet to driver
+# 26750011: [driver] Get packet from stimulus
+# 26810000: [monitor] Captured APB transaction
+# 26810000: [testcase] Write addr = 00000010, data = 10010000
+# 26810000: [scoreboard] Get packet from monitor
+# 26810000: [stimulus] Sent packet to driver
+# 26810000: [driver] Get packet from stimulus
+# 26870000: [monitor] Captured APB transaction
+# 26870000: [testcase] Read addr = 00000010
+# 26870000: [scoreboard] Get packet from monitor
+# 26870000: [compare] PASSED! Data matching. Exp: 10010000, Act: 10010000
+# 26870011: [stimulus] Sent packet to driver
+# 26870011: [driver] Get packet from stimulus
+# 26930000: [monitor] Captured APB transaction
+# 26930000: [testcase] Write addr = 00000010, data = 10011111
+# 26930000: [scoreboard] Get packet from monitor
+# 26930000: [stimulus] Sent packet to driver
+# 26930000: [driver] Get packet from stimulus
+# 26990000: [monitor] Captured APB transaction
+# 26990000: [testcase] Read addr = 00000010
+# 26990000: [scoreboard] Get packet from monitor
+# 26990000: [compare] PASSED! Data matching. Exp: 10011111, Act: 10011111
+# 26990011: [stimulus] Sent packet to driver
+# 26990011: [driver] Get packet from stimulus
+# 27050000: [monitor] Captured APB transaction
+# 27050000: [testcase] Write addr = 00000010, data = 10011010
+# 27050000: [scoreboard] Get packet from monitor
+# 27050000: [stimulus] Sent packet to driver
+# 27050000: [driver] Get packet from stimulus
+# 27110000: [monitor] Captured APB transaction
+# 27110000: [testcase] Read addr = 00000010
+# 27110000: [scoreboard] Get packet from monitor
+# 27110000: [compare] PASSED! Data matching. Exp: 10011010, Act: 10011010
+# 27110011: [stimulus] Sent packet to driver
+# 27110011: [driver] Get packet from stimulus
+# 27170000: [monitor] Captured APB transaction
+# 27170000: [testcase] Write addr = 00000010, data = 10000001
+# 27170000: [scoreboard] Get packet from monitor
+# 27170000: [stimulus] Sent packet to driver
+# 27170000: [driver] Get packet from stimulus
+# 27230000: [monitor] Captured APB transaction
+# 27230000: [testcase] Read addr = 00000010
+# 27230000: [scoreboard] Get packet from monitor
+# 27230000: [compare] PASSED! Data matching. Exp: 10000001, Act: 10000001
+# 27230011: [stimulus] Sent packet to driver
+# 27230011: [driver] Get packet from stimulus
+# 27290000: [monitor] Captured APB transaction
+# 27290000: [testcase] Write addr = 00000010, data = 10001100
+# 27290000: [scoreboard] Get packet from monitor
+# 27290000: [stimulus] Sent packet to driver
+# 27290000: [driver] Get packet from stimulus
+# 27350000: [monitor] Captured APB transaction
+# 27350000: [testcase] Read addr = 00000010
+# 27350000: [scoreboard] Get packet from monitor
+# 27350000: [compare] PASSED! Data matching. Exp: 10001100, Act: 10001100
+# 27350011: [stimulus] Sent packet to driver
+# 27350011: [driver] Get packet from stimulus
+# 27410000: [monitor] Captured APB transaction
+# 27410000: [testcase] Write addr = 00000010, data = 10001011
+# 27410000: [scoreboard] Get packet from monitor
+# 27410000: [stimulus] Sent packet to driver
+# 27410000: [driver] Get packet from stimulus
+# 27470000: [monitor] Captured APB transaction
+# 27470000: [testcase] Read addr = 00000010
+# 27470000: [scoreboard] Get packet from monitor
+# 27470000: [compare] PASSED! Data matching. Exp: 10001011, Act: 10001011
+# 27470011: [stimulus] Sent packet to driver
+# 27470011: [driver] Get packet from stimulus
+# 27530000: [monitor] Captured APB transaction
+# 27530000: [testcase] Write addr = 00000010, data = 10110110
+# 27530000: [scoreboard] Get packet from monitor
+# 27530000: [stimulus] Sent packet to driver
+# 27530000: [driver] Get packet from stimulus
+# 27590000: [monitor] Captured APB transaction
+# 27590000: [testcase] Read addr = 00000010
+# 27590000: [scoreboard] Get packet from monitor
+# 27590000: [compare] PASSED! Data matching. Exp: 10110110, Act: 10110110
+# 27590011: [stimulus] Sent packet to driver
+# 27590011: [driver] Get packet from stimulus
+# 27650000: [monitor] Captured APB transaction
+# 27650000: [testcase] Write addr = 00000010, data = 10111101
+# 27650000: [scoreboard] Get packet from monitor
+# 27650000: [stimulus] Sent packet to driver
+# 27650000: [driver] Get packet from stimulus
+# 27710000: [monitor] Captured APB transaction
+# 27710000: [testcase] Read addr = 00000010
+# 27710000: [scoreboard] Get packet from monitor
+# 27710000: [compare] PASSED! Data matching. Exp: 10111101, Act: 10111101
+# 27710011: [stimulus] Sent packet to driver
+# 27710011: [driver] Get packet from stimulus
+# 27770000: [monitor] Captured APB transaction
+# 27770000: [testcase] Write addr = 00000010, data = 10111000
+# 27770000: [scoreboard] Get packet from monitor
+# 27770000: [stimulus] Sent packet to driver
+# 27770000: [driver] Get packet from stimulus
+# 27830000: [monitor] Captured APB transaction
+# 27830000: [testcase] Read addr = 00000010
+# 27830000: [scoreboard] Get packet from monitor
+# 27830000: [compare] PASSED! Data matching. Exp: 10111000, Act: 10111000
+# 27830011: [stimulus] Sent packet to driver
+# 27830011: [driver] Get packet from stimulus
+# 27890000: [monitor] Captured APB transaction
+# 27890000: [testcase] Write addr = 00000010, data = 10100111
+# 27890000: [scoreboard] Get packet from monitor
+# 27890000: [stimulus] Sent packet to driver
+# 27890000: [driver] Get packet from stimulus
+# 27950000: [monitor] Captured APB transaction
+# 27950000: [testcase] Read addr = 00000010
+# 27950000: [scoreboard] Get packet from monitor
+# 27950000: [compare] PASSED! Data matching. Exp: 10100111, Act: 10100111
+# 27950011: [stimulus] Sent packet to driver
+# 27950011: [driver] Get packet from stimulus
+# 28010000: [monitor] Captured APB transaction
+# 28010000: [testcase] Write addr = 00000010, data = 10100010
+# 28010000: [scoreboard] Get packet from monitor
+# 28010000: [stimulus] Sent packet to driver
+# 28010000: [driver] Get packet from stimulus
+# 28070000: [monitor] Captured APB transaction
+# 28070000: [testcase] Read addr = 00000010
+# 28070000: [scoreboard] Get packet from monitor
+# 28070000: [compare] PASSED! Data matching. Exp: 10100010, Act: 10100010
+# 28070011: [stimulus] Sent packet to driver
+# 28070011: [driver] Get packet from stimulus
+# 28130000: [monitor] Captured APB transaction
+# 28130000: [testcase] Write addr = 00000010, data = 10101001
+# 28130000: [scoreboard] Get packet from monitor
+# 28130000: [stimulus] Sent packet to driver
+# 28130000: [driver] Get packet from stimulus
+# 28190000: [monitor] Captured APB transaction
+# 28190000: [testcase] Read addr = 00000010
+# 28190000: [scoreboard] Get packet from monitor
+# 28190000: [compare] PASSED! Data matching. Exp: 10101001, Act: 10101001
+# 28190011: [stimulus] Sent packet to driver
+# 28190011: [driver] Get packet from stimulus
+# 28250000: [monitor] Captured APB transaction
+# 28250000: [testcase] Write addr = 00000010, data = 01010001
+# 28250000: [scoreboard] Get packet from monitor
+# 28250000: [stimulus] Sent packet to driver
+# 28250000: [driver] Get packet from stimulus
+# 28310000: [monitor] Captured APB transaction
+# 28310000: [testcase] Read addr = 00000010
+# 28310000: [scoreboard] Get packet from monitor
+# 28310000: [compare] PASSED! Data matching. Exp: 01010001, Act: 01010001
+# 28310011: [stimulus] Sent packet to driver
+# 28310011: [driver] Get packet from stimulus
+# 28370000: [monitor] Captured APB transaction
+# 28370000: [testcase] Write addr = 00000010, data = 01011100
+# 28370000: [scoreboard] Get packet from monitor
+# 28370000: [stimulus] Sent packet to driver
+# 28370000: [driver] Get packet from stimulus
+# 28430000: [monitor] Captured APB transaction
+# 28430000: [testcase] Read addr = 00000010
+# 28430000: [scoreboard] Get packet from monitor
+# 28430000: [compare] PASSED! Data matching. Exp: 01011100, Act: 01011100
+# 28430011: [stimulus] Sent packet to driver
+# 28430011: [driver] Get packet from stimulus
+# 28490000: [monitor] Captured APB transaction
+# 28490000: [testcase] Write addr = 00000010, data = 01011011
+# 28490000: [scoreboard] Get packet from monitor
+# 28490000: [stimulus] Sent packet to driver
+# 28490000: [driver] Get packet from stimulus
+# 28550000: [monitor] Captured APB transaction
+# 28550000: [testcase] Read addr = 00000010
+# 28550000: [scoreboard] Get packet from monitor
+# 28550000: [compare] PASSED! Data matching. Exp: 01011011, Act: 01011011
+# 28550011: [stimulus] Sent packet to driver
+# 28550011: [driver] Get packet from stimulus
+# 28610000: [monitor] Captured APB transaction
+# 28610000: [testcase] Write addr = 00000010, data = 01000110
+# 28610000: [scoreboard] Get packet from monitor
+# 28610000: [stimulus] Sent packet to driver
+# 28610000: [driver] Get packet from stimulus
+# 28670000: [monitor] Captured APB transaction
+# 28670000: [testcase] Read addr = 00000010
+# 28670000: [scoreboard] Get packet from monitor
+# 28670000: [compare] PASSED! Data matching. Exp: 01000110, Act: 01000110
+# 28670011: [stimulus] Sent packet to driver
+# 28670011: [driver] Get packet from stimulus
+# 28730000: [monitor] Captured APB transaction
+# 28730000: [testcase] Write addr = 00000010, data = 01001101
+# 28730000: [scoreboard] Get packet from monitor
+# 28730000: [stimulus] Sent packet to driver
+# 28730000: [driver] Get packet from stimulus
+# 28790000: [monitor] Captured APB transaction
+# 28790000: [testcase] Read addr = 00000010
+# 28790000: [scoreboard] Get packet from monitor
+# 28790000: [compare] PASSED! Data matching. Exp: 01001101, Act: 01001101
+# 28790011: [stimulus] Sent packet to driver
+# 28790011: [driver] Get packet from stimulus
+# 28850000: [monitor] Captured APB transaction
+# 28850000: [testcase] Write addr = 00000010, data = 01001000
+# 28850000: [scoreboard] Get packet from monitor
+# 28850000: [stimulus] Sent packet to driver
+# 28850000: [driver] Get packet from stimulus
+# 28910000: [monitor] Captured APB transaction
+# 28910000: [testcase] Read addr = 00000010
+# 28910000: [scoreboard] Get packet from monitor
+# 28910000: [compare] PASSED! Data matching. Exp: 01001000, Act: 01001000
+# 28910011: [stimulus] Sent packet to driver
+# 28910011: [driver] Get packet from stimulus
+# 28970000: [monitor] Captured APB transaction
+# 28970000: [testcase] Write addr = 00000010, data = 01110111
+# 28970000: [scoreboard] Get packet from monitor
+# 28970000: [stimulus] Sent packet to driver
+# 28970000: [driver] Get packet from stimulus
+# 29030000: [monitor] Captured APB transaction
+# 29030000: [testcase] Read addr = 00000010
+# 29030000: [scoreboard] Get packet from monitor
+# 29030000: [compare] PASSED! Data matching. Exp: 01110111, Act: 01110111
+# 29030011: [stimulus] Sent packet to driver
+# 29030011: [driver] Get packet from stimulus
+# 29090000: [monitor] Captured APB transaction
+# 29090000: [testcase] Write addr = 00000010, data = 01110010
+# 29090000: [scoreboard] Get packet from monitor
+# 29090000: [stimulus] Sent packet to driver
+# 29090000: [driver] Get packet from stimulus
+# 29150000: [monitor] Captured APB transaction
+# 29150000: [testcase] Read addr = 00000010
+# 29150000: [scoreboard] Get packet from monitor
+# 29150000: [compare] PASSED! Data matching. Exp: 01110010, Act: 01110010
+# 29150011: [stimulus] Sent packet to driver
+# 29150011: [driver] Get packet from stimulus
+# 29210000: [monitor] Captured APB transaction
+# 29210000: [testcase] Write addr = 00000010, data = 01111001
+# 29210000: [scoreboard] Get packet from monitor
+# 29210000: [stimulus] Sent packet to driver
+# 29210000: [driver] Get packet from stimulus
+# 29270000: [monitor] Captured APB transaction
+# 29270000: [testcase] Read addr = 00000010
+# 29270000: [scoreboard] Get packet from monitor
+# 29270000: [compare] PASSED! Data matching. Exp: 01111001, Act: 01111001
+# 29270011: [stimulus] Sent packet to driver
+# 29270011: [driver] Get packet from stimulus
+# 29330000: [monitor] Captured APB transaction
+# 29330000: [testcase] Write addr = 00000010, data = 01100100
+# 29330000: [scoreboard] Get packet from monitor
+# 29330000: [stimulus] Sent packet to driver
+# 29330000: [driver] Get packet from stimulus
+# 29390000: [monitor] Captured APB transaction
+# 29390000: [testcase] Read addr = 00000010
+# 29390000: [scoreboard] Get packet from monitor
+# 29390000: [compare] PASSED! Data matching. Exp: 01100100, Act: 01100100
+# 29390011: [stimulus] Sent packet to driver
+# 29390011: [driver] Get packet from stimulus
+# 29450000: [monitor] Captured APB transaction
+# 29450000: [testcase] Write addr = 00000010, data = 01100011
+# 29450000: [scoreboard] Get packet from monitor
+# 29450000: [stimulus] Sent packet to driver
+# 29450000: [driver] Get packet from stimulus
+# 29510000: [monitor] Captured APB transaction
+# 29510000: [testcase] Read addr = 00000010
+# 29510000: [scoreboard] Get packet from monitor
+# 29510000: [compare] PASSED! Data matching. Exp: 01100011, Act: 01100011
+# 29510011: [stimulus] Sent packet to driver
+# 29510011: [driver] Get packet from stimulus
+# 29570000: [monitor] Captured APB transaction
+# 29570000: [testcase] Write addr = 00000010, data = 01101110
+# 29570000: [scoreboard] Get packet from monitor
+# 29570000: [stimulus] Sent packet to driver
+# 29570000: [driver] Get packet from stimulus
+# 29630000: [monitor] Captured APB transaction
+# 29630000: [testcase] Read addr = 00000010
+# 29630000: [scoreboard] Get packet from monitor
+# 29630000: [compare] PASSED! Data matching. Exp: 01101110, Act: 01101110
+# 29630011: [stimulus] Sent packet to driver
+# 29630011: [driver] Get packet from stimulus
+# 29690000: [monitor] Captured APB transaction
+# 29690000: [testcase] Write addr = 00000010, data = 00010101
+# 29690000: [scoreboard] Get packet from monitor
+# 29690000: [stimulus] Sent packet to driver
+# 29690000: [driver] Get packet from stimulus
+# 29750000: [monitor] Captured APB transaction
+# 29750000: [testcase] Read addr = 00000010
+# 29750000: [scoreboard] Get packet from monitor
+# 29750000: [compare] PASSED! Data matching. Exp: 00010101, Act: 00010101
+# 29750011: [stimulus] Sent packet to driver
+# 29750011: [driver] Get packet from stimulus
+# 29810000: [monitor] Captured APB transaction
+# 29810000: [testcase] Write addr = 00000010, data = 00010000
+# 29810000: [scoreboard] Get packet from monitor
+# 29810000: [stimulus] Sent packet to driver
+# 29810000: [driver] Get packet from stimulus
+# 29870000: [monitor] Captured APB transaction
+# 29870000: [testcase] Read addr = 00000010
+# 29870000: [scoreboard] Get packet from monitor
+# 29870000: [compare] PASSED! Data matching. Exp: 00010000, Act: 00010000
+# 29870011: [stimulus] Sent packet to driver
+# 29870011: [driver] Get packet from stimulus
+# 29930000: [monitor] Captured APB transaction
+# 29930000: [testcase] Write addr = 00000010, data = 00011111
+# 29930000: [scoreboard] Get packet from monitor
+# 29930000: [stimulus] Sent packet to driver
+# 29930000: [driver] Get packet from stimulus
+# 29990000: [monitor] Captured APB transaction
+# 29990000: [testcase] Read addr = 00000010
+# 29990000: [scoreboard] Get packet from monitor
+# 29990000: [compare] PASSED! Data matching. Exp: 00011111, Act: 00011111
+# 29990011: [stimulus] Sent packet to driver
+# 29990011: [driver] Get packet from stimulus
+# 30050000: [monitor] Captured APB transaction
+# 30050000: [testcase] Write addr = 00000010, data = 00011010
+# 30050000: [scoreboard] Get packet from monitor
+# 30050000: [stimulus] Sent packet to driver
+# 30050000: [driver] Get packet from stimulus
+# 30110000: [monitor] Captured APB transaction
+# 30110000: [testcase] Read addr = 00000010
+# 30110000: [scoreboard] Get packet from monitor
+# 30110000: [compare] PASSED! Data matching. Exp: 00011010, Act: 00011010
+# 30110011: [stimulus] Sent packet to driver
+# 30110011: [driver] Get packet from stimulus
+# 30170000: [monitor] Captured APB transaction
+# 30170000: [testcase] Write addr = 00000010, data = 00000001
+# 30170000: [scoreboard] Get packet from monitor
+# 30170000: [stimulus] Sent packet to driver
+# 30170000: [driver] Get packet from stimulus
+# 30230000: [monitor] Captured APB transaction
+# 30230000: [testcase] Read addr = 00000010
+# 30230000: [scoreboard] Get packet from monitor
+# 30230000: [compare] PASSED! Data matching. Exp: 00000001, Act: 00000001
+# 30230011: [stimulus] Sent packet to driver
+# 30230011: [driver] Get packet from stimulus
+# 30290000: [monitor] Captured APB transaction
+# 30290000: [testcase] Write addr = 00000010, data = 00001100
+# 30290000: [scoreboard] Get packet from monitor
+# 30290000: [stimulus] Sent packet to driver
+# 30290000: [driver] Get packet from stimulus
+# 30350000: [monitor] Captured APB transaction
+# 30350000: [testcase] Read addr = 00000010
+# 30350000: [scoreboard] Get packet from monitor
+# 30350000: [compare] PASSED! Data matching. Exp: 00001100, Act: 00001100
+# 30350011: [stimulus] Sent packet to driver
+# 30350011: [driver] Get packet from stimulus
+# 30410000: [monitor] Captured APB transaction
+# 30410000: [testcase] Write addr = 00000010, data = 00001011
+# 30410000: [scoreboard] Get packet from monitor
+# 30410000: [stimulus] Sent packet to driver
+# 30410000: [driver] Get packet from stimulus
+# 30470000: [monitor] Captured APB transaction
+# 30470000: [testcase] Read addr = 00000010
+# 30470000: [scoreboard] Get packet from monitor
+# 30470000: [compare] PASSED! Data matching. Exp: 00001011, Act: 00001011
+# 30470011: [stimulus] Sent packet to driver
+# 30470011: [driver] Get packet from stimulus
+# 30530000: [monitor] Captured APB transaction
+# 30530000: [testcase] Write addr = 00000010, data = 00110110
+# 30530000: [scoreboard] Get packet from monitor
+# 30530000: [stimulus] Sent packet to driver
+# 30530000: [driver] Get packet from stimulus
+# 30590000: [monitor] Captured APB transaction
+# 30590000: [testcase] Read addr = 00000010
+# 30590000: [scoreboard] Get packet from monitor
+# 30590000: [compare] PASSED! Data matching. Exp: 00110110, Act: 00110110
+# 30590011: [stimulus] Sent packet to driver
+# 30590011: [driver] Get packet from stimulus
+# 30650000: [monitor] Captured APB transaction
+# 30650000: [testcase] Write addr = 00000010, data = 00111101
+# 30650000: [scoreboard] Get packet from monitor
+# 30650000: [stimulus] Sent packet to driver
+# 30650000: [driver] Get packet from stimulus
+# 30710000: [monitor] Captured APB transaction
+# 30710000: [testcase] Read addr = 00000010
+# 30710000: [scoreboard] Get packet from monitor
+# 30710000: [compare] PASSED! Data matching. Exp: 00111101, Act: 00111101
+# ==========================================================================
+# =============================== TEST PASSED ==============================
+# ==========================================================================
+# [testbench] Time out....Seems your tb is hang!
+# ** Note: $finish    : ../tb/testbench.sv(143)
+#    Time: 2030710 ns  Iteration: 0  Instance: /testbench
+# Saving coverage database on exit...
+# End time: 18:04:38 on May 07,2026, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0

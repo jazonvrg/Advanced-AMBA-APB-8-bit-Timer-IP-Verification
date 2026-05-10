@@ -1,0 +1,83 @@
+# vsim -sv_seed 239421 -coverage -coveranalysis -debugDB -l underflow_test_239421.log -voptargs="+acc" -assertdebug -c testbench -do "coverage save -codeAll -cvg -onexit underflow_test.ucdb; log -r /*;run -all;" "+underflow_test" 
+# Start time: 18:05:53 on May 07,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# //  Questa Sim-64
+# //  Version 10.6d_1 linux_x86_64 Apr 11 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.dut_if(fast)
+# Loading work.timer_pkg(fast)
+# Loading work.test_pkg(fast)
+# Loading work.testbench(fast)
+# Loading work.dut_if(fast)
+# Loading work.timer_top(fast)
+# Loading work.timer_register(fast)
+# Loading work.timer_clock_divisor(fast)
+# Loading work.timer_counter(fast)
+# Loading work.timer_interrupt(fast)
+# ** Note: (vsim-8716) Reusing existing debug database vsim.dbg.
+# coverage save -codeAll -cvg -onexit underflow_test.ucdb
+#  log -r /*
+# run -all
+# 0: [environment] build
+# ==========================================================================
+# ======================= TEST NAME: underflow_test ========================
+# ==========================================================================
+# 11: [stimulus] Sent packet to driver
+# 11: [driver] Get packet from stimulus
+# 50000: [monitor] Captured APB transaction
+# 50000: [testcase] Write - addr = 00000010, data = 11111111
+# 50000: [scoreboard] Get packet from monitor
+# 50000: [stimulus] Sent packet to driver
+# 50000: [driver] Get packet from stimulus
+# 110000: [monitor] Captured APB transaction
+# 110000: [testcase] Write - addr = 00000000, data = 10100110
+# 110000: [scoreboard] Get packet from monitor
+# 110000: [stimulus] Sent packet to driver
+# 110000: [driver] Get packet from stimulus
+# 170000: [monitor] Captured APB transaction
+# 170000: [testcase] Write - addr = 00000000, data = 11000011
+# 170000: [scoreboard] Get packet from monitor
+# 1390000: [stimulus] Sent packet to driver
+# 1390000: [driver] Get packet from stimulus
+# 1450000: [monitor] Captured APB transaction
+# 1450000: [testcase] Read addr = 00000001
+# 1450000: [scoreboard] Get packet from monitor
+# 1450000: [compare] PASSED! Data matching. Exp: 00000000, Act: 00000000
+# 1450000: [stimulus] Sent packet to driver
+# 1450000: [driver] Get packet from stimulus
+# 1510000: [monitor] Captured APB transaction
+# 1510000: [testcase] Read addr = 00000001
+# 1510000: [scoreboard] Get packet from monitor
+# 1510000: [compare] PASSED! Data matching. Exp: 00000010, Act: 00000010
+# 1510000: [stimulus] Sent packet to driver
+# 1510000: [driver] Get packet from stimulus
+# 1570000: [monitor] Captured APB transaction
+# 1570000: [testcase] Write - addr = 00000001, data = 01110011
+# 1570000: [scoreboard] Get packet from monitor
+# 1570000: [stimulus] Sent packet to driver
+# 1570000: [driver] Get packet from stimulus
+# 1630000: [monitor] Captured APB transaction
+# 1630000: [testcase] Read addr = 00000001
+# 1630000: [scoreboard] Get packet from monitor
+# 1630000: [compare] PASSED! Data matching. Exp: 00000000, Act: 00000000
+# ==========================================================================
+# =============================== TEST PASSED ==============================
+# ==========================================================================
+# [testbench] Time out....Seems your tb is hang!
+# ** Note: $finish    : ../tb/testbench.sv(143)
+#    Time: 2001630 ns  Iteration: 0  Instance: /testbench
+# Saving coverage database on exit...
+# End time: 18:05:56 on May 07,2026, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0

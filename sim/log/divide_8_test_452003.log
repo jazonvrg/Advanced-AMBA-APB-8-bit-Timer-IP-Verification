@@ -1,0 +1,2861 @@
+# vsim -sv_seed 452003 -coverage -coveranalysis -debugDB -l divide_8_test_452003.log -voptargs="+acc" -assertdebug -c testbench -do "coverage save -codeAll -cvg -onexit divide_8_test.ucdb; log -r /*;run -all;" "+divide_8_test" 
+# Start time: 18:05:16 on May 07,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# //  Questa Sim-64
+# //  Version 10.6d_1 linux_x86_64 Apr 11 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.dut_if(fast)
+# Loading work.timer_pkg(fast)
+# Loading work.test_pkg(fast)
+# Loading work.testbench(fast)
+# Loading work.dut_if(fast)
+# Loading work.timer_top(fast)
+# Loading work.timer_register(fast)
+# Loading work.timer_clock_divisor(fast)
+# Loading work.timer_counter(fast)
+# Loading work.timer_interrupt(fast)
+# ** Note: (vsim-8716) Reusing existing debug database vsim.dbg.
+# coverage save -codeAll -cvg -onexit divide_8_test.ucdb
+#  log -r /*
+# run -all
+# 0: [environment] build
+# ==========================================================================
+# ======================== TEST NAME: divide_8_test ========================
+# ==========================================================================
+# 11: [stimulus] Sent packet to driver
+# 11: [driver] Get packet from stimulus
+# 50000: [monitor] Captured APB transaction
+# 50000: [testcase] Write - addr = 00000011, data = 01100001
+# 50000: [scoreboard] Get packet from monitor
+# 50000: [stimulus] Sent packet to driver
+# 50000: [driver] Get packet from stimulus
+# 110000: [monitor] Captured APB transaction
+# 110000: [testcase] Write - addr = 00000000, data = 10011001
+# 110000: [scoreboard] Get packet from monitor
+# 10330000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 10330011: [stimulus] Sent packet to driver
+# 10330011: [driver] Get packet from stimulus
+# 10390000: [monitor] Captured APB transaction
+# 10390000: [testcase] Write - addr = 00000011, data = 00110011
+# 10390000: [scoreboard] Get packet from monitor
+# 10390000: [stimulus] Sent packet to driver
+# 10390000: [driver] Get packet from stimulus
+# 10450000: [monitor] Captured APB transaction
+# 10450000: [testcase] Write - addr = 00000000, data = 01111001
+# 10450000: [scoreboard] Get packet from monitor
+# 20670000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 20670011: [stimulus] Sent packet to driver
+# 20670011: [driver] Get packet from stimulus
+# 20730000: [monitor] Captured APB transaction
+# 20730000: [testcase] Write - addr = 00000011, data = 00100111
+# 20730000: [scoreboard] Get packet from monitor
+# 20730000: [stimulus] Sent packet to driver
+# 20730000: [driver] Get packet from stimulus
+# 20790000: [monitor] Captured APB transaction
+# 20790000: [testcase] Write - addr = 00000000, data = 00111001
+# 20790000: [scoreboard] Get packet from monitor
+# 31010000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 31010011: [stimulus] Sent packet to driver
+# 31010011: [driver] Get packet from stimulus
+# 31070000: [monitor] Captured APB transaction
+# 31070000: [testcase] Write - addr = 00000011, data = 11100111
+# 31070000: [scoreboard] Get packet from monitor
+# 31070000: [stimulus] Sent packet to driver
+# 31070000: [driver] Get packet from stimulus
+# 31130000: [monitor] Captured APB transaction
+# 31130000: [testcase] Write - addr = 00000000, data = 11111001
+# 31130000: [scoreboard] Get packet from monitor
+# 41350000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 41350011: [stimulus] Sent packet to driver
+# 41350011: [driver] Get packet from stimulus
+# 41410000: [monitor] Captured APB transaction
+# 41410000: [testcase] Write - addr = 00000011, data = 00011111
+# 41410000: [scoreboard] Get packet from monitor
+# 41410000: [stimulus] Sent packet to driver
+# 41410000: [driver] Get packet from stimulus
+# 41470000: [monitor] Captured APB transaction
+# 41470000: [testcase] Write - addr = 00000000, data = 01111001
+# 41470000: [scoreboard] Get packet from monitor
+# 51690000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 51690011: [stimulus] Sent packet to driver
+# 51690011: [driver] Get packet from stimulus
+# 51750000: [monitor] Captured APB transaction
+# 51750000: [testcase] Write - addr = 00000011, data = 01111011
+# 51750000: [scoreboard] Get packet from monitor
+# 51750000: [stimulus] Sent packet to driver
+# 51750000: [driver] Get packet from stimulus
+# 51810000: [monitor] Captured APB transaction
+# 51810000: [testcase] Write - addr = 00000000, data = 11111001
+# 51810000: [scoreboard] Get packet from monitor
+# 62030000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 62030011: [stimulus] Sent packet to driver
+# 62030011: [driver] Get packet from stimulus
+# 62090000: [monitor] Captured APB transaction
+# 62090000: [testcase] Write - addr = 00000011, data = 10100101
+# 62090000: [scoreboard] Get packet from monitor
+# 62090000: [stimulus] Sent packet to driver
+# 62090000: [driver] Get packet from stimulus
+# 62150000: [monitor] Captured APB transaction
+# 62150000: [testcase] Write - addr = 00000000, data = 10011001
+# 62150000: [scoreboard] Get packet from monitor
+# 72370000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 72370011: [stimulus] Sent packet to driver
+# 72370011: [driver] Get packet from stimulus
+# 72430000: [monitor] Captured APB transaction
+# 72430000: [testcase] Write - addr = 00000011, data = 00000011
+# 72430000: [scoreboard] Get packet from monitor
+# 72430000: [stimulus] Sent packet to driver
+# 72430000: [driver] Get packet from stimulus
+# 72490000: [monitor] Captured APB transaction
+# 72490000: [testcase] Write - addr = 00000000, data = 10011001
+# 72490000: [scoreboard] Get packet from monitor
+# 82710000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 82710011: [stimulus] Sent packet to driver
+# 82710011: [driver] Get packet from stimulus
+# 82770000: [monitor] Captured APB transaction
+# 82770000: [testcase] Write - addr = 00000011, data = 01011011
+# 82770000: [scoreboard] Get packet from monitor
+# 82770000: [stimulus] Sent packet to driver
+# 82770000: [driver] Get packet from stimulus
+# 82830000: [monitor] Captured APB transaction
+# 82830000: [testcase] Write - addr = 00000000, data = 11011001
+# 82830000: [scoreboard] Get packet from monitor
+# 93050000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 93050011: [stimulus] Sent packet to driver
+# 93050011: [driver] Get packet from stimulus
+# 93110000: [monitor] Captured APB transaction
+# 93110000: [testcase] Write - addr = 00000011, data = 11000001
+# 93110000: [scoreboard] Get packet from monitor
+# 93110000: [stimulus] Sent packet to driver
+# 93110000: [driver] Get packet from stimulus
+# 93170000: [monitor] Captured APB transaction
+# 93170000: [testcase] Write - addr = 00000000, data = 11111001
+# 93170000: [scoreboard] Get packet from monitor
+# 103390000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 103390011: [stimulus] Sent packet to driver
+# 103390011: [driver] Get packet from stimulus
+# 103450000: [monitor] Captured APB transaction
+# 103450000: [testcase] Write - addr = 00000011, data = 10010101
+# 103450000: [scoreboard] Get packet from monitor
+# 103450000: [stimulus] Sent packet to driver
+# 103450000: [driver] Get packet from stimulus
+# 103510000: [monitor] Captured APB transaction
+# 103510000: [testcase] Write - addr = 00000000, data = 00111001
+# 103510000: [scoreboard] Get packet from monitor
+# 113730000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 113730011: [stimulus] Sent packet to driver
+# 113730011: [driver] Get packet from stimulus
+# 113790000: [monitor] Captured APB transaction
+# 113790000: [testcase] Write - addr = 00000011, data = 00111001
+# 113790000: [scoreboard] Get packet from monitor
+# 113790000: [stimulus] Sent packet to driver
+# 113790000: [driver] Get packet from stimulus
+# 113850000: [monitor] Captured APB transaction
+# 113850000: [testcase] Write - addr = 00000000, data = 01011001
+# 113850000: [scoreboard] Get packet from monitor
+# 124070000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 124070011: [stimulus] Sent packet to driver
+# 124070011: [driver] Get packet from stimulus
+# 124130000: [monitor] Captured APB transaction
+# 124130000: [testcase] Write - addr = 00000011, data = 10011001
+# 124130000: [scoreboard] Get packet from monitor
+# 124130000: [stimulus] Sent packet to driver
+# 124130000: [driver] Get packet from stimulus
+# 124190000: [monitor] Captured APB transaction
+# 124190000: [testcase] Write - addr = 00000000, data = 01111001
+# 124190000: [scoreboard] Get packet from monitor
+# 134410000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 134410011: [stimulus] Sent packet to driver
+# 134410011: [driver] Get packet from stimulus
+# 134470000: [monitor] Captured APB transaction
+# 134470000: [testcase] Write - addr = 00000011, data = 11010111
+# 134470000: [scoreboard] Get packet from monitor
+# 134470000: [stimulus] Sent packet to driver
+# 134470000: [driver] Get packet from stimulus
+# 134530000: [monitor] Captured APB transaction
+# 134530000: [testcase] Write - addr = 00000000, data = 00111001
+# 134530000: [scoreboard] Get packet from monitor
+# 144750000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 144750011: [stimulus] Sent packet to driver
+# 144750011: [driver] Get packet from stimulus
+# 144810000: [monitor] Captured APB transaction
+# 144810000: [testcase] Write - addr = 00000011, data = 11010101
+# 144810000: [scoreboard] Get packet from monitor
+# 144810000: [stimulus] Sent packet to driver
+# 144810000: [driver] Get packet from stimulus
+# 144870000: [monitor] Captured APB transaction
+# 144870000: [testcase] Write - addr = 00000000, data = 10111001
+# 144870000: [scoreboard] Get packet from monitor
+# 155090000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 155090011: [stimulus] Sent packet to driver
+# 155090011: [driver] Get packet from stimulus
+# 155150000: [monitor] Captured APB transaction
+# 155150000: [testcase] Write - addr = 00000011, data = 11010011
+# 155150000: [scoreboard] Get packet from monitor
+# 155150000: [stimulus] Sent packet to driver
+# 155150000: [driver] Get packet from stimulus
+# 155210000: [monitor] Captured APB transaction
+# 155210000: [testcase] Write - addr = 00000000, data = 10011001
+# 155210000: [scoreboard] Get packet from monitor
+# 165430000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 165430011: [stimulus] Sent packet to driver
+# 165430011: [driver] Get packet from stimulus
+# 165490000: [monitor] Captured APB transaction
+# 165490000: [testcase] Write - addr = 00000011, data = 00110111
+# 165490000: [scoreboard] Get packet from monitor
+# 165490000: [stimulus] Sent packet to driver
+# 165490000: [driver] Get packet from stimulus
+# 165550000: [monitor] Captured APB transaction
+# 165550000: [testcase] Write - addr = 00000000, data = 11111001
+# 165550000: [scoreboard] Get packet from monitor
+# 175770000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 175770011: [stimulus] Sent packet to driver
+# 175770011: [driver] Get packet from stimulus
+# 175830000: [monitor] Captured APB transaction
+# 175830000: [testcase] Write - addr = 00000011, data = 00111001
+# 175830000: [scoreboard] Get packet from monitor
+# 175830000: [stimulus] Sent packet to driver
+# 175830000: [driver] Get packet from stimulus
+# 175890000: [monitor] Captured APB transaction
+# 175890000: [testcase] Write - addr = 00000000, data = 00011001
+# 175890000: [scoreboard] Get packet from monitor
+# 186110000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 186110011: [stimulus] Sent packet to driver
+# 186110011: [driver] Get packet from stimulus
+# 186170000: [monitor] Captured APB transaction
+# 186170000: [testcase] Write - addr = 00000011, data = 10011111
+# 186170000: [scoreboard] Get packet from monitor
+# 186170000: [stimulus] Sent packet to driver
+# 186170000: [driver] Get packet from stimulus
+# 186230000: [monitor] Captured APB transaction
+# 186230000: [testcase] Write - addr = 00000000, data = 10111001
+# 186230000: [scoreboard] Get packet from monitor
+# 196450000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 196450011: [stimulus] Sent packet to driver
+# 196450011: [driver] Get packet from stimulus
+# 196510000: [monitor] Captured APB transaction
+# 196510000: [testcase] Write - addr = 00000011, data = 10001001
+# 196510000: [scoreboard] Get packet from monitor
+# 196510000: [stimulus] Sent packet to driver
+# 196510000: [driver] Get packet from stimulus
+# 196570000: [monitor] Captured APB transaction
+# 196570000: [testcase] Write - addr = 00000000, data = 01111001
+# 196570000: [scoreboard] Get packet from monitor
+# 206790000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 206790011: [stimulus] Sent packet to driver
+# 206790011: [driver] Get packet from stimulus
+# 206850000: [monitor] Captured APB transaction
+# 206850000: [testcase] Write - addr = 00000011, data = 11010011
+# 206850000: [scoreboard] Get packet from monitor
+# 206850000: [stimulus] Sent packet to driver
+# 206850000: [driver] Get packet from stimulus
+# 206910000: [monitor] Captured APB transaction
+# 206910000: [testcase] Write - addr = 00000000, data = 00011001
+# 206910000: [scoreboard] Get packet from monitor
+# 217130000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 217130011: [stimulus] Sent packet to driver
+# 217130011: [driver] Get packet from stimulus
+# 217190000: [monitor] Captured APB transaction
+# 217190000: [testcase] Write - addr = 00000011, data = 11111001
+# 217190000: [scoreboard] Get packet from monitor
+# 217190000: [stimulus] Sent packet to driver
+# 217190000: [driver] Get packet from stimulus
+# 217250000: [monitor] Captured APB transaction
+# 217250000: [testcase] Write - addr = 00000000, data = 00111001
+# 217250000: [scoreboard] Get packet from monitor
+# 227470000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 227470011: [stimulus] Sent packet to driver
+# 227470011: [driver] Get packet from stimulus
+# 227530000: [monitor] Captured APB transaction
+# 227530000: [testcase] Write - addr = 00000011, data = 11111101
+# 227530000: [scoreboard] Get packet from monitor
+# 227530000: [stimulus] Sent packet to driver
+# 227530000: [driver] Get packet from stimulus
+# 227590000: [monitor] Captured APB transaction
+# 227590000: [testcase] Write - addr = 00000000, data = 00111001
+# 227590000: [scoreboard] Get packet from monitor
+# 237810000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 237810011: [stimulus] Sent packet to driver
+# 237810011: [driver] Get packet from stimulus
+# 237870000: [monitor] Captured APB transaction
+# 237870000: [testcase] Write - addr = 00000011, data = 00011001
+# 237870000: [scoreboard] Get packet from monitor
+# 237870000: [stimulus] Sent packet to driver
+# 237870000: [driver] Get packet from stimulus
+# 237930000: [monitor] Captured APB transaction
+# 237930000: [testcase] Write - addr = 00000000, data = 11111001
+# 237930000: [scoreboard] Get packet from monitor
+# 248150000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 248150011: [stimulus] Sent packet to driver
+# 248150011: [driver] Get packet from stimulus
+# 248210000: [monitor] Captured APB transaction
+# 248210000: [testcase] Write - addr = 00000011, data = 10100011
+# 248210000: [scoreboard] Get packet from monitor
+# 248210000: [stimulus] Sent packet to driver
+# 248210000: [driver] Get packet from stimulus
+# 248270000: [monitor] Captured APB transaction
+# 248270000: [testcase] Write - addr = 00000000, data = 00011001
+# 248270000: [scoreboard] Get packet from monitor
+# 258490000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 258490011: [stimulus] Sent packet to driver
+# 258490011: [driver] Get packet from stimulus
+# 258550000: [monitor] Captured APB transaction
+# 258550000: [testcase] Write - addr = 00000011, data = 00101101
+# 258550000: [scoreboard] Get packet from monitor
+# 258550000: [stimulus] Sent packet to driver
+# 258550000: [driver] Get packet from stimulus
+# 258610000: [monitor] Captured APB transaction
+# 258610000: [testcase] Write - addr = 00000000, data = 01111001
+# 258610000: [scoreboard] Get packet from monitor
+# 268830000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 268830011: [stimulus] Sent packet to driver
+# 268830011: [driver] Get packet from stimulus
+# 268890000: [monitor] Captured APB transaction
+# 268890000: [testcase] Write - addr = 00000011, data = 11110111
+# 268890000: [scoreboard] Get packet from monitor
+# 268890000: [stimulus] Sent packet to driver
+# 268890000: [driver] Get packet from stimulus
+# 268950000: [monitor] Captured APB transaction
+# 268950000: [testcase] Write - addr = 00000000, data = 11111001
+# 268950000: [scoreboard] Get packet from monitor
+# 279170000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 279170011: [stimulus] Sent packet to driver
+# 279170011: [driver] Get packet from stimulus
+# 279230000: [monitor] Captured APB transaction
+# 279230000: [testcase] Write - addr = 00000011, data = 10000011
+# 279230000: [scoreboard] Get packet from monitor
+# 279230000: [stimulus] Sent packet to driver
+# 279230000: [driver] Get packet from stimulus
+# 279290000: [monitor] Captured APB transaction
+# 279290000: [testcase] Write - addr = 00000000, data = 11011001
+# 279290000: [scoreboard] Get packet from monitor
+# 289510000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 289510011: [stimulus] Sent packet to driver
+# 289510011: [driver] Get packet from stimulus
+# 289570000: [monitor] Captured APB transaction
+# 289570000: [testcase] Write - addr = 00000011, data = 01111101
+# 289570000: [scoreboard] Get packet from monitor
+# 289570000: [stimulus] Sent packet to driver
+# 289570000: [driver] Get packet from stimulus
+# 289630000: [monitor] Captured APB transaction
+# 289630000: [testcase] Write - addr = 00000000, data = 10011001
+# 289630000: [scoreboard] Get packet from monitor
+# 299850000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 299850011: [stimulus] Sent packet to driver
+# 299850011: [driver] Get packet from stimulus
+# 299910000: [monitor] Captured APB transaction
+# 299910000: [testcase] Write - addr = 00000011, data = 10110001
+# 299910000: [scoreboard] Get packet from monitor
+# 299910000: [stimulus] Sent packet to driver
+# 299910000: [driver] Get packet from stimulus
+# 299970000: [monitor] Captured APB transaction
+# 299970000: [testcase] Write - addr = 00000000, data = 10011001
+# 299970000: [scoreboard] Get packet from monitor
+# 310190000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 310190011: [stimulus] Sent packet to driver
+# 310190011: [driver] Get packet from stimulus
+# 310250000: [monitor] Captured APB transaction
+# 310250000: [testcase] Write - addr = 00000011, data = 00110111
+# 310250000: [scoreboard] Get packet from monitor
+# 310250000: [stimulus] Sent packet to driver
+# 310250000: [driver] Get packet from stimulus
+# 310310000: [monitor] Captured APB transaction
+# 310310000: [testcase] Write - addr = 00000000, data = 01111001
+# 310310000: [scoreboard] Get packet from monitor
+# 320530000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 320530011: [stimulus] Sent packet to driver
+# 320530011: [driver] Get packet from stimulus
+# 320590000: [monitor] Captured APB transaction
+# 320590000: [testcase] Write - addr = 00000011, data = 11111001
+# 320590000: [scoreboard] Get packet from monitor
+# 320590000: [stimulus] Sent packet to driver
+# 320590000: [driver] Get packet from stimulus
+# 320650000: [monitor] Captured APB transaction
+# 320650000: [testcase] Write - addr = 00000000, data = 00111001
+# 320650000: [scoreboard] Get packet from monitor
+# 330870000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 330870011: [stimulus] Sent packet to driver
+# 330870011: [driver] Get packet from stimulus
+# 330930000: [monitor] Captured APB transaction
+# 330930000: [testcase] Write - addr = 00000011, data = 00110011
+# 330930000: [scoreboard] Get packet from monitor
+# 330930000: [stimulus] Sent packet to driver
+# 330930000: [driver] Get packet from stimulus
+# 330990000: [monitor] Captured APB transaction
+# 330990000: [testcase] Write - addr = 00000000, data = 01011001
+# 330990000: [scoreboard] Get packet from monitor
+# 341210000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 341210011: [stimulus] Sent packet to driver
+# 341210011: [driver] Get packet from stimulus
+# 341270000: [monitor] Captured APB transaction
+# 341270000: [testcase] Write - addr = 00000011, data = 11000111
+# 341270000: [scoreboard] Get packet from monitor
+# 341270000: [stimulus] Sent packet to driver
+# 341270000: [driver] Get packet from stimulus
+# 341330000: [monitor] Captured APB transaction
+# 341330000: [testcase] Write - addr = 00000000, data = 01111001
+# 341330000: [scoreboard] Get packet from monitor
+# 351550000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 351550011: [stimulus] Sent packet to driver
+# 351550011: [driver] Get packet from stimulus
+# 351610000: [monitor] Captured APB transaction
+# 351610000: [testcase] Write - addr = 00000011, data = 10001011
+# 351610000: [scoreboard] Get packet from monitor
+# 351610000: [stimulus] Sent packet to driver
+# 351610000: [driver] Get packet from stimulus
+# 351670000: [monitor] Captured APB transaction
+# 351670000: [testcase] Write - addr = 00000000, data = 11011001
+# 351670000: [scoreboard] Get packet from monitor
+# 361890000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 361890011: [stimulus] Sent packet to driver
+# 361890011: [driver] Get packet from stimulus
+# 361950000: [monitor] Captured APB transaction
+# 361950000: [testcase] Write - addr = 00000011, data = 01010001
+# 361950000: [scoreboard] Get packet from monitor
+# 361950000: [stimulus] Sent packet to driver
+# 361950000: [driver] Get packet from stimulus
+# 362010000: [monitor] Captured APB transaction
+# 362010000: [testcase] Write - addr = 00000000, data = 10111001
+# 362010000: [scoreboard] Get packet from monitor
+# 372230000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 372230011: [stimulus] Sent packet to driver
+# 372230011: [driver] Get packet from stimulus
+# 372290000: [monitor] Captured APB transaction
+# 372290000: [testcase] Write - addr = 00000011, data = 01010101
+# 372290000: [scoreboard] Get packet from monitor
+# 372290000: [stimulus] Sent packet to driver
+# 372290000: [driver] Get packet from stimulus
+# 372350000: [monitor] Captured APB transaction
+# 372350000: [testcase] Write - addr = 00000000, data = 00011001
+# 372350000: [scoreboard] Get packet from monitor
+# 382570000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 382570011: [stimulus] Sent packet to driver
+# 382570011: [driver] Get packet from stimulus
+# 382630000: [monitor] Captured APB transaction
+# 382630000: [testcase] Write - addr = 00000011, data = 11110011
+# 382630000: [scoreboard] Get packet from monitor
+# 382630000: [stimulus] Sent packet to driver
+# 382630000: [driver] Get packet from stimulus
+# 382690000: [monitor] Captured APB transaction
+# 382690000: [testcase] Write - addr = 00000000, data = 11111001
+# 382690000: [scoreboard] Get packet from monitor
+# 392910000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 392910011: [stimulus] Sent packet to driver
+# 392910011: [driver] Get packet from stimulus
+# 392970000: [monitor] Captured APB transaction
+# 392970000: [testcase] Write - addr = 00000011, data = 11011001
+# 392970000: [scoreboard] Get packet from monitor
+# 392970000: [stimulus] Sent packet to driver
+# 392970000: [driver] Get packet from stimulus
+# 393030000: [monitor] Captured APB transaction
+# 393030000: [testcase] Write - addr = 00000000, data = 11011001
+# 393030000: [scoreboard] Get packet from monitor
+# 403250000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 403250011: [stimulus] Sent packet to driver
+# 403250011: [driver] Get packet from stimulus
+# 403310000: [monitor] Captured APB transaction
+# 403310000: [testcase] Write - addr = 00000011, data = 10100001
+# 403310000: [scoreboard] Get packet from monitor
+# 403310000: [stimulus] Sent packet to driver
+# 403310000: [driver] Get packet from stimulus
+# 403370000: [monitor] Captured APB transaction
+# 403370000: [testcase] Write - addr = 00000000, data = 01011001
+# 403370000: [scoreboard] Get packet from monitor
+# 413590000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 413590011: [stimulus] Sent packet to driver
+# 413590011: [driver] Get packet from stimulus
+# 413650000: [monitor] Captured APB transaction
+# 413650000: [testcase] Write - addr = 00000011, data = 11101001
+# 413650000: [scoreboard] Get packet from monitor
+# 413650000: [stimulus] Sent packet to driver
+# 413650000: [driver] Get packet from stimulus
+# 413710000: [monitor] Captured APB transaction
+# 413710000: [testcase] Write - addr = 00000000, data = 01111001
+# 413710000: [scoreboard] Get packet from monitor
+# 423930000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 423930011: [stimulus] Sent packet to driver
+# 423930011: [driver] Get packet from stimulus
+# 423990000: [monitor] Captured APB transaction
+# 423990000: [testcase] Write - addr = 00000011, data = 11011101
+# 423990000: [scoreboard] Get packet from monitor
+# 423990000: [stimulus] Sent packet to driver
+# 423990000: [driver] Get packet from stimulus
+# 424050000: [monitor] Captured APB transaction
+# 424050000: [testcase] Write - addr = 00000000, data = 00011001
+# 424050000: [scoreboard] Get packet from monitor
+# 434270000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 434270011: [stimulus] Sent packet to driver
+# 434270011: [driver] Get packet from stimulus
+# 434330000: [monitor] Captured APB transaction
+# 434330000: [testcase] Write - addr = 00000011, data = 01001001
+# 434330000: [scoreboard] Get packet from monitor
+# 434330000: [stimulus] Sent packet to driver
+# 434330000: [driver] Get packet from stimulus
+# 434390000: [monitor] Captured APB transaction
+# 434390000: [testcase] Write - addr = 00000000, data = 10011001
+# 434390000: [scoreboard] Get packet from monitor
+# 444610000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 444610011: [stimulus] Sent packet to driver
+# 444610011: [driver] Get packet from stimulus
+# 444670000: [monitor] Captured APB transaction
+# 444670000: [testcase] Write - addr = 00000011, data = 11010001
+# 444670000: [scoreboard] Get packet from monitor
+# 444670000: [stimulus] Sent packet to driver
+# 444670000: [driver] Get packet from stimulus
+# 444730000: [monitor] Captured APB transaction
+# 444730000: [testcase] Write - addr = 00000000, data = 10011001
+# 444730000: [scoreboard] Get packet from monitor
+# 454950000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 454950011: [stimulus] Sent packet to driver
+# 454950011: [driver] Get packet from stimulus
+# 455010000: [monitor] Captured APB transaction
+# 455010000: [testcase] Write - addr = 00000011, data = 11010001
+# 455010000: [scoreboard] Get packet from monitor
+# 455010000: [stimulus] Sent packet to driver
+# 455010000: [driver] Get packet from stimulus
+# 455070000: [monitor] Captured APB transaction
+# 455070000: [testcase] Write - addr = 00000000, data = 00111001
+# 455070000: [scoreboard] Get packet from monitor
+# 465290000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 465290011: [stimulus] Sent packet to driver
+# 465290011: [driver] Get packet from stimulus
+# 465350000: [monitor] Captured APB transaction
+# 465350000: [testcase] Write - addr = 00000011, data = 11111101
+# 465350000: [scoreboard] Get packet from monitor
+# 465350000: [stimulus] Sent packet to driver
+# 465350000: [driver] Get packet from stimulus
+# 465410000: [monitor] Captured APB transaction
+# 465410000: [testcase] Write - addr = 00000000, data = 11011001
+# 465410000: [scoreboard] Get packet from monitor
+# 475630000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 475630011: [stimulus] Sent packet to driver
+# 475630011: [driver] Get packet from stimulus
+# 475690000: [monitor] Captured APB transaction
+# 475690000: [testcase] Write - addr = 00000011, data = 10111111
+# 475690000: [scoreboard] Get packet from monitor
+# 475690000: [stimulus] Sent packet to driver
+# 475690000: [driver] Get packet from stimulus
+# 475750000: [monitor] Captured APB transaction
+# 475750000: [testcase] Write - addr = 00000000, data = 11111001
+# 475750000: [scoreboard] Get packet from monitor
+# 485970000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 485970011: [stimulus] Sent packet to driver
+# 485970011: [driver] Get packet from stimulus
+# 486030000: [monitor] Captured APB transaction
+# 486030000: [testcase] Write - addr = 00000011, data = 01111011
+# 486030000: [scoreboard] Get packet from monitor
+# 486030000: [stimulus] Sent packet to driver
+# 486030000: [driver] Get packet from stimulus
+# 486090000: [monitor] Captured APB transaction
+# 486090000: [testcase] Write - addr = 00000000, data = 10011001
+# 486090000: [scoreboard] Get packet from monitor
+# 496310000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 496310011: [stimulus] Sent packet to driver
+# 496310011: [driver] Get packet from stimulus
+# 496370000: [monitor] Captured APB transaction
+# 496370000: [testcase] Write - addr = 00000011, data = 10100001
+# 496370000: [scoreboard] Get packet from monitor
+# 496370000: [stimulus] Sent packet to driver
+# 496370000: [driver] Get packet from stimulus
+# 496430000: [monitor] Captured APB transaction
+# 496430000: [testcase] Write - addr = 00000000, data = 11011001
+# 496430000: [scoreboard] Get packet from monitor
+# 506650000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 506650011: [stimulus] Sent packet to driver
+# 506650011: [driver] Get packet from stimulus
+# 506710000: [monitor] Captured APB transaction
+# 506710000: [testcase] Write - addr = 00000011, data = 11011101
+# 506710000: [scoreboard] Get packet from monitor
+# 506710000: [stimulus] Sent packet to driver
+# 506710000: [driver] Get packet from stimulus
+# 506770000: [monitor] Captured APB transaction
+# 506770000: [testcase] Write - addr = 00000000, data = 11111001
+# 506770000: [scoreboard] Get packet from monitor
+# 516990000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 516990011: [stimulus] Sent packet to driver
+# 516990011: [driver] Get packet from stimulus
+# 517050000: [monitor] Captured APB transaction
+# 517050000: [testcase] Write - addr = 00000011, data = 00000001
+# 517050000: [scoreboard] Get packet from monitor
+# 517050000: [stimulus] Sent packet to driver
+# 517050000: [driver] Get packet from stimulus
+# 517110000: [monitor] Captured APB transaction
+# 517110000: [testcase] Write - addr = 00000000, data = 11111001
+# 517110000: [scoreboard] Get packet from monitor
+# 527330000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 527330011: [stimulus] Sent packet to driver
+# 527330011: [driver] Get packet from stimulus
+# 527390000: [monitor] Captured APB transaction
+# 527390000: [testcase] Write - addr = 00000011, data = 10010011
+# 527390000: [scoreboard] Get packet from monitor
+# 527390000: [stimulus] Sent packet to driver
+# 527390000: [driver] Get packet from stimulus
+# 527450000: [monitor] Captured APB transaction
+# 527450000: [testcase] Write - addr = 00000000, data = 01011001
+# 527450000: [scoreboard] Get packet from monitor
+# 537670000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 537670011: [stimulus] Sent packet to driver
+# 537670011: [driver] Get packet from stimulus
+# 537730000: [monitor] Captured APB transaction
+# 537730000: [testcase] Write - addr = 00000011, data = 00110011
+# 537730000: [scoreboard] Get packet from monitor
+# 537730000: [stimulus] Sent packet to driver
+# 537730000: [driver] Get packet from stimulus
+# 537790000: [monitor] Captured APB transaction
+# 537790000: [testcase] Write - addr = 00000000, data = 01111001
+# 537790000: [scoreboard] Get packet from monitor
+# 548010000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 548010011: [stimulus] Sent packet to driver
+# 548010011: [driver] Get packet from stimulus
+# 548070000: [monitor] Captured APB transaction
+# 548070000: [testcase] Write - addr = 00000011, data = 00011111
+# 548070000: [scoreboard] Get packet from monitor
+# 548070000: [stimulus] Sent packet to driver
+# 548070000: [driver] Get packet from stimulus
+# 548130000: [monitor] Captured APB transaction
+# 548130000: [testcase] Write - addr = 00000000, data = 10011001
+# 548130000: [scoreboard] Get packet from monitor
+# 558350000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 558350011: [stimulus] Sent packet to driver
+# 558350011: [driver] Get packet from stimulus
+# 558410000: [monitor] Captured APB transaction
+# 558410000: [testcase] Write - addr = 00000011, data = 11101101
+# 558410000: [scoreboard] Get packet from monitor
+# 558410000: [stimulus] Sent packet to driver
+# 558410000: [driver] Get packet from stimulus
+# 558470000: [monitor] Captured APB transaction
+# 558470000: [testcase] Write - addr = 00000000, data = 01011001
+# 558470000: [scoreboard] Get packet from monitor
+# 568690000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 568690011: [stimulus] Sent packet to driver
+# 568690011: [driver] Get packet from stimulus
+# 568750000: [monitor] Captured APB transaction
+# 568750000: [testcase] Write - addr = 00000011, data = 01000101
+# 568750000: [scoreboard] Get packet from monitor
+# 568750000: [stimulus] Sent packet to driver
+# 568750000: [driver] Get packet from stimulus
+# 568810000: [monitor] Captured APB transaction
+# 568810000: [testcase] Write - addr = 00000000, data = 00011001
+# 568810000: [scoreboard] Get packet from monitor
+# 579030000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 579030011: [stimulus] Sent packet to driver
+# 579030011: [driver] Get packet from stimulus
+# 579090000: [monitor] Captured APB transaction
+# 579090000: [testcase] Write - addr = 00000011, data = 10110101
+# 579090000: [scoreboard] Get packet from monitor
+# 579090000: [stimulus] Sent packet to driver
+# 579090000: [driver] Get packet from stimulus
+# 579150000: [monitor] Captured APB transaction
+# 579150000: [testcase] Write - addr = 00000000, data = 01011001
+# 579150000: [scoreboard] Get packet from monitor
+# 589370000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 589370011: [stimulus] Sent packet to driver
+# 589370011: [driver] Get packet from stimulus
+# 589430000: [monitor] Captured APB transaction
+# 589430000: [testcase] Write - addr = 00000011, data = 10011111
+# 589430000: [scoreboard] Get packet from monitor
+# 589430000: [stimulus] Sent packet to driver
+# 589430000: [driver] Get packet from stimulus
+# 589490000: [monitor] Captured APB transaction
+# 589490000: [testcase] Write - addr = 00000000, data = 01011001
+# 589490000: [scoreboard] Get packet from monitor
+# 599710000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 599710011: [stimulus] Sent packet to driver
+# 599710011: [driver] Get packet from stimulus
+# 599770000: [monitor] Captured APB transaction
+# 599770000: [testcase] Write - addr = 00000011, data = 11100111
+# 599770000: [scoreboard] Get packet from monitor
+# 599770000: [stimulus] Sent packet to driver
+# 599770000: [driver] Get packet from stimulus
+# 599830000: [monitor] Captured APB transaction
+# 599830000: [testcase] Write - addr = 00000000, data = 00111001
+# 599830000: [scoreboard] Get packet from monitor
+# 610050000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 610050011: [stimulus] Sent packet to driver
+# 610050011: [driver] Get packet from stimulus
+# 610110000: [monitor] Captured APB transaction
+# 610110000: [testcase] Write - addr = 00000011, data = 10110101
+# 610110000: [scoreboard] Get packet from monitor
+# 610110000: [stimulus] Sent packet to driver
+# 610110000: [driver] Get packet from stimulus
+# 610170000: [monitor] Captured APB transaction
+# 610170000: [testcase] Write - addr = 00000000, data = 00111001
+# 610170000: [scoreboard] Get packet from monitor
+# 620390000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 620390011: [stimulus] Sent packet to driver
+# 620390011: [driver] Get packet from stimulus
+# 620450000: [monitor] Captured APB transaction
+# 620450000: [testcase] Write - addr = 00000011, data = 01101001
+# 620450000: [scoreboard] Get packet from monitor
+# 620450000: [stimulus] Sent packet to driver
+# 620450000: [driver] Get packet from stimulus
+# 620510000: [monitor] Captured APB transaction
+# 620510000: [testcase] Write - addr = 00000000, data = 00111001
+# 620510000: [scoreboard] Get packet from monitor
+# 630730000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 630730011: [stimulus] Sent packet to driver
+# 630730011: [driver] Get packet from stimulus
+# 630790000: [monitor] Captured APB transaction
+# 630790000: [testcase] Write - addr = 00000011, data = 00011001
+# 630790000: [scoreboard] Get packet from monitor
+# 630790000: [stimulus] Sent packet to driver
+# 630790000: [driver] Get packet from stimulus
+# 630850000: [monitor] Captured APB transaction
+# 630850000: [testcase] Write - addr = 00000000, data = 11111001
+# 630850000: [scoreboard] Get packet from monitor
+# 641070000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 641070011: [stimulus] Sent packet to driver
+# 641070011: [driver] Get packet from stimulus
+# 641130000: [monitor] Captured APB transaction
+# 641130000: [testcase] Write - addr = 00000011, data = 01011011
+# 641130000: [scoreboard] Get packet from monitor
+# 641130000: [stimulus] Sent packet to driver
+# 641130000: [driver] Get packet from stimulus
+# 641190000: [monitor] Captured APB transaction
+# 641190000: [testcase] Write - addr = 00000000, data = 11111001
+# 641190000: [scoreboard] Get packet from monitor
+# 651410000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 651410011: [stimulus] Sent packet to driver
+# 651410011: [driver] Get packet from stimulus
+# 651470000: [monitor] Captured APB transaction
+# 651470000: [testcase] Write - addr = 00000011, data = 01111101
+# 651470000: [scoreboard] Get packet from monitor
+# 651470000: [stimulus] Sent packet to driver
+# 651470000: [driver] Get packet from stimulus
+# 651530000: [monitor] Captured APB transaction
+# 651530000: [testcase] Write - addr = 00000000, data = 00011001
+# 651530000: [scoreboard] Get packet from monitor
+# 661750000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 661750011: [stimulus] Sent packet to driver
+# 661750011: [driver] Get packet from stimulus
+# 661810000: [monitor] Captured APB transaction
+# 661810000: [testcase] Write - addr = 00000011, data = 01100111
+# 661810000: [scoreboard] Get packet from monitor
+# 661810000: [stimulus] Sent packet to driver
+# 661810000: [driver] Get packet from stimulus
+# 661870000: [monitor] Captured APB transaction
+# 661870000: [testcase] Write - addr = 00000000, data = 11111001
+# 661870000: [scoreboard] Get packet from monitor
+# 672090000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 672090011: [stimulus] Sent packet to driver
+# 672090011: [driver] Get packet from stimulus
+# 672150000: [monitor] Captured APB transaction
+# 672150000: [testcase] Write - addr = 00000011, data = 00101001
+# 672150000: [scoreboard] Get packet from monitor
+# 672150000: [stimulus] Sent packet to driver
+# 672150000: [driver] Get packet from stimulus
+# 672210000: [monitor] Captured APB transaction
+# 672210000: [testcase] Write - addr = 00000000, data = 11011001
+# 672210000: [scoreboard] Get packet from monitor
+# 682430000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 682430011: [stimulus] Sent packet to driver
+# 682430011: [driver] Get packet from stimulus
+# 682490000: [monitor] Captured APB transaction
+# 682490000: [testcase] Write - addr = 00000011, data = 11010111
+# 682490000: [scoreboard] Get packet from monitor
+# 682490000: [stimulus] Sent packet to driver
+# 682490000: [driver] Get packet from stimulus
+# 682550000: [monitor] Captured APB transaction
+# 682550000: [testcase] Write - addr = 00000000, data = 11111001
+# 682550000: [scoreboard] Get packet from monitor
+# 692770000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 692770011: [stimulus] Sent packet to driver
+# 692770011: [driver] Get packet from stimulus
+# 692830000: [monitor] Captured APB transaction
+# 692830000: [testcase] Write - addr = 00000011, data = 00101001
+# 692830000: [scoreboard] Get packet from monitor
+# 692830000: [stimulus] Sent packet to driver
+# 692830000: [driver] Get packet from stimulus
+# 692890000: [monitor] Captured APB transaction
+# 692890000: [testcase] Write - addr = 00000000, data = 11111001
+# 692890000: [scoreboard] Get packet from monitor
+# 703110000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 703110011: [stimulus] Sent packet to driver
+# 703110011: [driver] Get packet from stimulus
+# 703170000: [monitor] Captured APB transaction
+# 703170000: [testcase] Write - addr = 00000011, data = 11011111
+# 703170000: [scoreboard] Get packet from monitor
+# 703170000: [stimulus] Sent packet to driver
+# 703170000: [driver] Get packet from stimulus
+# 703230000: [monitor] Captured APB transaction
+# 703230000: [testcase] Write - addr = 00000000, data = 10111001
+# 703230000: [scoreboard] Get packet from monitor
+# 713450000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 713450011: [stimulus] Sent packet to driver
+# 713450011: [driver] Get packet from stimulus
+# 713510000: [monitor] Captured APB transaction
+# 713510000: [testcase] Write - addr = 00000011, data = 11110001
+# 713510000: [scoreboard] Get packet from monitor
+# 713510000: [stimulus] Sent packet to driver
+# 713510000: [driver] Get packet from stimulus
+# 713570000: [monitor] Captured APB transaction
+# 713570000: [testcase] Write - addr = 00000000, data = 11111001
+# 713570000: [scoreboard] Get packet from monitor
+# 723790000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 723790011: [stimulus] Sent packet to driver
+# 723790011: [driver] Get packet from stimulus
+# 723850000: [monitor] Captured APB transaction
+# 723850000: [testcase] Write - addr = 00000011, data = 00010011
+# 723850000: [scoreboard] Get packet from monitor
+# 723850000: [stimulus] Sent packet to driver
+# 723850000: [driver] Get packet from stimulus
+# 723910000: [monitor] Captured APB transaction
+# 723910000: [testcase] Write - addr = 00000000, data = 01111001
+# 723910000: [scoreboard] Get packet from monitor
+# 734130000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 734130011: [stimulus] Sent packet to driver
+# 734130011: [driver] Get packet from stimulus
+# 734190000: [monitor] Captured APB transaction
+# 734190000: [testcase] Write - addr = 00000011, data = 10010111
+# 734190000: [scoreboard] Get packet from monitor
+# 734190000: [stimulus] Sent packet to driver
+# 734190000: [driver] Get packet from stimulus
+# 734250000: [monitor] Captured APB transaction
+# 734250000: [testcase] Write - addr = 00000000, data = 01111001
+# 734250000: [scoreboard] Get packet from monitor
+# 744470000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 744470011: [stimulus] Sent packet to driver
+# 744470011: [driver] Get packet from stimulus
+# 744530000: [monitor] Captured APB transaction
+# 744530000: [testcase] Write - addr = 00000011, data = 01000101
+# 744530000: [scoreboard] Get packet from monitor
+# 744530000: [stimulus] Sent packet to driver
+# 744530000: [driver] Get packet from stimulus
+# 744590000: [monitor] Captured APB transaction
+# 744590000: [testcase] Write - addr = 00000000, data = 10011001
+# 744590000: [scoreboard] Get packet from monitor
+# 754810000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 754810011: [stimulus] Sent packet to driver
+# 754810011: [driver] Get packet from stimulus
+# 754870000: [monitor] Captured APB transaction
+# 754870000: [testcase] Write - addr = 00000011, data = 00100011
+# 754870000: [scoreboard] Get packet from monitor
+# 754870000: [stimulus] Sent packet to driver
+# 754870000: [driver] Get packet from stimulus
+# 754930000: [monitor] Captured APB transaction
+# 754930000: [testcase] Write - addr = 00000000, data = 01111001
+# 754930000: [scoreboard] Get packet from monitor
+# 765150000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 765150011: [stimulus] Sent packet to driver
+# 765150011: [driver] Get packet from stimulus
+# 765210000: [monitor] Captured APB transaction
+# 765210000: [testcase] Write - addr = 00000011, data = 11101111
+# 765210000: [scoreboard] Get packet from monitor
+# 765210000: [stimulus] Sent packet to driver
+# 765210000: [driver] Get packet from stimulus
+# 765270000: [monitor] Captured APB transaction
+# 765270000: [testcase] Write - addr = 00000000, data = 11011001
+# 765270000: [scoreboard] Get packet from monitor
+# 775490000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 775490011: [stimulus] Sent packet to driver
+# 775490011: [driver] Get packet from stimulus
+# 775550000: [monitor] Captured APB transaction
+# 775550000: [testcase] Write - addr = 00000011, data = 11110011
+# 775550000: [scoreboard] Get packet from monitor
+# 775550000: [stimulus] Sent packet to driver
+# 775550000: [driver] Get packet from stimulus
+# 775610000: [monitor] Captured APB transaction
+# 775610000: [testcase] Write - addr = 00000000, data = 00011001
+# 775610000: [scoreboard] Get packet from monitor
+# 785830000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 785830011: [stimulus] Sent packet to driver
+# 785830011: [driver] Get packet from stimulus
+# 785890000: [monitor] Captured APB transaction
+# 785890000: [testcase] Write - addr = 00000011, data = 00000111
+# 785890000: [scoreboard] Get packet from monitor
+# 785890000: [stimulus] Sent packet to driver
+# 785890000: [driver] Get packet from stimulus
+# 785950000: [monitor] Captured APB transaction
+# 785950000: [testcase] Write - addr = 00000000, data = 00011001
+# 785950000: [scoreboard] Get packet from monitor
+# 796170000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 796170011: [stimulus] Sent packet to driver
+# 796170011: [driver] Get packet from stimulus
+# 796230000: [monitor] Captured APB transaction
+# 796230000: [testcase] Write - addr = 00000011, data = 00100101
+# 796230000: [scoreboard] Get packet from monitor
+# 796230000: [stimulus] Sent packet to driver
+# 796230000: [driver] Get packet from stimulus
+# 796290000: [monitor] Captured APB transaction
+# 796290000: [testcase] Write - addr = 00000000, data = 10111001
+# 796290000: [scoreboard] Get packet from monitor
+# 806510000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 806510011: [stimulus] Sent packet to driver
+# 806510011: [driver] Get packet from stimulus
+# 806570000: [monitor] Captured APB transaction
+# 806570000: [testcase] Write - addr = 00000011, data = 10101001
+# 806570000: [scoreboard] Get packet from monitor
+# 806570000: [stimulus] Sent packet to driver
+# 806570000: [driver] Get packet from stimulus
+# 806630000: [monitor] Captured APB transaction
+# 806630000: [testcase] Write - addr = 00000000, data = 00011001
+# 806630000: [scoreboard] Get packet from monitor
+# 816850000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 816850011: [stimulus] Sent packet to driver
+# 816850011: [driver] Get packet from stimulus
+# 816910000: [monitor] Captured APB transaction
+# 816910000: [testcase] Write - addr = 00000011, data = 00111111
+# 816910000: [scoreboard] Get packet from monitor
+# 816910000: [stimulus] Sent packet to driver
+# 816910000: [driver] Get packet from stimulus
+# 816970000: [monitor] Captured APB transaction
+# 816970000: [testcase] Write - addr = 00000000, data = 11011001
+# 816970000: [scoreboard] Get packet from monitor
+# 827190000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 827190011: [stimulus] Sent packet to driver
+# 827190011: [driver] Get packet from stimulus
+# 827250000: [monitor] Captured APB transaction
+# 827250000: [testcase] Write - addr = 00000011, data = 11101001
+# 827250000: [scoreboard] Get packet from monitor
+# 827250000: [stimulus] Sent packet to driver
+# 827250000: [driver] Get packet from stimulus
+# 827310000: [monitor] Captured APB transaction
+# 827310000: [testcase] Write - addr = 00000000, data = 10011001
+# 827310000: [scoreboard] Get packet from monitor
+# 837530000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 837530011: [stimulus] Sent packet to driver
+# 837530011: [driver] Get packet from stimulus
+# 837590000: [monitor] Captured APB transaction
+# 837590000: [testcase] Write - addr = 00000011, data = 00100101
+# 837590000: [scoreboard] Get packet from monitor
+# 837590000: [stimulus] Sent packet to driver
+# 837590000: [driver] Get packet from stimulus
+# 837650000: [monitor] Captured APB transaction
+# 837650000: [testcase] Write - addr = 00000000, data = 11011001
+# 837650000: [scoreboard] Get packet from monitor
+# 847870000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 847870011: [stimulus] Sent packet to driver
+# 847870011: [driver] Get packet from stimulus
+# 847930000: [monitor] Captured APB transaction
+# 847930000: [testcase] Write - addr = 00000011, data = 10000011
+# 847930000: [scoreboard] Get packet from monitor
+# 847930000: [stimulus] Sent packet to driver
+# 847930000: [driver] Get packet from stimulus
+# 847990000: [monitor] Captured APB transaction
+# 847990000: [testcase] Write - addr = 00000000, data = 01011001
+# 847990000: [scoreboard] Get packet from monitor
+# 858210000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 858210011: [stimulus] Sent packet to driver
+# 858210011: [driver] Get packet from stimulus
+# 858270000: [monitor] Captured APB transaction
+# 858270000: [testcase] Write - addr = 00000011, data = 10100011
+# 858270000: [scoreboard] Get packet from monitor
+# 858270000: [stimulus] Sent packet to driver
+# 858270000: [driver] Get packet from stimulus
+# 858330000: [monitor] Captured APB transaction
+# 858330000: [testcase] Write - addr = 00000000, data = 01011001
+# 858330000: [scoreboard] Get packet from monitor
+# 868550000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 868550011: [stimulus] Sent packet to driver
+# 868550011: [driver] Get packet from stimulus
+# 868610000: [monitor] Captured APB transaction
+# 868610000: [testcase] Write - addr = 00000011, data = 01001001
+# 868610000: [scoreboard] Get packet from monitor
+# 868610000: [stimulus] Sent packet to driver
+# 868610000: [driver] Get packet from stimulus
+# 868670000: [monitor] Captured APB transaction
+# 868670000: [testcase] Write - addr = 00000000, data = 11111001
+# 868670000: [scoreboard] Get packet from monitor
+# 878890000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 878890011: [stimulus] Sent packet to driver
+# 878890011: [driver] Get packet from stimulus
+# 878950000: [monitor] Captured APB transaction
+# 878950000: [testcase] Write - addr = 00000011, data = 11110101
+# 878950000: [scoreboard] Get packet from monitor
+# 878950000: [stimulus] Sent packet to driver
+# 878950000: [driver] Get packet from stimulus
+# 879010000: [monitor] Captured APB transaction
+# 879010000: [testcase] Write - addr = 00000000, data = 11011001
+# 879010000: [scoreboard] Get packet from monitor
+# 889230000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 889230011: [stimulus] Sent packet to driver
+# 889230011: [driver] Get packet from stimulus
+# 889290000: [monitor] Captured APB transaction
+# 889290000: [testcase] Write - addr = 00000011, data = 10100101
+# 889290000: [scoreboard] Get packet from monitor
+# 889290000: [stimulus] Sent packet to driver
+# 889290000: [driver] Get packet from stimulus
+# 889350000: [monitor] Captured APB transaction
+# 889350000: [testcase] Write - addr = 00000000, data = 10011001
+# 889350000: [scoreboard] Get packet from monitor
+# 899570000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 899570011: [stimulus] Sent packet to driver
+# 899570011: [driver] Get packet from stimulus
+# 899630000: [monitor] Captured APB transaction
+# 899630000: [testcase] Write - addr = 00000011, data = 00110011
+# 899630000: [scoreboard] Get packet from monitor
+# 899630000: [stimulus] Sent packet to driver
+# 899630000: [driver] Get packet from stimulus
+# 899690000: [monitor] Captured APB transaction
+# 899690000: [testcase] Write - addr = 00000000, data = 10111001
+# 899690000: [scoreboard] Get packet from monitor
+# 909910000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 909910011: [stimulus] Sent packet to driver
+# 909910011: [driver] Get packet from stimulus
+# 909970000: [monitor] Captured APB transaction
+# 909970000: [testcase] Write - addr = 00000011, data = 00100011
+# 909970000: [scoreboard] Get packet from monitor
+# 909970000: [stimulus] Sent packet to driver
+# 909970000: [driver] Get packet from stimulus
+# 910030000: [monitor] Captured APB transaction
+# 910030000: [testcase] Write - addr = 00000000, data = 00111001
+# 910030000: [scoreboard] Get packet from monitor
+# 920250000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 920250011: [stimulus] Sent packet to driver
+# 920250011: [driver] Get packet from stimulus
+# 920310000: [monitor] Captured APB transaction
+# 920310000: [testcase] Write - addr = 00000011, data = 10001101
+# 920310000: [scoreboard] Get packet from monitor
+# 920310000: [stimulus] Sent packet to driver
+# 920310000: [driver] Get packet from stimulus
+# 920370000: [monitor] Captured APB transaction
+# 920370000: [testcase] Write - addr = 00000000, data = 01011001
+# 920370000: [scoreboard] Get packet from monitor
+# 930590000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 930590011: [stimulus] Sent packet to driver
+# 930590011: [driver] Get packet from stimulus
+# 930650000: [monitor] Captured APB transaction
+# 930650000: [testcase] Write - addr = 00000011, data = 01011101
+# 930650000: [scoreboard] Get packet from monitor
+# 930650000: [stimulus] Sent packet to driver
+# 930650000: [driver] Get packet from stimulus
+# 930710000: [monitor] Captured APB transaction
+# 930710000: [testcase] Write - addr = 00000000, data = 01111001
+# 930710000: [scoreboard] Get packet from monitor
+# 940930000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 940930011: [stimulus] Sent packet to driver
+# 940930011: [driver] Get packet from stimulus
+# 940990000: [monitor] Captured APB transaction
+# 940990000: [testcase] Write - addr = 00000011, data = 01001111
+# 940990000: [scoreboard] Get packet from monitor
+# 940990000: [stimulus] Sent packet to driver
+# 940990000: [driver] Get packet from stimulus
+# 941050000: [monitor] Captured APB transaction
+# 941050000: [testcase] Write - addr = 00000000, data = 11111001
+# 941050000: [scoreboard] Get packet from monitor
+# 951270000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 951270011: [stimulus] Sent packet to driver
+# 951270011: [driver] Get packet from stimulus
+# 951330000: [monitor] Captured APB transaction
+# 951330000: [testcase] Write - addr = 00000011, data = 01011111
+# 951330000: [scoreboard] Get packet from monitor
+# 951330000: [stimulus] Sent packet to driver
+# 951330000: [driver] Get packet from stimulus
+# 951390000: [monitor] Captured APB transaction
+# 951390000: [testcase] Write - addr = 00000000, data = 10011001
+# 951390000: [scoreboard] Get packet from monitor
+# 961610000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 961610011: [stimulus] Sent packet to driver
+# 961610011: [driver] Get packet from stimulus
+# 961670000: [monitor] Captured APB transaction
+# 961670000: [testcase] Write - addr = 00000011, data = 00101101
+# 961670000: [scoreboard] Get packet from monitor
+# 961670000: [stimulus] Sent packet to driver
+# 961670000: [driver] Get packet from stimulus
+# 961730000: [monitor] Captured APB transaction
+# 961730000: [testcase] Write - addr = 00000000, data = 01111001
+# 961730000: [scoreboard] Get packet from monitor
+# 971950000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 971950011: [stimulus] Sent packet to driver
+# 971950011: [driver] Get packet from stimulus
+# 972010000: [monitor] Captured APB transaction
+# 972010000: [testcase] Write - addr = 00000011, data = 00111101
+# 972010000: [scoreboard] Get packet from monitor
+# 972010000: [stimulus] Sent packet to driver
+# 972010000: [driver] Get packet from stimulus
+# 972070000: [monitor] Captured APB transaction
+# 972070000: [testcase] Write - addr = 00000000, data = 01011001
+# 972070000: [scoreboard] Get packet from monitor
+# 982290000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 982290011: [stimulus] Sent packet to driver
+# 982290011: [driver] Get packet from stimulus
+# 982350000: [monitor] Captured APB transaction
+# 982350000: [testcase] Write - addr = 00000011, data = 01001011
+# 982350000: [scoreboard] Get packet from monitor
+# 982350000: [stimulus] Sent packet to driver
+# 982350000: [driver] Get packet from stimulus
+# 982410000: [monitor] Captured APB transaction
+# 982410000: [testcase] Write - addr = 00000000, data = 00011001
+# 982410000: [scoreboard] Get packet from monitor
+# 992630000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 992630011: [stimulus] Sent packet to driver
+# 992630011: [driver] Get packet from stimulus
+# 992690000: [monitor] Captured APB transaction
+# 992690000: [testcase] Write - addr = 00000011, data = 00100001
+# 992690000: [scoreboard] Get packet from monitor
+# 992690000: [stimulus] Sent packet to driver
+# 992690000: [driver] Get packet from stimulus
+# 992750000: [monitor] Captured APB transaction
+# 992750000: [testcase] Write - addr = 00000000, data = 01011001
+# 992750000: [scoreboard] Get packet from monitor
+# 1002970000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1002970011: [stimulus] Sent packet to driver
+# 1002970011: [driver] Get packet from stimulus
+# 1003030000: [monitor] Captured APB transaction
+# 1003030000: [testcase] Write - addr = 00000011, data = 01000011
+# 1003030000: [scoreboard] Get packet from monitor
+# 1003030000: [stimulus] Sent packet to driver
+# 1003030000: [driver] Get packet from stimulus
+# 1003090000: [monitor] Captured APB transaction
+# 1003090000: [testcase] Write - addr = 00000000, data = 10111001
+# 1003090000: [scoreboard] Get packet from monitor
+# 1013310000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1013310011: [stimulus] Sent packet to driver
+# 1013310011: [driver] Get packet from stimulus
+# 1013370000: [monitor] Captured APB transaction
+# 1013370000: [testcase] Write - addr = 00000011, data = 11010111
+# 1013370000: [scoreboard] Get packet from monitor
+# 1013370000: [stimulus] Sent packet to driver
+# 1013370000: [driver] Get packet from stimulus
+# 1013430000: [monitor] Captured APB transaction
+# 1013430000: [testcase] Write - addr = 00000000, data = 10011001
+# 1013430000: [scoreboard] Get packet from monitor
+# 1023650000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1023650011: [stimulus] Sent packet to driver
+# 1023650011: [driver] Get packet from stimulus
+# 1023710000: [monitor] Captured APB transaction
+# 1023710000: [testcase] Write - addr = 00000011, data = 01001101
+# 1023710000: [scoreboard] Get packet from monitor
+# 1023710000: [stimulus] Sent packet to driver
+# 1023710000: [driver] Get packet from stimulus
+# 1023770000: [monitor] Captured APB transaction
+# 1023770000: [testcase] Write - addr = 00000000, data = 10111001
+# 1023770000: [scoreboard] Get packet from monitor
+# 1033990000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1033990011: [stimulus] Sent packet to driver
+# 1033990011: [driver] Get packet from stimulus
+# 1034050000: [monitor] Captured APB transaction
+# 1034050000: [testcase] Write - addr = 00000011, data = 11001111
+# 1034050000: [scoreboard] Get packet from monitor
+# 1034050000: [stimulus] Sent packet to driver
+# 1034050000: [driver] Get packet from stimulus
+# 1034110000: [monitor] Captured APB transaction
+# 1034110000: [testcase] Write - addr = 00000000, data = 00111001
+# 1034110000: [scoreboard] Get packet from monitor
+# 1044330000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1044330011: [stimulus] Sent packet to driver
+# 1044330011: [driver] Get packet from stimulus
+# 1044390000: [monitor] Captured APB transaction
+# 1044390000: [testcase] Write - addr = 00000011, data = 10001001
+# 1044390000: [scoreboard] Get packet from monitor
+# 1044390000: [stimulus] Sent packet to driver
+# 1044390000: [driver] Get packet from stimulus
+# 1044450000: [monitor] Captured APB transaction
+# 1044450000: [testcase] Write - addr = 00000000, data = 10011001
+# 1044450000: [scoreboard] Get packet from monitor
+# 1054670000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1054670011: [stimulus] Sent packet to driver
+# 1054670011: [driver] Get packet from stimulus
+# 1054730000: [monitor] Captured APB transaction
+# 1054730000: [testcase] Write - addr = 00000011, data = 10001101
+# 1054730000: [scoreboard] Get packet from monitor
+# 1054730000: [stimulus] Sent packet to driver
+# 1054730000: [driver] Get packet from stimulus
+# 1054790000: [monitor] Captured APB transaction
+# 1054790000: [testcase] Write - addr = 00000000, data = 10111001
+# 1054790000: [scoreboard] Get packet from monitor
+# 1065010000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1065010011: [stimulus] Sent packet to driver
+# 1065010011: [driver] Get packet from stimulus
+# 1065070000: [monitor] Captured APB transaction
+# 1065070000: [testcase] Write - addr = 00000011, data = 11010001
+# 1065070000: [scoreboard] Get packet from monitor
+# 1065070000: [stimulus] Sent packet to driver
+# 1065070000: [driver] Get packet from stimulus
+# 1065130000: [monitor] Captured APB transaction
+# 1065130000: [testcase] Write - addr = 00000000, data = 00011001
+# 1065130000: [scoreboard] Get packet from monitor
+# 1075350000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1075350011: [stimulus] Sent packet to driver
+# 1075350011: [driver] Get packet from stimulus
+# 1075410000: [monitor] Captured APB transaction
+# 1075410000: [testcase] Write - addr = 00000011, data = 11111011
+# 1075410000: [scoreboard] Get packet from monitor
+# 1075410000: [stimulus] Sent packet to driver
+# 1075410000: [driver] Get packet from stimulus
+# 1075470000: [monitor] Captured APB transaction
+# 1075470000: [testcase] Write - addr = 00000000, data = 01111001
+# 1075470000: [scoreboard] Get packet from monitor
+# 1085690000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1085690011: [stimulus] Sent packet to driver
+# 1085690011: [driver] Get packet from stimulus
+# 1085750000: [monitor] Captured APB transaction
+# 1085750000: [testcase] Write - addr = 00000011, data = 10011101
+# 1085750000: [scoreboard] Get packet from monitor
+# 1085750000: [stimulus] Sent packet to driver
+# 1085750000: [driver] Get packet from stimulus
+# 1085810000: [monitor] Captured APB transaction
+# 1085810000: [testcase] Write - addr = 00000000, data = 11011001
+# 1085810000: [scoreboard] Get packet from monitor
+# 1096030000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1096030011: [stimulus] Sent packet to driver
+# 1096030011: [driver] Get packet from stimulus
+# 1096090000: [monitor] Captured APB transaction
+# 1096090000: [testcase] Write - addr = 00000011, data = 11110101
+# 1096090000: [scoreboard] Get packet from monitor
+# 1096090000: [stimulus] Sent packet to driver
+# 1096090000: [driver] Get packet from stimulus
+# 1096150000: [monitor] Captured APB transaction
+# 1096150000: [testcase] Write - addr = 00000000, data = 10111001
+# 1096150000: [scoreboard] Get packet from monitor
+# 1106370000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1106370011: [stimulus] Sent packet to driver
+# 1106370011: [driver] Get packet from stimulus
+# 1106430000: [monitor] Captured APB transaction
+# 1106430000: [testcase] Write - addr = 00000011, data = 11111101
+# 1106430000: [scoreboard] Get packet from monitor
+# 1106430000: [stimulus] Sent packet to driver
+# 1106430000: [driver] Get packet from stimulus
+# 1106490000: [monitor] Captured APB transaction
+# 1106490000: [testcase] Write - addr = 00000000, data = 01011001
+# 1106490000: [scoreboard] Get packet from monitor
+# 1116710000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1116710011: [stimulus] Sent packet to driver
+# 1116710011: [driver] Get packet from stimulus
+# 1116770000: [monitor] Captured APB transaction
+# 1116770000: [testcase] Write - addr = 00000011, data = 11101111
+# 1116770000: [scoreboard] Get packet from monitor
+# 1116770000: [stimulus] Sent packet to driver
+# 1116770000: [driver] Get packet from stimulus
+# 1116830000: [monitor] Captured APB transaction
+# 1116830000: [testcase] Write - addr = 00000000, data = 01011001
+# 1116830000: [scoreboard] Get packet from monitor
+# 1127050000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1127050011: [stimulus] Sent packet to driver
+# 1127050011: [driver] Get packet from stimulus
+# 1127110000: [monitor] Captured APB transaction
+# 1127110000: [testcase] Write - addr = 00000011, data = 11000001
+# 1127110000: [scoreboard] Get packet from monitor
+# 1127110000: [stimulus] Sent packet to driver
+# 1127110000: [driver] Get packet from stimulus
+# 1127170000: [monitor] Captured APB transaction
+# 1127170000: [testcase] Write - addr = 00000000, data = 11011001
+# 1127170000: [scoreboard] Get packet from monitor
+# 1137390000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1137390011: [stimulus] Sent packet to driver
+# 1137390011: [driver] Get packet from stimulus
+# 1137450000: [monitor] Captured APB transaction
+# 1137450000: [testcase] Write - addr = 00000011, data = 10100101
+# 1137450000: [scoreboard] Get packet from monitor
+# 1137450000: [stimulus] Sent packet to driver
+# 1137450000: [driver] Get packet from stimulus
+# 1137510000: [monitor] Captured APB transaction
+# 1137510000: [testcase] Write - addr = 00000000, data = 10111001
+# 1137510000: [scoreboard] Get packet from monitor
+# 1147730000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1147730011: [stimulus] Sent packet to driver
+# 1147730011: [driver] Get packet from stimulus
+# 1147790000: [monitor] Captured APB transaction
+# 1147790000: [testcase] Write - addr = 00000011, data = 00101011
+# 1147790000: [scoreboard] Get packet from monitor
+# 1147790000: [stimulus] Sent packet to driver
+# 1147790000: [driver] Get packet from stimulus
+# 1147850000: [monitor] Captured APB transaction
+# 1147850000: [testcase] Write - addr = 00000000, data = 10011001
+# 1147850000: [scoreboard] Get packet from monitor
+# 1158070000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1158070011: [stimulus] Sent packet to driver
+# 1158070011: [driver] Get packet from stimulus
+# 1158130000: [monitor] Captured APB transaction
+# 1158130000: [testcase] Write - addr = 00000011, data = 10110001
+# 1158130000: [scoreboard] Get packet from monitor
+# 1158130000: [stimulus] Sent packet to driver
+# 1158130000: [driver] Get packet from stimulus
+# 1158190000: [monitor] Captured APB transaction
+# 1158190000: [testcase] Write - addr = 00000000, data = 00111001
+# 1158190000: [scoreboard] Get packet from monitor
+# 1168410000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1168410011: [stimulus] Sent packet to driver
+# 1168410011: [driver] Get packet from stimulus
+# 1168470000: [monitor] Captured APB transaction
+# 1168470000: [testcase] Write - addr = 00000011, data = 00000101
+# 1168470000: [scoreboard] Get packet from monitor
+# 1168470000: [stimulus] Sent packet to driver
+# 1168470000: [driver] Get packet from stimulus
+# 1168530000: [monitor] Captured APB transaction
+# 1168530000: [testcase] Write - addr = 00000000, data = 10011001
+# 1168530000: [scoreboard] Get packet from monitor
+# 1178750000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1178750011: [stimulus] Sent packet to driver
+# 1178750011: [driver] Get packet from stimulus
+# 1178810000: [monitor] Captured APB transaction
+# 1178810000: [testcase] Write - addr = 00000011, data = 10110001
+# 1178810000: [scoreboard] Get packet from monitor
+# 1178810000: [stimulus] Sent packet to driver
+# 1178810000: [driver] Get packet from stimulus
+# 1178870000: [monitor] Captured APB transaction
+# 1178870000: [testcase] Write - addr = 00000000, data = 10111001
+# 1178870000: [scoreboard] Get packet from monitor
+# 1189090000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1189090011: [stimulus] Sent packet to driver
+# 1189090011: [driver] Get packet from stimulus
+# 1189150000: [monitor] Captured APB transaction
+# 1189150000: [testcase] Write - addr = 00000011, data = 11100101
+# 1189150000: [scoreboard] Get packet from monitor
+# 1189150000: [stimulus] Sent packet to driver
+# 1189150000: [driver] Get packet from stimulus
+# 1189210000: [monitor] Captured APB transaction
+# 1189210000: [testcase] Write - addr = 00000000, data = 10011001
+# 1189210000: [scoreboard] Get packet from monitor
+# 1199430000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1199430011: [stimulus] Sent packet to driver
+# 1199430011: [driver] Get packet from stimulus
+# 1199490000: [monitor] Captured APB transaction
+# 1199490000: [testcase] Write - addr = 00000011, data = 10101101
+# 1199490000: [scoreboard] Get packet from monitor
+# 1199490000: [stimulus] Sent packet to driver
+# 1199490000: [driver] Get packet from stimulus
+# 1199550000: [monitor] Captured APB transaction
+# 1199550000: [testcase] Write - addr = 00000000, data = 01111001
+# 1199550000: [scoreboard] Get packet from monitor
+# 1209770000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1209770011: [stimulus] Sent packet to driver
+# 1209770011: [driver] Get packet from stimulus
+# 1209830000: [monitor] Captured APB transaction
+# 1209830000: [testcase] Write - addr = 00000011, data = 11100101
+# 1209830000: [scoreboard] Get packet from monitor
+# 1209830000: [stimulus] Sent packet to driver
+# 1209830000: [driver] Get packet from stimulus
+# 1209890000: [monitor] Captured APB transaction
+# 1209890000: [testcase] Write - addr = 00000000, data = 01111001
+# 1209890000: [scoreboard] Get packet from monitor
+# 1220110000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1220110011: [stimulus] Sent packet to driver
+# 1220110011: [driver] Get packet from stimulus
+# 1220170000: [monitor] Captured APB transaction
+# 1220170000: [testcase] Write - addr = 00000011, data = 11001001
+# 1220170000: [scoreboard] Get packet from monitor
+# 1220170000: [stimulus] Sent packet to driver
+# 1220170000: [driver] Get packet from stimulus
+# 1220230000: [monitor] Captured APB transaction
+# 1220230000: [testcase] Write - addr = 00000000, data = 10011001
+# 1220230000: [scoreboard] Get packet from monitor
+# 1230450000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1230450011: [stimulus] Sent packet to driver
+# 1230450011: [driver] Get packet from stimulus
+# 1230510000: [monitor] Captured APB transaction
+# 1230510000: [testcase] Write - addr = 00000011, data = 00100111
+# 1230510000: [scoreboard] Get packet from monitor
+# 1230510000: [stimulus] Sent packet to driver
+# 1230510000: [driver] Get packet from stimulus
+# 1230570000: [monitor] Captured APB transaction
+# 1230570000: [testcase] Write - addr = 00000000, data = 10111001
+# 1230570000: [scoreboard] Get packet from monitor
+# 1240790000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1240790011: [stimulus] Sent packet to driver
+# 1240790011: [driver] Get packet from stimulus
+# 1240850000: [monitor] Captured APB transaction
+# 1240850000: [testcase] Write - addr = 00000011, data = 01100001
+# 1240850000: [scoreboard] Get packet from monitor
+# 1240850000: [stimulus] Sent packet to driver
+# 1240850000: [driver] Get packet from stimulus
+# 1240910000: [monitor] Captured APB transaction
+# 1240910000: [testcase] Write - addr = 00000000, data = 00011001
+# 1240910000: [scoreboard] Get packet from monitor
+# 1251130000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1251130011: [stimulus] Sent packet to driver
+# 1251130011: [driver] Get packet from stimulus
+# 1251190000: [monitor] Captured APB transaction
+# 1251190000: [testcase] Write - addr = 00000011, data = 11011011
+# 1251190000: [scoreboard] Get packet from monitor
+# 1251190000: [stimulus] Sent packet to driver
+# 1251190000: [driver] Get packet from stimulus
+# 1251250000: [monitor] Captured APB transaction
+# 1251250000: [testcase] Write - addr = 00000000, data = 11011001
+# 1251250000: [scoreboard] Get packet from monitor
+# 1261470000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1261470011: [stimulus] Sent packet to driver
+# 1261470011: [driver] Get packet from stimulus
+# 1261530000: [monitor] Captured APB transaction
+# 1261530000: [testcase] Write - addr = 00000011, data = 01111001
+# 1261530000: [scoreboard] Get packet from monitor
+# 1261530000: [stimulus] Sent packet to driver
+# 1261530000: [driver] Get packet from stimulus
+# 1261590000: [monitor] Captured APB transaction
+# 1261590000: [testcase] Write - addr = 00000000, data = 00111001
+# 1261590000: [scoreboard] Get packet from monitor
+# 1271810000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1271810011: [stimulus] Sent packet to driver
+# 1271810011: [driver] Get packet from stimulus
+# 1271870000: [monitor] Captured APB transaction
+# 1271870000: [testcase] Write - addr = 00000011, data = 00001111
+# 1271870000: [scoreboard] Get packet from monitor
+# 1271870000: [stimulus] Sent packet to driver
+# 1271870000: [driver] Get packet from stimulus
+# 1271930000: [monitor] Captured APB transaction
+# 1271930000: [testcase] Write - addr = 00000000, data = 00111001
+# 1271930000: [scoreboard] Get packet from monitor
+# 1282150000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1282150011: [stimulus] Sent packet to driver
+# 1282150011: [driver] Get packet from stimulus
+# 1282210000: [monitor] Captured APB transaction
+# 1282210000: [testcase] Write - addr = 00000011, data = 00010011
+# 1282210000: [scoreboard] Get packet from monitor
+# 1282210000: [stimulus] Sent packet to driver
+# 1282210000: [driver] Get packet from stimulus
+# 1282270000: [monitor] Captured APB transaction
+# 1282270000: [testcase] Write - addr = 00000000, data = 01011001
+# 1282270000: [scoreboard] Get packet from monitor
+# 1292490000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1292490011: [stimulus] Sent packet to driver
+# 1292490011: [driver] Get packet from stimulus
+# 1292550000: [monitor] Captured APB transaction
+# 1292550000: [testcase] Write - addr = 00000011, data = 00000011
+# 1292550000: [scoreboard] Get packet from monitor
+# 1292550000: [stimulus] Sent packet to driver
+# 1292550000: [driver] Get packet from stimulus
+# 1292610000: [monitor] Captured APB transaction
+# 1292610000: [testcase] Write - addr = 00000000, data = 01111001
+# 1292610000: [scoreboard] Get packet from monitor
+# 1302830000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1302830011: [stimulus] Sent packet to driver
+# 1302830011: [driver] Get packet from stimulus
+# 1302890000: [monitor] Captured APB transaction
+# 1302890000: [testcase] Write - addr = 00000011, data = 00111001
+# 1302890000: [scoreboard] Get packet from monitor
+# 1302890000: [stimulus] Sent packet to driver
+# 1302890000: [driver] Get packet from stimulus
+# 1302950000: [monitor] Captured APB transaction
+# 1302950000: [testcase] Write - addr = 00000000, data = 00011001
+# 1302950000: [scoreboard] Get packet from monitor
+# 1313170000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1313170011: [stimulus] Sent packet to driver
+# 1313170011: [driver] Get packet from stimulus
+# 1313230000: [monitor] Captured APB transaction
+# 1313230000: [testcase] Write - addr = 00000011, data = 10011101
+# 1313230000: [scoreboard] Get packet from monitor
+# 1313230000: [stimulus] Sent packet to driver
+# 1313230000: [driver] Get packet from stimulus
+# 1313290000: [monitor] Captured APB transaction
+# 1313290000: [testcase] Write - addr = 00000000, data = 10011001
+# 1313290000: [scoreboard] Get packet from monitor
+# 1323510000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1323510011: [stimulus] Sent packet to driver
+# 1323510011: [driver] Get packet from stimulus
+# 1323570000: [monitor] Captured APB transaction
+# 1323570000: [testcase] Write - addr = 00000011, data = 01001111
+# 1323570000: [scoreboard] Get packet from monitor
+# 1323570000: [stimulus] Sent packet to driver
+# 1323570000: [driver] Get packet from stimulus
+# 1323630000: [monitor] Captured APB transaction
+# 1323630000: [testcase] Write - addr = 00000000, data = 10011001
+# 1323630000: [scoreboard] Get packet from monitor
+# 1333850000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1333850011: [stimulus] Sent packet to driver
+# 1333850011: [driver] Get packet from stimulus
+# 1333910000: [monitor] Captured APB transaction
+# 1333910000: [testcase] Write - addr = 00000011, data = 00110011
+# 1333910000: [scoreboard] Get packet from monitor
+# 1333910000: [stimulus] Sent packet to driver
+# 1333910000: [driver] Get packet from stimulus
+# 1333970000: [monitor] Captured APB transaction
+# 1333970000: [testcase] Write - addr = 00000000, data = 11111001
+# 1333970000: [scoreboard] Get packet from monitor
+# 1344190000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1344190011: [stimulus] Sent packet to driver
+# 1344190011: [driver] Get packet from stimulus
+# 1344250000: [monitor] Captured APB transaction
+# 1344250000: [testcase] Write - addr = 00000011, data = 10010101
+# 1344250000: [scoreboard] Get packet from monitor
+# 1344250000: [stimulus] Sent packet to driver
+# 1344250000: [driver] Get packet from stimulus
+# 1344310000: [monitor] Captured APB transaction
+# 1344310000: [testcase] Write - addr = 00000000, data = 01111001
+# 1344310000: [scoreboard] Get packet from monitor
+# 1354530000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1354530011: [stimulus] Sent packet to driver
+# 1354530011: [driver] Get packet from stimulus
+# 1354590000: [monitor] Captured APB transaction
+# 1354590000: [testcase] Write - addr = 00000011, data = 01101101
+# 1354590000: [scoreboard] Get packet from monitor
+# 1354590000: [stimulus] Sent packet to driver
+# 1354590000: [driver] Get packet from stimulus
+# 1354650000: [monitor] Captured APB transaction
+# 1354650000: [testcase] Write - addr = 00000000, data = 11011001
+# 1354650000: [scoreboard] Get packet from monitor
+# 1364870000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1364870011: [stimulus] Sent packet to driver
+# 1364870011: [driver] Get packet from stimulus
+# 1364930000: [monitor] Captured APB transaction
+# 1364930000: [testcase] Write - addr = 00000011, data = 10001011
+# 1364930000: [scoreboard] Get packet from monitor
+# 1364930000: [stimulus] Sent packet to driver
+# 1364930000: [driver] Get packet from stimulus
+# 1364990000: [monitor] Captured APB transaction
+# 1364990000: [testcase] Write - addr = 00000000, data = 01011001
+# 1364990000: [scoreboard] Get packet from monitor
+# 1375210000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1375210011: [stimulus] Sent packet to driver
+# 1375210011: [driver] Get packet from stimulus
+# 1375270000: [monitor] Captured APB transaction
+# 1375270000: [testcase] Write - addr = 00000011, data = 10111101
+# 1375270000: [scoreboard] Get packet from monitor
+# 1375270000: [stimulus] Sent packet to driver
+# 1375270000: [driver] Get packet from stimulus
+# 1375330000: [monitor] Captured APB transaction
+# 1375330000: [testcase] Write - addr = 00000000, data = 10111001
+# 1375330000: [scoreboard] Get packet from monitor
+# 1385550000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1385550011: [stimulus] Sent packet to driver
+# 1385550011: [driver] Get packet from stimulus
+# 1385610000: [monitor] Captured APB transaction
+# 1385610000: [testcase] Write - addr = 00000011, data = 00111001
+# 1385610000: [scoreboard] Get packet from monitor
+# 1385610000: [stimulus] Sent packet to driver
+# 1385610000: [driver] Get packet from stimulus
+# 1385670000: [monitor] Captured APB transaction
+# 1385670000: [testcase] Write - addr = 00000000, data = 10111001
+# 1385670000: [scoreboard] Get packet from monitor
+# 1395890000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1395890011: [stimulus] Sent packet to driver
+# 1395890011: [driver] Get packet from stimulus
+# 1395950000: [monitor] Captured APB transaction
+# 1395950000: [testcase] Write - addr = 00000011, data = 10010001
+# 1395950000: [scoreboard] Get packet from monitor
+# 1395950000: [stimulus] Sent packet to driver
+# 1395950000: [driver] Get packet from stimulus
+# 1396010000: [monitor] Captured APB transaction
+# 1396010000: [testcase] Write - addr = 00000000, data = 01111001
+# 1396010000: [scoreboard] Get packet from monitor
+# 1406230000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1406230011: [stimulus] Sent packet to driver
+# 1406230011: [driver] Get packet from stimulus
+# 1406290000: [monitor] Captured APB transaction
+# 1406290000: [testcase] Write - addr = 00000011, data = 01011011
+# 1406290000: [scoreboard] Get packet from monitor
+# 1406290000: [stimulus] Sent packet to driver
+# 1406290000: [driver] Get packet from stimulus
+# 1406350000: [monitor] Captured APB transaction
+# 1406350000: [testcase] Write - addr = 00000000, data = 00011001
+# 1406350000: [scoreboard] Get packet from monitor
+# 1416570000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1416570011: [stimulus] Sent packet to driver
+# 1416570011: [driver] Get packet from stimulus
+# 1416630000: [monitor] Captured APB transaction
+# 1416630000: [testcase] Write - addr = 00000011, data = 10000001
+# 1416630000: [scoreboard] Get packet from monitor
+# 1416630000: [stimulus] Sent packet to driver
+# 1416630000: [driver] Get packet from stimulus
+# 1416690000: [monitor] Captured APB transaction
+# 1416690000: [testcase] Write - addr = 00000000, data = 11011001
+# 1416690000: [scoreboard] Get packet from monitor
+# 1426910000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1426910011: [stimulus] Sent packet to driver
+# 1426910011: [driver] Get packet from stimulus
+# 1426970000: [monitor] Captured APB transaction
+# 1426970000: [testcase] Write - addr = 00000011, data = 11011111
+# 1426970000: [scoreboard] Get packet from monitor
+# 1426970000: [stimulus] Sent packet to driver
+# 1426970000: [driver] Get packet from stimulus
+# 1427030000: [monitor] Captured APB transaction
+# 1427030000: [testcase] Write - addr = 00000000, data = 10111001
+# 1427030000: [scoreboard] Get packet from monitor
+# 1437250000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1437250011: [stimulus] Sent packet to driver
+# 1437250011: [driver] Get packet from stimulus
+# 1437310000: [monitor] Captured APB transaction
+# 1437310000: [testcase] Write - addr = 00000011, data = 10011001
+# 1437310000: [scoreboard] Get packet from monitor
+# 1437310000: [stimulus] Sent packet to driver
+# 1437310000: [driver] Get packet from stimulus
+# 1437370000: [monitor] Captured APB transaction
+# 1437370000: [testcase] Write - addr = 00000000, data = 10011001
+# 1437370000: [scoreboard] Get packet from monitor
+# 1447590000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1447590011: [stimulus] Sent packet to driver
+# 1447590011: [driver] Get packet from stimulus
+# 1447650000: [monitor] Captured APB transaction
+# 1447650000: [testcase] Write - addr = 00000011, data = 00000001
+# 1447650000: [scoreboard] Get packet from monitor
+# 1447650000: [stimulus] Sent packet to driver
+# 1447650000: [driver] Get packet from stimulus
+# 1447710000: [monitor] Captured APB transaction
+# 1447710000: [testcase] Write - addr = 00000000, data = 10011001
+# 1447710000: [scoreboard] Get packet from monitor
+# 1457930000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1457930011: [stimulus] Sent packet to driver
+# 1457930011: [driver] Get packet from stimulus
+# 1457990000: [monitor] Captured APB transaction
+# 1457990000: [testcase] Write - addr = 00000011, data = 10011111
+# 1457990000: [scoreboard] Get packet from monitor
+# 1457990000: [stimulus] Sent packet to driver
+# 1457990000: [driver] Get packet from stimulus
+# 1458050000: [monitor] Captured APB transaction
+# 1458050000: [testcase] Write - addr = 00000000, data = 01111001
+# 1458050000: [scoreboard] Get packet from monitor
+# 1468270000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1468270011: [stimulus] Sent packet to driver
+# 1468270011: [driver] Get packet from stimulus
+# 1468330000: [monitor] Captured APB transaction
+# 1468330000: [testcase] Write - addr = 00000011, data = 01101111
+# 1468330000: [scoreboard] Get packet from monitor
+# 1468330000: [stimulus] Sent packet to driver
+# 1468330000: [driver] Get packet from stimulus
+# 1468390000: [monitor] Captured APB transaction
+# 1468390000: [testcase] Write - addr = 00000000, data = 10111001
+# 1468390000: [scoreboard] Get packet from monitor
+# 1478610000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1478610011: [stimulus] Sent packet to driver
+# 1478610011: [driver] Get packet from stimulus
+# 1478670000: [monitor] Captured APB transaction
+# 1478670000: [testcase] Write - addr = 00000011, data = 10011101
+# 1478670000: [scoreboard] Get packet from monitor
+# 1478670000: [stimulus] Sent packet to driver
+# 1478670000: [driver] Get packet from stimulus
+# 1478730000: [monitor] Captured APB transaction
+# 1478730000: [testcase] Write - addr = 00000000, data = 00111001
+# 1478730000: [scoreboard] Get packet from monitor
+# 1488950000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1488950011: [stimulus] Sent packet to driver
+# 1488950011: [driver] Get packet from stimulus
+# 1489010000: [monitor] Captured APB transaction
+# 1489010000: [testcase] Write - addr = 00000011, data = 10111101
+# 1489010000: [scoreboard] Get packet from monitor
+# 1489010000: [stimulus] Sent packet to driver
+# 1489010000: [driver] Get packet from stimulus
+# 1489070000: [monitor] Captured APB transaction
+# 1489070000: [testcase] Write - addr = 00000000, data = 01011001
+# 1489070000: [scoreboard] Get packet from monitor
+# 1499290000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1499290011: [stimulus] Sent packet to driver
+# 1499290011: [driver] Get packet from stimulus
+# 1499350000: [monitor] Captured APB transaction
+# 1499350000: [testcase] Write - addr = 00000011, data = 10000011
+# 1499350000: [scoreboard] Get packet from monitor
+# 1499350000: [stimulus] Sent packet to driver
+# 1499350000: [driver] Get packet from stimulus
+# 1499410000: [monitor] Captured APB transaction
+# 1499410000: [testcase] Write - addr = 00000000, data = 01111001
+# 1499410000: [scoreboard] Get packet from monitor
+# 1509630000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1509630011: [stimulus] Sent packet to driver
+# 1509630011: [driver] Get packet from stimulus
+# 1509690000: [monitor] Captured APB transaction
+# 1509690000: [testcase] Write - addr = 00000011, data = 01000011
+# 1509690000: [scoreboard] Get packet from monitor
+# 1509690000: [stimulus] Sent packet to driver
+# 1509690000: [driver] Get packet from stimulus
+# 1509750000: [monitor] Captured APB transaction
+# 1509750000: [testcase] Write - addr = 00000000, data = 00011001
+# 1509750000: [scoreboard] Get packet from monitor
+# 1519970000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1519970011: [stimulus] Sent packet to driver
+# 1519970011: [driver] Get packet from stimulus
+# 1520030000: [monitor] Captured APB transaction
+# 1520030000: [testcase] Write - addr = 00000011, data = 01000011
+# 1520030000: [scoreboard] Get packet from monitor
+# 1520030000: [stimulus] Sent packet to driver
+# 1520030000: [driver] Get packet from stimulus
+# 1520090000: [monitor] Captured APB transaction
+# 1520090000: [testcase] Write - addr = 00000000, data = 10011001
+# 1520090000: [scoreboard] Get packet from monitor
+# 1530310000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1530310011: [stimulus] Sent packet to driver
+# 1530310011: [driver] Get packet from stimulus
+# 1530370000: [monitor] Captured APB transaction
+# 1530370000: [testcase] Write - addr = 00000011, data = 00011101
+# 1530370000: [scoreboard] Get packet from monitor
+# 1530370000: [stimulus] Sent packet to driver
+# 1530370000: [driver] Get packet from stimulus
+# 1530430000: [monitor] Captured APB transaction
+# 1530430000: [testcase] Write - addr = 00000000, data = 11011001
+# 1530430000: [scoreboard] Get packet from monitor
+# 1540650000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1540650011: [stimulus] Sent packet to driver
+# 1540650011: [driver] Get packet from stimulus
+# 1540710000: [monitor] Captured APB transaction
+# 1540710000: [testcase] Write - addr = 00000011, data = 00010011
+# 1540710000: [scoreboard] Get packet from monitor
+# 1540710000: [stimulus] Sent packet to driver
+# 1540710000: [driver] Get packet from stimulus
+# 1540770000: [monitor] Captured APB transaction
+# 1540770000: [testcase] Write - addr = 00000000, data = 00011001
+# 1540770000: [scoreboard] Get packet from monitor
+# 1550990000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1550990011: [stimulus] Sent packet to driver
+# 1550990011: [driver] Get packet from stimulus
+# 1551050000: [monitor] Captured APB transaction
+# 1551050000: [testcase] Write - addr = 00000011, data = 10001111
+# 1551050000: [scoreboard] Get packet from monitor
+# 1551050000: [stimulus] Sent packet to driver
+# 1551050000: [driver] Get packet from stimulus
+# 1551110000: [monitor] Captured APB transaction
+# 1551110000: [testcase] Write - addr = 00000000, data = 10111001
+# 1551110000: [scoreboard] Get packet from monitor
+# 1561330000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1561330011: [stimulus] Sent packet to driver
+# 1561330011: [driver] Get packet from stimulus
+# 1561390000: [monitor] Captured APB transaction
+# 1561390000: [testcase] Write - addr = 00000011, data = 11101011
+# 1561390000: [scoreboard] Get packet from monitor
+# 1561390000: [stimulus] Sent packet to driver
+# 1561390000: [driver] Get packet from stimulus
+# 1561450000: [monitor] Captured APB transaction
+# 1561450000: [testcase] Write - addr = 00000000, data = 01011001
+# 1561450000: [scoreboard] Get packet from monitor
+# 1571670000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1571670011: [stimulus] Sent packet to driver
+# 1571670011: [driver] Get packet from stimulus
+# 1571730000: [monitor] Captured APB transaction
+# 1571730000: [testcase] Write - addr = 00000011, data = 01100001
+# 1571730000: [scoreboard] Get packet from monitor
+# 1571730000: [stimulus] Sent packet to driver
+# 1571730000: [driver] Get packet from stimulus
+# 1571790000: [monitor] Captured APB transaction
+# 1571790000: [testcase] Write - addr = 00000000, data = 10111001
+# 1571790000: [scoreboard] Get packet from monitor
+# 1582010000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1582010011: [stimulus] Sent packet to driver
+# 1582010011: [driver] Get packet from stimulus
+# 1582070000: [monitor] Captured APB transaction
+# 1582070000: [testcase] Write - addr = 00000011, data = 01001101
+# 1582070000: [scoreboard] Get packet from monitor
+# 1582070000: [stimulus] Sent packet to driver
+# 1582070000: [driver] Get packet from stimulus
+# 1582130000: [monitor] Captured APB transaction
+# 1582130000: [testcase] Write - addr = 00000000, data = 11111001
+# 1582130000: [scoreboard] Get packet from monitor
+# 1592350000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1592350011: [stimulus] Sent packet to driver
+# 1592350011: [driver] Get packet from stimulus
+# 1592410000: [monitor] Captured APB transaction
+# 1592410000: [testcase] Write - addr = 00000011, data = 01000001
+# 1592410000: [scoreboard] Get packet from monitor
+# 1592410000: [stimulus] Sent packet to driver
+# 1592410000: [driver] Get packet from stimulus
+# 1592470000: [monitor] Captured APB transaction
+# 1592470000: [testcase] Write - addr = 00000000, data = 10011001
+# 1592470000: [scoreboard] Get packet from monitor
+# 1602690000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1602690011: [stimulus] Sent packet to driver
+# 1602690011: [driver] Get packet from stimulus
+# 1602750000: [monitor] Captured APB transaction
+# 1602750000: [testcase] Write - addr = 00000011, data = 11000111
+# 1602750000: [scoreboard] Get packet from monitor
+# 1602750000: [stimulus] Sent packet to driver
+# 1602750000: [driver] Get packet from stimulus
+# 1602810000: [monitor] Captured APB transaction
+# 1602810000: [testcase] Write - addr = 00000000, data = 10011001
+# 1602810000: [scoreboard] Get packet from monitor
+# 1613030000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1613030011: [stimulus] Sent packet to driver
+# 1613030011: [driver] Get packet from stimulus
+# 1613090000: [monitor] Captured APB transaction
+# 1613090000: [testcase] Write - addr = 00000011, data = 01111011
+# 1613090000: [scoreboard] Get packet from monitor
+# 1613090000: [stimulus] Sent packet to driver
+# 1613090000: [driver] Get packet from stimulus
+# 1613150000: [monitor] Captured APB transaction
+# 1613150000: [testcase] Write - addr = 00000000, data = 11011001
+# 1613150000: [scoreboard] Get packet from monitor
+# 1623370000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1623370011: [stimulus] Sent packet to driver
+# 1623370011: [driver] Get packet from stimulus
+# 1623430000: [monitor] Captured APB transaction
+# 1623430000: [testcase] Write - addr = 00000011, data = 00010101
+# 1623430000: [scoreboard] Get packet from monitor
+# 1623430000: [stimulus] Sent packet to driver
+# 1623430000: [driver] Get packet from stimulus
+# 1623490000: [monitor] Captured APB transaction
+# 1623490000: [testcase] Write - addr = 00000000, data = 10111001
+# 1623490000: [scoreboard] Get packet from monitor
+# 1633710000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1633710011: [stimulus] Sent packet to driver
+# 1633710011: [driver] Get packet from stimulus
+# 1633770000: [monitor] Captured APB transaction
+# 1633770000: [testcase] Write - addr = 00000011, data = 10100111
+# 1633770000: [scoreboard] Get packet from monitor
+# 1633770000: [stimulus] Sent packet to driver
+# 1633770000: [driver] Get packet from stimulus
+# 1633830000: [monitor] Captured APB transaction
+# 1633830000: [testcase] Write - addr = 00000000, data = 10111001
+# 1633830000: [scoreboard] Get packet from monitor
+# 1644050000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1644050011: [stimulus] Sent packet to driver
+# 1644050011: [driver] Get packet from stimulus
+# 1644110000: [monitor] Captured APB transaction
+# 1644110000: [testcase] Write - addr = 00000011, data = 11010111
+# 1644110000: [scoreboard] Get packet from monitor
+# 1644110000: [stimulus] Sent packet to driver
+# 1644110000: [driver] Get packet from stimulus
+# 1644170000: [monitor] Captured APB transaction
+# 1644170000: [testcase] Write - addr = 00000000, data = 00111001
+# 1644170000: [scoreboard] Get packet from monitor
+# 1654390000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1654390011: [stimulus] Sent packet to driver
+# 1654390011: [driver] Get packet from stimulus
+# 1654450000: [monitor] Captured APB transaction
+# 1654450000: [testcase] Write - addr = 00000011, data = 00101011
+# 1654450000: [scoreboard] Get packet from monitor
+# 1654450000: [stimulus] Sent packet to driver
+# 1654450000: [driver] Get packet from stimulus
+# 1654510000: [monitor] Captured APB transaction
+# 1654510000: [testcase] Write - addr = 00000000, data = 01111001
+# 1654510000: [scoreboard] Get packet from monitor
+# 1664730000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1664730011: [stimulus] Sent packet to driver
+# 1664730011: [driver] Get packet from stimulus
+# 1664790000: [monitor] Captured APB transaction
+# 1664790000: [testcase] Write - addr = 00000011, data = 00110111
+# 1664790000: [scoreboard] Get packet from monitor
+# 1664790000: [stimulus] Sent packet to driver
+# 1664790000: [driver] Get packet from stimulus
+# 1664850000: [monitor] Captured APB transaction
+# 1664850000: [testcase] Write - addr = 00000000, data = 11011001
+# 1664850000: [scoreboard] Get packet from monitor
+# 1675070000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1675070011: [stimulus] Sent packet to driver
+# 1675070011: [driver] Get packet from stimulus
+# 1675130000: [monitor] Captured APB transaction
+# 1675130000: [testcase] Write - addr = 00000011, data = 00010111
+# 1675130000: [scoreboard] Get packet from monitor
+# 1675130000: [stimulus] Sent packet to driver
+# 1675130000: [driver] Get packet from stimulus
+# 1675190000: [monitor] Captured APB transaction
+# 1675190000: [testcase] Write - addr = 00000000, data = 11011001
+# 1675190000: [scoreboard] Get packet from monitor
+# 1685410000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1685410011: [stimulus] Sent packet to driver
+# 1685410011: [driver] Get packet from stimulus
+# 1685470000: [monitor] Captured APB transaction
+# 1685470000: [testcase] Write - addr = 00000011, data = 10000001
+# 1685470000: [scoreboard] Get packet from monitor
+# 1685470000: [stimulus] Sent packet to driver
+# 1685470000: [driver] Get packet from stimulus
+# 1685530000: [monitor] Captured APB transaction
+# 1685530000: [testcase] Write - addr = 00000000, data = 01111001
+# 1685530000: [scoreboard] Get packet from monitor
+# 1695750000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1695750011: [stimulus] Sent packet to driver
+# 1695750011: [driver] Get packet from stimulus
+# 1695810000: [monitor] Captured APB transaction
+# 1695810000: [testcase] Write - addr = 00000011, data = 11101011
+# 1695810000: [scoreboard] Get packet from monitor
+# 1695810000: [stimulus] Sent packet to driver
+# 1695810000: [driver] Get packet from stimulus
+# 1695870000: [monitor] Captured APB transaction
+# 1695870000: [testcase] Write - addr = 00000000, data = 00111001
+# 1695870000: [scoreboard] Get packet from monitor
+# 1706090000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1706090011: [stimulus] Sent packet to driver
+# 1706090011: [driver] Get packet from stimulus
+# 1706150000: [monitor] Captured APB transaction
+# 1706150000: [testcase] Write - addr = 00000011, data = 11000001
+# 1706150000: [scoreboard] Get packet from monitor
+# 1706150000: [stimulus] Sent packet to driver
+# 1706150000: [driver] Get packet from stimulus
+# 1706210000: [monitor] Captured APB transaction
+# 1706210000: [testcase] Write - addr = 00000000, data = 01111001
+# 1706210000: [scoreboard] Get packet from monitor
+# 1716430000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1716430011: [stimulus] Sent packet to driver
+# 1716430011: [driver] Get packet from stimulus
+# 1716490000: [monitor] Captured APB transaction
+# 1716490000: [testcase] Write - addr = 00000011, data = 00010011
+# 1716490000: [scoreboard] Get packet from monitor
+# 1716490000: [stimulus] Sent packet to driver
+# 1716490000: [driver] Get packet from stimulus
+# 1716550000: [monitor] Captured APB transaction
+# 1716550000: [testcase] Write - addr = 00000000, data = 10011001
+# 1716550000: [scoreboard] Get packet from monitor
+# 1726770000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1726770011: [stimulus] Sent packet to driver
+# 1726770011: [driver] Get packet from stimulus
+# 1726830000: [monitor] Captured APB transaction
+# 1726830000: [testcase] Write - addr = 00000011, data = 01011011
+# 1726830000: [scoreboard] Get packet from monitor
+# 1726830000: [stimulus] Sent packet to driver
+# 1726830000: [driver] Get packet from stimulus
+# 1726890000: [monitor] Captured APB transaction
+# 1726890000: [testcase] Write - addr = 00000000, data = 11111001
+# 1726890000: [scoreboard] Get packet from monitor
+# 1737110000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1737110011: [stimulus] Sent packet to driver
+# 1737110011: [driver] Get packet from stimulus
+# 1737170000: [monitor] Captured APB transaction
+# 1737170000: [testcase] Write - addr = 00000011, data = 11100101
+# 1737170000: [scoreboard] Get packet from monitor
+# 1737170000: [stimulus] Sent packet to driver
+# 1737170000: [driver] Get packet from stimulus
+# 1737230000: [monitor] Captured APB transaction
+# 1737230000: [testcase] Write - addr = 00000000, data = 11011001
+# 1737230000: [scoreboard] Get packet from monitor
+# 1747450000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1747450011: [stimulus] Sent packet to driver
+# 1747450011: [driver] Get packet from stimulus
+# 1747510000: [monitor] Captured APB transaction
+# 1747510000: [testcase] Write - addr = 00000011, data = 00000111
+# 1747510000: [scoreboard] Get packet from monitor
+# 1747510000: [stimulus] Sent packet to driver
+# 1747510000: [driver] Get packet from stimulus
+# 1747570000: [monitor] Captured APB transaction
+# 1747570000: [testcase] Write - addr = 00000000, data = 10111001
+# 1747570000: [scoreboard] Get packet from monitor
+# 1757790000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1757790011: [stimulus] Sent packet to driver
+# 1757790011: [driver] Get packet from stimulus
+# 1757850000: [monitor] Captured APB transaction
+# 1757850000: [testcase] Write - addr = 00000011, data = 00100101
+# 1757850000: [scoreboard] Get packet from monitor
+# 1757850000: [stimulus] Sent packet to driver
+# 1757850000: [driver] Get packet from stimulus
+# 1757910000: [monitor] Captured APB transaction
+# 1757910000: [testcase] Write - addr = 00000000, data = 00011001
+# 1757910000: [scoreboard] Get packet from monitor
+# 1768130000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1768130011: [stimulus] Sent packet to driver
+# 1768130011: [driver] Get packet from stimulus
+# 1768190000: [monitor] Captured APB transaction
+# 1768190000: [testcase] Write - addr = 00000011, data = 00100111
+# 1768190000: [scoreboard] Get packet from monitor
+# 1768190000: [stimulus] Sent packet to driver
+# 1768190000: [driver] Get packet from stimulus
+# 1768250000: [monitor] Captured APB transaction
+# 1768250000: [testcase] Write - addr = 00000000, data = 10111001
+# 1768250000: [scoreboard] Get packet from monitor
+# 1778470000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1778470011: [stimulus] Sent packet to driver
+# 1778470011: [driver] Get packet from stimulus
+# 1778530000: [monitor] Captured APB transaction
+# 1778530000: [testcase] Write - addr = 00000011, data = 01110011
+# 1778530000: [scoreboard] Get packet from monitor
+# 1778530000: [stimulus] Sent packet to driver
+# 1778530000: [driver] Get packet from stimulus
+# 1778590000: [monitor] Captured APB transaction
+# 1778590000: [testcase] Write - addr = 00000000, data = 11111001
+# 1778590000: [scoreboard] Get packet from monitor
+# 1788810000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1788810011: [stimulus] Sent packet to driver
+# 1788810011: [driver] Get packet from stimulus
+# 1788870000: [monitor] Captured APB transaction
+# 1788870000: [testcase] Write - addr = 00000011, data = 00111001
+# 1788870000: [scoreboard] Get packet from monitor
+# 1788870000: [stimulus] Sent packet to driver
+# 1788870000: [driver] Get packet from stimulus
+# 1788930000: [monitor] Captured APB transaction
+# 1788930000: [testcase] Write - addr = 00000000, data = 11011001
+# 1788930000: [scoreboard] Get packet from monitor
+# 1799150000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1799150011: [stimulus] Sent packet to driver
+# 1799150011: [driver] Get packet from stimulus
+# 1799210000: [monitor] Captured APB transaction
+# 1799210000: [testcase] Write - addr = 00000011, data = 00100101
+# 1799210000: [scoreboard] Get packet from monitor
+# 1799210000: [stimulus] Sent packet to driver
+# 1799210000: [driver] Get packet from stimulus
+# 1799270000: [monitor] Captured APB transaction
+# 1799270000: [testcase] Write - addr = 00000000, data = 11011001
+# 1799270000: [scoreboard] Get packet from monitor
+# 1809490000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1809490011: [stimulus] Sent packet to driver
+# 1809490011: [driver] Get packet from stimulus
+# 1809550000: [monitor] Captured APB transaction
+# 1809550000: [testcase] Write - addr = 00000011, data = 10110001
+# 1809550000: [scoreboard] Get packet from monitor
+# 1809550000: [stimulus] Sent packet to driver
+# 1809550000: [driver] Get packet from stimulus
+# 1809610000: [monitor] Captured APB transaction
+# 1809610000: [testcase] Write - addr = 00000000, data = 00011001
+# 1809610000: [scoreboard] Get packet from monitor
+# 1819830000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1819830011: [stimulus] Sent packet to driver
+# 1819830011: [driver] Get packet from stimulus
+# 1819890000: [monitor] Captured APB transaction
+# 1819890000: [testcase] Write - addr = 00000011, data = 10100011
+# 1819890000: [scoreboard] Get packet from monitor
+# 1819890000: [stimulus] Sent packet to driver
+# 1819890000: [driver] Get packet from stimulus
+# 1819950000: [monitor] Captured APB transaction
+# 1819950000: [testcase] Write - addr = 00000000, data = 00011001
+# 1819950000: [scoreboard] Get packet from monitor
+# 1830170000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1830170011: [stimulus] Sent packet to driver
+# 1830170011: [driver] Get packet from stimulus
+# 1830230000: [monitor] Captured APB transaction
+# 1830230000: [testcase] Write - addr = 00000011, data = 10010111
+# 1830230000: [scoreboard] Get packet from monitor
+# 1830230000: [stimulus] Sent packet to driver
+# 1830230000: [driver] Get packet from stimulus
+# 1830290000: [monitor] Captured APB transaction
+# 1830290000: [testcase] Write - addr = 00000000, data = 10111001
+# 1830290000: [scoreboard] Get packet from monitor
+# 1840510000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1840510011: [stimulus] Sent packet to driver
+# 1840510011: [driver] Get packet from stimulus
+# 1840570000: [monitor] Captured APB transaction
+# 1840570000: [testcase] Write - addr = 00000011, data = 11111111
+# 1840570000: [scoreboard] Get packet from monitor
+# 1840570000: [stimulus] Sent packet to driver
+# 1840570000: [driver] Get packet from stimulus
+# 1840630000: [monitor] Captured APB transaction
+# 1840630000: [testcase] Write - addr = 00000000, data = 01011001
+# 1840630000: [scoreboard] Get packet from monitor
+# 1850850000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1850850011: [stimulus] Sent packet to driver
+# 1850850011: [driver] Get packet from stimulus
+# 1850910000: [monitor] Captured APB transaction
+# 1850910000: [testcase] Write - addr = 00000011, data = 01110001
+# 1850910000: [scoreboard] Get packet from monitor
+# 1850910000: [stimulus] Sent packet to driver
+# 1850910000: [driver] Get packet from stimulus
+# 1850970000: [monitor] Captured APB transaction
+# 1850970000: [testcase] Write - addr = 00000000, data = 11011001
+# 1850970000: [scoreboard] Get packet from monitor
+# 1861190000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1861190011: [stimulus] Sent packet to driver
+# 1861190011: [driver] Get packet from stimulus
+# 1861250000: [monitor] Captured APB transaction
+# 1861250000: [testcase] Write - addr = 00000011, data = 11011001
+# 1861250000: [scoreboard] Get packet from monitor
+# 1861250000: [stimulus] Sent packet to driver
+# 1861250000: [driver] Get packet from stimulus
+# 1861310000: [monitor] Captured APB transaction
+# 1861310000: [testcase] Write - addr = 00000000, data = 11111001
+# 1861310000: [scoreboard] Get packet from monitor
+# 1871530000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1871530011: [stimulus] Sent packet to driver
+# 1871530011: [driver] Get packet from stimulus
+# 1871590000: [monitor] Captured APB transaction
+# 1871590000: [testcase] Write - addr = 00000011, data = 11111111
+# 1871590000: [scoreboard] Get packet from monitor
+# 1871590000: [stimulus] Sent packet to driver
+# 1871590000: [driver] Get packet from stimulus
+# 1871650000: [monitor] Captured APB transaction
+# 1871650000: [testcase] Write - addr = 00000000, data = 01011001
+# 1871650000: [scoreboard] Get packet from monitor
+# 1881870000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1881870011: [stimulus] Sent packet to driver
+# 1881870011: [driver] Get packet from stimulus
+# 1881930000: [monitor] Captured APB transaction
+# 1881930000: [testcase] Write - addr = 00000011, data = 01111101
+# 1881930000: [scoreboard] Get packet from monitor
+# 1881930000: [stimulus] Sent packet to driver
+# 1881930000: [driver] Get packet from stimulus
+# 1881990000: [monitor] Captured APB transaction
+# 1881990000: [testcase] Write - addr = 00000000, data = 01011001
+# 1881990000: [scoreboard] Get packet from monitor
+# 1892210000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1892210011: [stimulus] Sent packet to driver
+# 1892210011: [driver] Get packet from stimulus
+# 1892270000: [monitor] Captured APB transaction
+# 1892270000: [testcase] Write - addr = 00000011, data = 00111111
+# 1892270000: [scoreboard] Get packet from monitor
+# 1892270000: [stimulus] Sent packet to driver
+# 1892270000: [driver] Get packet from stimulus
+# 1892330000: [monitor] Captured APB transaction
+# 1892330000: [testcase] Write - addr = 00000000, data = 01111001
+# 1892330000: [scoreboard] Get packet from monitor
+# 1902550000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1902550011: [stimulus] Sent packet to driver
+# 1902550011: [driver] Get packet from stimulus
+# 1902610000: [monitor] Captured APB transaction
+# 1902610000: [testcase] Write - addr = 00000011, data = 10101101
+# 1902610000: [scoreboard] Get packet from monitor
+# 1902610000: [stimulus] Sent packet to driver
+# 1902610000: [driver] Get packet from stimulus
+# 1902670000: [monitor] Captured APB transaction
+# 1902670000: [testcase] Write - addr = 00000000, data = 01011001
+# 1902670000: [scoreboard] Get packet from monitor
+# 1912890000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1912890011: [stimulus] Sent packet to driver
+# 1912890011: [driver] Get packet from stimulus
+# 1912950000: [monitor] Captured APB transaction
+# 1912950000: [testcase] Write - addr = 00000011, data = 01110111
+# 1912950000: [scoreboard] Get packet from monitor
+# 1912950000: [stimulus] Sent packet to driver
+# 1912950000: [driver] Get packet from stimulus
+# 1913010000: [monitor] Captured APB transaction
+# 1913010000: [testcase] Write - addr = 00000000, data = 00111001
+# 1913010000: [scoreboard] Get packet from monitor
+# 1923230000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1923230011: [stimulus] Sent packet to driver
+# 1923230011: [driver] Get packet from stimulus
+# 1923290000: [monitor] Captured APB transaction
+# 1923290000: [testcase] Write - addr = 00000011, data = 00111101
+# 1923290000: [scoreboard] Get packet from monitor
+# 1923290000: [stimulus] Sent packet to driver
+# 1923290000: [driver] Get packet from stimulus
+# 1923350000: [monitor] Captured APB transaction
+# 1923350000: [testcase] Write - addr = 00000000, data = 00111001
+# 1923350000: [scoreboard] Get packet from monitor
+# 1933570000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1933570011: [stimulus] Sent packet to driver
+# 1933570011: [driver] Get packet from stimulus
+# 1933630000: [monitor] Captured APB transaction
+# 1933630000: [testcase] Write - addr = 00000011, data = 10010011
+# 1933630000: [scoreboard] Get packet from monitor
+# 1933630000: [stimulus] Sent packet to driver
+# 1933630000: [driver] Get packet from stimulus
+# 1933690000: [monitor] Captured APB transaction
+# 1933690000: [testcase] Write - addr = 00000000, data = 00111001
+# 1933690000: [scoreboard] Get packet from monitor
+# 1943910000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1943910011: [stimulus] Sent packet to driver
+# 1943910011: [driver] Get packet from stimulus
+# 1943970000: [monitor] Captured APB transaction
+# 1943970000: [testcase] Write - addr = 00000011, data = 01010001
+# 1943970000: [scoreboard] Get packet from monitor
+# 1943970000: [stimulus] Sent packet to driver
+# 1943970000: [driver] Get packet from stimulus
+# 1944030000: [monitor] Captured APB transaction
+# 1944030000: [testcase] Write - addr = 00000000, data = 00011001
+# 1944030000: [scoreboard] Get packet from monitor
+# 1954250000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1954250011: [stimulus] Sent packet to driver
+# 1954250011: [driver] Get packet from stimulus
+# 1954310000: [monitor] Captured APB transaction
+# 1954310000: [testcase] Write - addr = 00000011, data = 01110011
+# 1954310000: [scoreboard] Get packet from monitor
+# 1954310000: [stimulus] Sent packet to driver
+# 1954310000: [driver] Get packet from stimulus
+# 1954370000: [monitor] Captured APB transaction
+# 1954370000: [testcase] Write - addr = 00000000, data = 01111001
+# 1954370000: [scoreboard] Get packet from monitor
+# 1964590000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1964590011: [stimulus] Sent packet to driver
+# 1964590011: [driver] Get packet from stimulus
+# 1964650000: [monitor] Captured APB transaction
+# 1964650000: [testcase] Write - addr = 00000011, data = 11011111
+# 1964650000: [scoreboard] Get packet from monitor
+# 1964650000: [stimulus] Sent packet to driver
+# 1964650000: [driver] Get packet from stimulus
+# 1964710000: [monitor] Captured APB transaction
+# 1964710000: [testcase] Write - addr = 00000000, data = 10111001
+# 1964710000: [scoreboard] Get packet from monitor
+# 1974930000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1974930011: [stimulus] Sent packet to driver
+# 1974930011: [driver] Get packet from stimulus
+# 1974990000: [monitor] Captured APB transaction
+# 1974990000: [testcase] Write - addr = 00000011, data = 00101001
+# 1974990000: [scoreboard] Get packet from monitor
+# 1974990000: [stimulus] Sent packet to driver
+# 1974990000: [driver] Get packet from stimulus
+# 1975050000: [monitor] Captured APB transaction
+# 1975050000: [testcase] Write - addr = 00000000, data = 01111001
+# 1975050000: [scoreboard] Get packet from monitor
+# 1985270000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1985270011: [stimulus] Sent packet to driver
+# 1985270011: [driver] Get packet from stimulus
+# 1985330000: [monitor] Captured APB transaction
+# 1985330000: [testcase] Write - addr = 00000011, data = 11100111
+# 1985330000: [scoreboard] Get packet from monitor
+# 1985330000: [stimulus] Sent packet to driver
+# 1985330000: [driver] Get packet from stimulus
+# 1985390000: [monitor] Captured APB transaction
+# 1985390000: [testcase] Write - addr = 00000000, data = 10011001
+# 1985390000: [scoreboard] Get packet from monitor
+# 1995610000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 1995610011: [stimulus] Sent packet to driver
+# 1995610011: [driver] Get packet from stimulus
+# 1995670000: [monitor] Captured APB transaction
+# 1995670000: [testcase] Write - addr = 00000011, data = 00111011
+# 1995670000: [scoreboard] Get packet from monitor
+# 1995670000: [stimulus] Sent packet to driver
+# 1995670000: [driver] Get packet from stimulus
+# 1995730000: [monitor] Captured APB transaction
+# 1995730000: [testcase] Write - addr = 00000000, data = 00011001
+# 1995730000: [scoreboard] Get packet from monitor
+# 2005950000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2005950011: [stimulus] Sent packet to driver
+# 2005950011: [driver] Get packet from stimulus
+# 2006010000: [monitor] Captured APB transaction
+# 2006010000: [testcase] Write - addr = 00000011, data = 00111011
+# 2006010000: [scoreboard] Get packet from monitor
+# 2006010000: [stimulus] Sent packet to driver
+# 2006010000: [driver] Get packet from stimulus
+# 2006070000: [monitor] Captured APB transaction
+# 2006070000: [testcase] Write - addr = 00000000, data = 01011001
+# 2006070000: [scoreboard] Get packet from monitor
+# 2016290000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2016290011: [stimulus] Sent packet to driver
+# 2016290011: [driver] Get packet from stimulus
+# 2016350000: [monitor] Captured APB transaction
+# 2016350000: [testcase] Write - addr = 00000011, data = 01101011
+# 2016350000: [scoreboard] Get packet from monitor
+# 2016350000: [stimulus] Sent packet to driver
+# 2016350000: [driver] Get packet from stimulus
+# 2016410000: [monitor] Captured APB transaction
+# 2016410000: [testcase] Write - addr = 00000000, data = 10111001
+# 2016410000: [scoreboard] Get packet from monitor
+# 2026630000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2026630011: [stimulus] Sent packet to driver
+# 2026630011: [driver] Get packet from stimulus
+# 2026690000: [monitor] Captured APB transaction
+# 2026690000: [testcase] Write - addr = 00000011, data = 11000111
+# 2026690000: [scoreboard] Get packet from monitor
+# 2026690000: [stimulus] Sent packet to driver
+# 2026690000: [driver] Get packet from stimulus
+# 2026750000: [monitor] Captured APB transaction
+# 2026750000: [testcase] Write - addr = 00000000, data = 11011001
+# 2026750000: [scoreboard] Get packet from monitor
+# 2036970000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2036970011: [stimulus] Sent packet to driver
+# 2036970011: [driver] Get packet from stimulus
+# 2037030000: [monitor] Captured APB transaction
+# 2037030000: [testcase] Write - addr = 00000011, data = 10001001
+# 2037030000: [scoreboard] Get packet from monitor
+# 2037030000: [stimulus] Sent packet to driver
+# 2037030000: [driver] Get packet from stimulus
+# 2037090000: [monitor] Captured APB transaction
+# 2037090000: [testcase] Write - addr = 00000000, data = 01011001
+# 2037090000: [scoreboard] Get packet from monitor
+# 2047310000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2047310011: [stimulus] Sent packet to driver
+# 2047310011: [driver] Get packet from stimulus
+# 2047370000: [monitor] Captured APB transaction
+# 2047370000: [testcase] Write - addr = 00000011, data = 10010001
+# 2047370000: [scoreboard] Get packet from monitor
+# 2047370000: [stimulus] Sent packet to driver
+# 2047370000: [driver] Get packet from stimulus
+# 2047430000: [monitor] Captured APB transaction
+# 2047430000: [testcase] Write - addr = 00000000, data = 11011001
+# 2047430000: [scoreboard] Get packet from monitor
+# 2057650000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2057650011: [stimulus] Sent packet to driver
+# 2057650011: [driver] Get packet from stimulus
+# 2057710000: [monitor] Captured APB transaction
+# 2057710000: [testcase] Write - addr = 00000011, data = 10010101
+# 2057710000: [scoreboard] Get packet from monitor
+# 2057710000: [stimulus] Sent packet to driver
+# 2057710000: [driver] Get packet from stimulus
+# 2057770000: [monitor] Captured APB transaction
+# 2057770000: [testcase] Write - addr = 00000000, data = 10011001
+# 2057770000: [scoreboard] Get packet from monitor
+# 2067990000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2067990011: [stimulus] Sent packet to driver
+# 2067990011: [driver] Get packet from stimulus
+# 2068050000: [monitor] Captured APB transaction
+# 2068050000: [testcase] Write - addr = 00000011, data = 11000001
+# 2068050000: [scoreboard] Get packet from monitor
+# 2068050000: [stimulus] Sent packet to driver
+# 2068050000: [driver] Get packet from stimulus
+# 2068110000: [monitor] Captured APB transaction
+# 2068110000: [testcase] Write - addr = 00000000, data = 10111001
+# 2068110000: [scoreboard] Get packet from monitor
+# 2078330000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2078330011: [stimulus] Sent packet to driver
+# 2078330011: [driver] Get packet from stimulus
+# 2078390000: [monitor] Captured APB transaction
+# 2078390000: [testcase] Write - addr = 00000011, data = 01110011
+# 2078390000: [scoreboard] Get packet from monitor
+# 2078390000: [stimulus] Sent packet to driver
+# 2078390000: [driver] Get packet from stimulus
+# 2078450000: [monitor] Captured APB transaction
+# 2078450000: [testcase] Write - addr = 00000000, data = 00111001
+# 2078450000: [scoreboard] Get packet from monitor
+# 2088670000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2088670011: [stimulus] Sent packet to driver
+# 2088670011: [driver] Get packet from stimulus
+# 2088730000: [monitor] Captured APB transaction
+# 2088730000: [testcase] Write - addr = 00000011, data = 10000101
+# 2088730000: [scoreboard] Get packet from monitor
+# 2088730000: [stimulus] Sent packet to driver
+# 2088730000: [driver] Get packet from stimulus
+# 2088790000: [monitor] Captured APB transaction
+# 2088790000: [testcase] Write - addr = 00000000, data = 10111001
+# 2088790000: [scoreboard] Get packet from monitor
+# 2099010000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2099010011: [stimulus] Sent packet to driver
+# 2099010011: [driver] Get packet from stimulus
+# 2099070000: [monitor] Captured APB transaction
+# 2099070000: [testcase] Write - addr = 00000011, data = 01000001
+# 2099070000: [scoreboard] Get packet from monitor
+# 2099070000: [stimulus] Sent packet to driver
+# 2099070000: [driver] Get packet from stimulus
+# 2099130000: [monitor] Captured APB transaction
+# 2099130000: [testcase] Write - addr = 00000000, data = 01011001
+# 2099130000: [scoreboard] Get packet from monitor
+# 2109350000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2109350011: [stimulus] Sent packet to driver
+# 2109350011: [driver] Get packet from stimulus
+# 2109410000: [monitor] Captured APB transaction
+# 2109410000: [testcase] Write - addr = 00000011, data = 00011001
+# 2109410000: [scoreboard] Get packet from monitor
+# 2109410000: [stimulus] Sent packet to driver
+# 2109410000: [driver] Get packet from stimulus
+# 2109470000: [monitor] Captured APB transaction
+# 2109470000: [testcase] Write - addr = 00000000, data = 00011001
+# 2109470000: [scoreboard] Get packet from monitor
+# 2119690000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2119690011: [stimulus] Sent packet to driver
+# 2119690011: [driver] Get packet from stimulus
+# 2119750000: [monitor] Captured APB transaction
+# 2119750000: [testcase] Write - addr = 00000011, data = 00100111
+# 2119750000: [scoreboard] Get packet from monitor
+# 2119750000: [stimulus] Sent packet to driver
+# 2119750000: [driver] Get packet from stimulus
+# 2119810000: [monitor] Captured APB transaction
+# 2119810000: [testcase] Write - addr = 00000000, data = 00011001
+# 2119810000: [scoreboard] Get packet from monitor
+# 2130030000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2130030011: [stimulus] Sent packet to driver
+# 2130030011: [driver] Get packet from stimulus
+# 2130090000: [monitor] Captured APB transaction
+# 2130090000: [testcase] Write - addr = 00000011, data = 11111101
+# 2130090000: [scoreboard] Get packet from monitor
+# 2130090000: [stimulus] Sent packet to driver
+# 2130090000: [driver] Get packet from stimulus
+# 2130150000: [monitor] Captured APB transaction
+# 2130150000: [testcase] Write - addr = 00000000, data = 11011001
+# 2130150000: [scoreboard] Get packet from monitor
+# 2140370000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2140370011: [stimulus] Sent packet to driver
+# 2140370011: [driver] Get packet from stimulus
+# 2140430000: [monitor] Captured APB transaction
+# 2140430000: [testcase] Write - addr = 00000011, data = 11110101
+# 2140430000: [scoreboard] Get packet from monitor
+# 2140430000: [stimulus] Sent packet to driver
+# 2140430000: [driver] Get packet from stimulus
+# 2140490000: [monitor] Captured APB transaction
+# 2140490000: [testcase] Write - addr = 00000000, data = 01111001
+# 2140490000: [scoreboard] Get packet from monitor
+# 2150710000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2150710011: [stimulus] Sent packet to driver
+# 2150710011: [driver] Get packet from stimulus
+# 2150770000: [monitor] Captured APB transaction
+# 2150770000: [testcase] Write - addr = 00000011, data = 01101001
+# 2150770000: [scoreboard] Get packet from monitor
+# 2150770000: [stimulus] Sent packet to driver
+# 2150770000: [driver] Get packet from stimulus
+# 2150830000: [monitor] Captured APB transaction
+# 2150830000: [testcase] Write - addr = 00000000, data = 00011001
+# 2150830000: [scoreboard] Get packet from monitor
+# 2161050000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2161050011: [stimulus] Sent packet to driver
+# 2161050011: [driver] Get packet from stimulus
+# 2161110000: [monitor] Captured APB transaction
+# 2161110000: [testcase] Write - addr = 00000011, data = 11100011
+# 2161110000: [scoreboard] Get packet from monitor
+# 2161110000: [stimulus] Sent packet to driver
+# 2161110000: [driver] Get packet from stimulus
+# 2161170000: [monitor] Captured APB transaction
+# 2161170000: [testcase] Write - addr = 00000000, data = 00011001
+# 2161170000: [scoreboard] Get packet from monitor
+# 2171390000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2171390011: [stimulus] Sent packet to driver
+# 2171390011: [driver] Get packet from stimulus
+# 2171450000: [monitor] Captured APB transaction
+# 2171450000: [testcase] Write - addr = 00000011, data = 01001001
+# 2171450000: [scoreboard] Get packet from monitor
+# 2171450000: [stimulus] Sent packet to driver
+# 2171450000: [driver] Get packet from stimulus
+# 2171510000: [monitor] Captured APB transaction
+# 2171510000: [testcase] Write - addr = 00000000, data = 00111001
+# 2171510000: [scoreboard] Get packet from monitor
+# 2181730000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2181730011: [stimulus] Sent packet to driver
+# 2181730011: [driver] Get packet from stimulus
+# 2181790000: [monitor] Captured APB transaction
+# 2181790000: [testcase] Write - addr = 00000011, data = 11100011
+# 2181790000: [scoreboard] Get packet from monitor
+# 2181790000: [stimulus] Sent packet to driver
+# 2181790000: [driver] Get packet from stimulus
+# 2181850000: [monitor] Captured APB transaction
+# 2181850000: [testcase] Write - addr = 00000000, data = 10111001
+# 2181850000: [scoreboard] Get packet from monitor
+# 2192070000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2192070011: [stimulus] Sent packet to driver
+# 2192070011: [driver] Get packet from stimulus
+# 2192130000: [monitor] Captured APB transaction
+# 2192130000: [testcase] Write - addr = 00000011, data = 01100001
+# 2192130000: [scoreboard] Get packet from monitor
+# 2192130000: [stimulus] Sent packet to driver
+# 2192130000: [driver] Get packet from stimulus
+# 2192190000: [monitor] Captured APB transaction
+# 2192190000: [testcase] Write - addr = 00000000, data = 11111001
+# 2192190000: [scoreboard] Get packet from monitor
+# 2202410000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2202410011: [stimulus] Sent packet to driver
+# 2202410011: [driver] Get packet from stimulus
+# 2202470000: [monitor] Captured APB transaction
+# 2202470000: [testcase] Write - addr = 00000011, data = 10111101
+# 2202470000: [scoreboard] Get packet from monitor
+# 2202470000: [stimulus] Sent packet to driver
+# 2202470000: [driver] Get packet from stimulus
+# 2202530000: [monitor] Captured APB transaction
+# 2202530000: [testcase] Write - addr = 00000000, data = 00011001
+# 2202530000: [scoreboard] Get packet from monitor
+# 2212750000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2212750011: [stimulus] Sent packet to driver
+# 2212750011: [driver] Get packet from stimulus
+# 2212810000: [monitor] Captured APB transaction
+# 2212810000: [testcase] Write - addr = 00000011, data = 01101001
+# 2212810000: [scoreboard] Get packet from monitor
+# 2212810000: [stimulus] Sent packet to driver
+# 2212810000: [driver] Get packet from stimulus
+# 2212870000: [monitor] Captured APB transaction
+# 2212870000: [testcase] Write - addr = 00000000, data = 11111001
+# 2212870000: [scoreboard] Get packet from monitor
+# 2223090000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2223090011: [stimulus] Sent packet to driver
+# 2223090011: [driver] Get packet from stimulus
+# 2223150000: [monitor] Captured APB transaction
+# 2223150000: [testcase] Write - addr = 00000011, data = 01011001
+# 2223150000: [scoreboard] Get packet from monitor
+# 2223150000: [stimulus] Sent packet to driver
+# 2223150000: [driver] Get packet from stimulus
+# 2223210000: [monitor] Captured APB transaction
+# 2223210000: [testcase] Write - addr = 00000000, data = 00111001
+# 2223210000: [scoreboard] Get packet from monitor
+# 2233430000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2233430011: [stimulus] Sent packet to driver
+# 2233430011: [driver] Get packet from stimulus
+# 2233490000: [monitor] Captured APB transaction
+# 2233490000: [testcase] Write - addr = 00000011, data = 01111111
+# 2233490000: [scoreboard] Get packet from monitor
+# 2233490000: [stimulus] Sent packet to driver
+# 2233490000: [driver] Get packet from stimulus
+# 2233550000: [monitor] Captured APB transaction
+# 2233550000: [testcase] Write - addr = 00000000, data = 01011001
+# 2233550000: [scoreboard] Get packet from monitor
+# 2243770000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2243770011: [stimulus] Sent packet to driver
+# 2243770011: [driver] Get packet from stimulus
+# 2243830000: [monitor] Captured APB transaction
+# 2243830000: [testcase] Write - addr = 00000011, data = 11101001
+# 2243830000: [scoreboard] Get packet from monitor
+# 2243830000: [stimulus] Sent packet to driver
+# 2243830000: [driver] Get packet from stimulus
+# 2243890000: [monitor] Captured APB transaction
+# 2243890000: [testcase] Write - addr = 00000000, data = 00011001
+# 2243890000: [scoreboard] Get packet from monitor
+# 2254110000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2254110011: [stimulus] Sent packet to driver
+# 2254110011: [driver] Get packet from stimulus
+# 2254170000: [monitor] Captured APB transaction
+# 2254170000: [testcase] Write - addr = 00000011, data = 11011101
+# 2254170000: [scoreboard] Get packet from monitor
+# 2254170000: [stimulus] Sent packet to driver
+# 2254170000: [driver] Get packet from stimulus
+# 2254230000: [monitor] Captured APB transaction
+# 2254230000: [testcase] Write - addr = 00000000, data = 00111001
+# 2254230000: [scoreboard] Get packet from monitor
+# 2264450000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2264450011: [stimulus] Sent packet to driver
+# 2264450011: [driver] Get packet from stimulus
+# 2264510000: [monitor] Captured APB transaction
+# 2264510000: [testcase] Write - addr = 00000011, data = 01000111
+# 2264510000: [scoreboard] Get packet from monitor
+# 2264510000: [stimulus] Sent packet to driver
+# 2264510000: [driver] Get packet from stimulus
+# 2264570000: [monitor] Captured APB transaction
+# 2264570000: [testcase] Write - addr = 00000000, data = 10111001
+# 2264570000: [scoreboard] Get packet from monitor
+# 2274790000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2274790011: [stimulus] Sent packet to driver
+# 2274790011: [driver] Get packet from stimulus
+# 2274850000: [monitor] Captured APB transaction
+# 2274850000: [testcase] Write - addr = 00000011, data = 11101011
+# 2274850000: [scoreboard] Get packet from monitor
+# 2274850000: [stimulus] Sent packet to driver
+# 2274850000: [driver] Get packet from stimulus
+# 2274910000: [monitor] Captured APB transaction
+# 2274910000: [testcase] Write - addr = 00000000, data = 10011001
+# 2274910000: [scoreboard] Get packet from monitor
+# 2285130000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2285130011: [stimulus] Sent packet to driver
+# 2285130011: [driver] Get packet from stimulus
+# 2285190000: [monitor] Captured APB transaction
+# 2285190000: [testcase] Write - addr = 00000011, data = 00011101
+# 2285190000: [scoreboard] Get packet from monitor
+# 2285190000: [stimulus] Sent packet to driver
+# 2285190000: [driver] Get packet from stimulus
+# 2285250000: [monitor] Captured APB transaction
+# 2285250000: [testcase] Write - addr = 00000000, data = 00011001
+# 2285250000: [scoreboard] Get packet from monitor
+# 2295470000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2295470011: [stimulus] Sent packet to driver
+# 2295470011: [driver] Get packet from stimulus
+# 2295530000: [monitor] Captured APB transaction
+# 2295530000: [testcase] Write - addr = 00000011, data = 00100001
+# 2295530000: [scoreboard] Get packet from monitor
+# 2295530000: [stimulus] Sent packet to driver
+# 2295530000: [driver] Get packet from stimulus
+# 2295590000: [monitor] Captured APB transaction
+# 2295590000: [testcase] Write - addr = 00000000, data = 11011001
+# 2295590000: [scoreboard] Get packet from monitor
+# 2305810000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2305810011: [stimulus] Sent packet to driver
+# 2305810011: [driver] Get packet from stimulus
+# 2305870000: [monitor] Captured APB transaction
+# 2305870000: [testcase] Write - addr = 00000011, data = 11010111
+# 2305870000: [scoreboard] Get packet from monitor
+# 2305870000: [stimulus] Sent packet to driver
+# 2305870000: [driver] Get packet from stimulus
+# 2305930000: [monitor] Captured APB transaction
+# 2305930000: [testcase] Write - addr = 00000000, data = 10111001
+# 2305930000: [scoreboard] Get packet from monitor
+# 2316150000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2316150011: [stimulus] Sent packet to driver
+# 2316150011: [driver] Get packet from stimulus
+# 2316210000: [monitor] Captured APB transaction
+# 2316210000: [testcase] Write - addr = 00000011, data = 01100101
+# 2316210000: [scoreboard] Get packet from monitor
+# 2316210000: [stimulus] Sent packet to driver
+# 2316210000: [driver] Get packet from stimulus
+# 2316270000: [monitor] Captured APB transaction
+# 2316270000: [testcase] Write - addr = 00000000, data = 01111001
+# 2316270000: [scoreboard] Get packet from monitor
+# 2326490000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2326490011: [stimulus] Sent packet to driver
+# 2326490011: [driver] Get packet from stimulus
+# 2326550000: [monitor] Captured APB transaction
+# 2326550000: [testcase] Write - addr = 00000011, data = 01001111
+# 2326550000: [scoreboard] Get packet from monitor
+# 2326550000: [stimulus] Sent packet to driver
+# 2326550000: [driver] Get packet from stimulus
+# 2326610000: [monitor] Captured APB transaction
+# 2326610000: [testcase] Write - addr = 00000000, data = 10011001
+# 2326610000: [scoreboard] Get packet from monitor
+# 2336830000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2336830011: [stimulus] Sent packet to driver
+# 2336830011: [driver] Get packet from stimulus
+# 2336890000: [monitor] Captured APB transaction
+# 2336890000: [testcase] Write - addr = 00000011, data = 11000011
+# 2336890000: [scoreboard] Get packet from monitor
+# 2336890000: [stimulus] Sent packet to driver
+# 2336890000: [driver] Get packet from stimulus
+# 2336950000: [monitor] Captured APB transaction
+# 2336950000: [testcase] Write - addr = 00000000, data = 10111001
+# 2336950000: [scoreboard] Get packet from monitor
+# 2347170000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2347170011: [stimulus] Sent packet to driver
+# 2347170011: [driver] Get packet from stimulus
+# 2347230000: [monitor] Captured APB transaction
+# 2347230000: [testcase] Write - addr = 00000011, data = 01111011
+# 2347230000: [scoreboard] Get packet from monitor
+# 2347230000: [stimulus] Sent packet to driver
+# 2347230000: [driver] Get packet from stimulus
+# 2347290000: [monitor] Captured APB transaction
+# 2347290000: [testcase] Write - addr = 00000000, data = 11011001
+# 2347290000: [scoreboard] Get packet from monitor
+# 2357510000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2357510011: [stimulus] Sent packet to driver
+# 2357510011: [driver] Get packet from stimulus
+# 2357570000: [monitor] Captured APB transaction
+# 2357570000: [testcase] Write - addr = 00000011, data = 10100001
+# 2357570000: [scoreboard] Get packet from monitor
+# 2357570000: [stimulus] Sent packet to driver
+# 2357570000: [driver] Get packet from stimulus
+# 2357630000: [monitor] Captured APB transaction
+# 2357630000: [testcase] Write - addr = 00000000, data = 11011001
+# 2357630000: [scoreboard] Get packet from monitor
+# 2367850000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2367850011: [stimulus] Sent packet to driver
+# 2367850011: [driver] Get packet from stimulus
+# 2367910000: [monitor] Captured APB transaction
+# 2367910000: [testcase] Write - addr = 00000011, data = 11011011
+# 2367910000: [scoreboard] Get packet from monitor
+# 2367910000: [stimulus] Sent packet to driver
+# 2367910000: [driver] Get packet from stimulus
+# 2367970000: [monitor] Captured APB transaction
+# 2367970000: [testcase] Write - addr = 00000000, data = 01111001
+# 2367970000: [scoreboard] Get packet from monitor
+# 2378190000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2378190011: [stimulus] Sent packet to driver
+# 2378190011: [driver] Get packet from stimulus
+# 2378250000: [monitor] Captured APB transaction
+# 2378250000: [testcase] Write - addr = 00000011, data = 00101101
+# 2378250000: [scoreboard] Get packet from monitor
+# 2378250000: [stimulus] Sent packet to driver
+# 2378250000: [driver] Get packet from stimulus
+# 2378310000: [monitor] Captured APB transaction
+# 2378310000: [testcase] Write - addr = 00000000, data = 00111001
+# 2378310000: [scoreboard] Get packet from monitor
+# 2388530000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2388530011: [stimulus] Sent packet to driver
+# 2388530011: [driver] Get packet from stimulus
+# 2388590000: [monitor] Captured APB transaction
+# 2388590000: [testcase] Write - addr = 00000011, data = 00110111
+# 2388590000: [scoreboard] Get packet from monitor
+# 2388590000: [stimulus] Sent packet to driver
+# 2388590000: [driver] Get packet from stimulus
+# 2388650000: [monitor] Captured APB transaction
+# 2388650000: [testcase] Write - addr = 00000000, data = 11011001
+# 2388650000: [scoreboard] Get packet from monitor
+# 2398870000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2398870011: [stimulus] Sent packet to driver
+# 2398870011: [driver] Get packet from stimulus
+# 2398930000: [monitor] Captured APB transaction
+# 2398930000: [testcase] Write - addr = 00000011, data = 10010111
+# 2398930000: [scoreboard] Get packet from monitor
+# 2398930000: [stimulus] Sent packet to driver
+# 2398930000: [driver] Get packet from stimulus
+# 2398990000: [monitor] Captured APB transaction
+# 2398990000: [testcase] Write - addr = 00000000, data = 00111001
+# 2398990000: [scoreboard] Get packet from monitor
+# 2409210000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2409210011: [stimulus] Sent packet to driver
+# 2409210011: [driver] Get packet from stimulus
+# 2409270000: [monitor] Captured APB transaction
+# 2409270000: [testcase] Write - addr = 00000011, data = 10011011
+# 2409270000: [scoreboard] Get packet from monitor
+# 2409270000: [stimulus] Sent packet to driver
+# 2409270000: [driver] Get packet from stimulus
+# 2409330000: [monitor] Captured APB transaction
+# 2409330000: [testcase] Write - addr = 00000000, data = 01111001
+# 2409330000: [scoreboard] Get packet from monitor
+# 2419550000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2419550011: [stimulus] Sent packet to driver
+# 2419550011: [driver] Get packet from stimulus
+# 2419610000: [monitor] Captured APB transaction
+# 2419610000: [testcase] Write - addr = 00000011, data = 00000111
+# 2419610000: [scoreboard] Get packet from monitor
+# 2419610000: [stimulus] Sent packet to driver
+# 2419610000: [driver] Get packet from stimulus
+# 2419670000: [monitor] Captured APB transaction
+# 2419670000: [testcase] Write - addr = 00000000, data = 10111001
+# 2419670000: [scoreboard] Get packet from monitor
+# 2429890000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2429890011: [stimulus] Sent packet to driver
+# 2429890011: [driver] Get packet from stimulus
+# 2429950000: [monitor] Captured APB transaction
+# 2429950000: [testcase] Write - addr = 00000011, data = 10110111
+# 2429950000: [scoreboard] Get packet from monitor
+# 2429950000: [stimulus] Sent packet to driver
+# 2429950000: [driver] Get packet from stimulus
+# 2430010000: [monitor] Captured APB transaction
+# 2430010000: [testcase] Write - addr = 00000000, data = 10011001
+# 2430010000: [scoreboard] Get packet from monitor
+# 2440230000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2440230011: [stimulus] Sent packet to driver
+# 2440230011: [driver] Get packet from stimulus
+# 2440290000: [monitor] Captured APB transaction
+# 2440290000: [testcase] Write - addr = 00000011, data = 00001101
+# 2440290000: [scoreboard] Get packet from monitor
+# 2440290000: [stimulus] Sent packet to driver
+# 2440290000: [driver] Get packet from stimulus
+# 2440350000: [monitor] Captured APB transaction
+# 2440350000: [testcase] Write - addr = 00000000, data = 01111001
+# 2440350000: [scoreboard] Get packet from monitor
+# 2450570000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2450570011: [stimulus] Sent packet to driver
+# 2450570011: [driver] Get packet from stimulus
+# 2450630000: [monitor] Captured APB transaction
+# 2450630000: [testcase] Write - addr = 00000011, data = 00101001
+# 2450630000: [scoreboard] Get packet from monitor
+# 2450630000: [stimulus] Sent packet to driver
+# 2450630000: [driver] Get packet from stimulus
+# 2450690000: [monitor] Captured APB transaction
+# 2450690000: [testcase] Write - addr = 00000000, data = 00011001
+# 2450690000: [scoreboard] Get packet from monitor
+# 2460910000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2460910011: [stimulus] Sent packet to driver
+# 2460910011: [driver] Get packet from stimulus
+# 2460970000: [monitor] Captured APB transaction
+# 2460970000: [testcase] Write - addr = 00000011, data = 01101011
+# 2460970000: [scoreboard] Get packet from monitor
+# 2460970000: [stimulus] Sent packet to driver
+# 2460970000: [driver] Get packet from stimulus
+# 2461030000: [monitor] Captured APB transaction
+# 2461030000: [testcase] Write - addr = 00000000, data = 11111001
+# 2461030000: [scoreboard] Get packet from monitor
+# 2471250000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2471250011: [stimulus] Sent packet to driver
+# 2471250011: [driver] Get packet from stimulus
+# 2471310000: [monitor] Captured APB transaction
+# 2471310000: [testcase] Write - addr = 00000011, data = 01111111
+# 2471310000: [scoreboard] Get packet from monitor
+# 2471310000: [stimulus] Sent packet to driver
+# 2471310000: [driver] Get packet from stimulus
+# 2471370000: [monitor] Captured APB transaction
+# 2471370000: [testcase] Write - addr = 00000000, data = 01111001
+# 2471370000: [scoreboard] Get packet from monitor
+# 2481590000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2481590011: [stimulus] Sent packet to driver
+# 2481590011: [driver] Get packet from stimulus
+# 2481650000: [monitor] Captured APB transaction
+# 2481650000: [testcase] Write - addr = 00000011, data = 10000101
+# 2481650000: [scoreboard] Get packet from monitor
+# 2481650000: [stimulus] Sent packet to driver
+# 2481650000: [driver] Get packet from stimulus
+# 2481710000: [monitor] Captured APB transaction
+# 2481710000: [testcase] Write - addr = 00000000, data = 00011001
+# 2481710000: [scoreboard] Get packet from monitor
+# 2491930000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2491930011: [stimulus] Sent packet to driver
+# 2491930011: [driver] Get packet from stimulus
+# 2491990000: [monitor] Captured APB transaction
+# 2491990000: [testcase] Write - addr = 00000011, data = 10011101
+# 2491990000: [scoreboard] Get packet from monitor
+# 2491990000: [stimulus] Sent packet to driver
+# 2491990000: [driver] Get packet from stimulus
+# 2492050000: [monitor] Captured APB transaction
+# 2492050000: [testcase] Write - addr = 00000000, data = 01011001
+# 2492050000: [scoreboard] Get packet from monitor
+# 2502270000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2502270011: [stimulus] Sent packet to driver
+# 2502270011: [driver] Get packet from stimulus
+# 2502330000: [monitor] Captured APB transaction
+# 2502330000: [testcase] Write - addr = 00000011, data = 00111111
+# 2502330000: [scoreboard] Get packet from monitor
+# 2502330000: [stimulus] Sent packet to driver
+# 2502330000: [driver] Get packet from stimulus
+# 2502390000: [monitor] Captured APB transaction
+# 2502390000: [testcase] Write - addr = 00000000, data = 01111001
+# 2502390000: [scoreboard] Get packet from monitor
+# 2512610000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2512610011: [stimulus] Sent packet to driver
+# 2512610011: [driver] Get packet from stimulus
+# 2512670000: [monitor] Captured APB transaction
+# 2512670000: [testcase] Write - addr = 00000011, data = 10101101
+# 2512670000: [scoreboard] Get packet from monitor
+# 2512670000: [stimulus] Sent packet to driver
+# 2512670000: [driver] Get packet from stimulus
+# 2512730000: [monitor] Captured APB transaction
+# 2512730000: [testcase] Write - addr = 00000000, data = 00011001
+# 2512730000: [scoreboard] Get packet from monitor
+# 2522950000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2522950011: [stimulus] Sent packet to driver
+# 2522950011: [driver] Get packet from stimulus
+# 2523010000: [monitor] Captured APB transaction
+# 2523010000: [testcase] Write - addr = 00000011, data = 11111001
+# 2523010000: [scoreboard] Get packet from monitor
+# 2523010000: [stimulus] Sent packet to driver
+# 2523010000: [driver] Get packet from stimulus
+# 2523070000: [monitor] Captured APB transaction
+# 2523070000: [testcase] Write - addr = 00000000, data = 11111001
+# 2523070000: [scoreboard] Get packet from monitor
+# 2533290000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2533290011: [stimulus] Sent packet to driver
+# 2533290011: [driver] Get packet from stimulus
+# 2533350000: [monitor] Captured APB transaction
+# 2533350000: [testcase] Write - addr = 00000011, data = 11010011
+# 2533350000: [scoreboard] Get packet from monitor
+# 2533350000: [stimulus] Sent packet to driver
+# 2533350000: [driver] Get packet from stimulus
+# 2533410000: [monitor] Captured APB transaction
+# 2533410000: [testcase] Write - addr = 00000000, data = 11111001
+# 2533410000: [scoreboard] Get packet from monitor
+# 2543630000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2543630011: [stimulus] Sent packet to driver
+# 2543630011: [driver] Get packet from stimulus
+# 2543690000: [monitor] Captured APB transaction
+# 2543690000: [testcase] Write - addr = 00000011, data = 00101101
+# 2543690000: [scoreboard] Get packet from monitor
+# 2543690000: [stimulus] Sent packet to driver
+# 2543690000: [driver] Get packet from stimulus
+# 2543750000: [monitor] Captured APB transaction
+# 2543750000: [testcase] Write - addr = 00000000, data = 01011001
+# 2543750000: [scoreboard] Get packet from monitor
+# 2553970000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2553970011: [stimulus] Sent packet to driver
+# 2553970011: [driver] Get packet from stimulus
+# 2554030000: [monitor] Captured APB transaction
+# 2554030000: [testcase] Write - addr = 00000011, data = 10111101
+# 2554030000: [scoreboard] Get packet from monitor
+# 2554030000: [stimulus] Sent packet to driver
+# 2554030000: [driver] Get packet from stimulus
+# 2554090000: [monitor] Captured APB transaction
+# 2554090000: [testcase] Write - addr = 00000000, data = 01111001
+# 2554090000: [scoreboard] Get packet from monitor
+# 2564310000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2564310011: [stimulus] Sent packet to driver
+# 2564310011: [driver] Get packet from stimulus
+# 2564370000: [monitor] Captured APB transaction
+# 2564370000: [testcase] Write - addr = 00000011, data = 01110101
+# 2564370000: [scoreboard] Get packet from monitor
+# 2564370000: [stimulus] Sent packet to driver
+# 2564370000: [driver] Get packet from stimulus
+# 2564430000: [monitor] Captured APB transaction
+# 2564430000: [testcase] Write - addr = 00000000, data = 10011001
+# 2564430000: [scoreboard] Get packet from monitor
+# 2574650000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2574650011: [stimulus] Sent packet to driver
+# 2574650011: [driver] Get packet from stimulus
+# 2574710000: [monitor] Captured APB transaction
+# 2574710000: [testcase] Write - addr = 00000011, data = 01110111
+# 2574710000: [scoreboard] Get packet from monitor
+# 2574710000: [stimulus] Sent packet to driver
+# 2574710000: [driver] Get packet from stimulus
+# 2574770000: [monitor] Captured APB transaction
+# 2574770000: [testcase] Write - addr = 00000000, data = 10011001
+# 2574770000: [scoreboard] Get packet from monitor
+# 2584990000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2584990011: [stimulus] Sent packet to driver
+# 2584990011: [driver] Get packet from stimulus
+# 2585050000: [monitor] Captured APB transaction
+# 2585050000: [testcase] Write - addr = 00000011, data = 11010111
+# 2585050000: [scoreboard] Get packet from monitor
+# 2585050000: [stimulus] Sent packet to driver
+# 2585050000: [driver] Get packet from stimulus
+# 2585110000: [monitor] Captured APB transaction
+# 2585110000: [testcase] Write - addr = 00000000, data = 00111001
+# 2585110000: [scoreboard] Get packet from monitor
+# 2595330000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2595330011: [stimulus] Sent packet to driver
+# 2595330011: [driver] Get packet from stimulus
+# 2595390000: [monitor] Captured APB transaction
+# 2595390000: [testcase] Write - addr = 00000011, data = 01111111
+# 2595390000: [scoreboard] Get packet from monitor
+# 2595390000: [stimulus] Sent packet to driver
+# 2595390000: [driver] Get packet from stimulus
+# 2595450000: [monitor] Captured APB transaction
+# 2595450000: [testcase] Write - addr = 00000000, data = 11111001
+# 2595450000: [scoreboard] Get packet from monitor
+# 2605670000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2605670011: [stimulus] Sent packet to driver
+# 2605670011: [driver] Get packet from stimulus
+# 2605730000: [monitor] Captured APB transaction
+# 2605730000: [testcase] Write - addr = 00000011, data = 10001111
+# 2605730000: [scoreboard] Get packet from monitor
+# 2605730000: [stimulus] Sent packet to driver
+# 2605730000: [driver] Get packet from stimulus
+# 2605790000: [monitor] Captured APB transaction
+# 2605790000: [testcase] Write - addr = 00000000, data = 01011001
+# 2605790000: [scoreboard] Get packet from monitor
+# 2616010000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2616010011: [stimulus] Sent packet to driver
+# 2616010011: [driver] Get packet from stimulus
+# 2616070000: [monitor] Captured APB transaction
+# 2616070000: [testcase] Write - addr = 00000011, data = 11011011
+# 2616070000: [scoreboard] Get packet from monitor
+# 2616070000: [stimulus] Sent packet to driver
+# 2616070000: [driver] Get packet from stimulus
+# 2616130000: [monitor] Captured APB transaction
+# 2616130000: [testcase] Write - addr = 00000000, data = 01011001
+# 2616130000: [scoreboard] Get packet from monitor
+# 2626350000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2626350011: [stimulus] Sent packet to driver
+# 2626350011: [driver] Get packet from stimulus
+# 2626410000: [monitor] Captured APB transaction
+# 2626410000: [testcase] Write - addr = 00000011, data = 10010101
+# 2626410000: [scoreboard] Get packet from monitor
+# 2626410000: [stimulus] Sent packet to driver
+# 2626410000: [driver] Get packet from stimulus
+# 2626470000: [monitor] Captured APB transaction
+# 2626470000: [testcase] Write - addr = 00000000, data = 10111001
+# 2626470000: [scoreboard] Get packet from monitor
+# 2636690000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# 2636690011: [stimulus] Sent packet to driver
+# 2636690011: [driver] Get packet from stimulus
+# 2636750000: [monitor] Captured APB transaction
+# 2636750000: [testcase] Write - addr = 00000011, data = 10010111
+# 2636750000: [scoreboard] Get packet from monitor
+# 2636750000: [stimulus] Sent packet to driver
+# 2636750000: [driver] Get packet from stimulus
+# 2636810000: [monitor] Captured APB transaction
+# 2636810000: [testcase] Write - addr = 00000000, data = 01111001
+# 2636810000: [scoreboard] Get packet from monitor
+# 2647030000: [compare] PASSED! Timing 10220000 in range [9960000 ,10520000]
+# ==========================================================================
+# =============================== TEST PASSED ==============================
+# ==========================================================================
+# [testbench] Time out....Seems your tb is hang!
+# ** Note: $finish    : ../tb/testbench.sv(143)
+#    Time: 4647030 ns  Iteration: 0  Instance: /testbench
+# Saving coverage database on exit...
+# End time: 18:05:20 on May 07,2026, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 0

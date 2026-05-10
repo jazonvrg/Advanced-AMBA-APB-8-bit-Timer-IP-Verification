@@ -40,12 +40,7 @@ The Design Under Test (DUT) is an 8-bit Timer IP acting as an APB slave. It was 
 * **`0x02` - TDR:** Timer Data Register (Data load value).
 * **`0x03` - TIE:** Timer Interrupt Enable Register.
 
-**3. Testbench Architecture Block Diagram:**
-<p align="center">
-  <img src=" KÉO THẢ ẢNH SƠ ĐỒ TESTBENCH VÀO ĐÂY " alt="SV Testbench Architecture">
-</p>
-
-**4. Module Descriptions (Testbench Components):**
+**3. Module Descriptions (Testbench Components):**
 
 To thoroughly verify the DUT, I implemented a layered OOP testbench structure:
 * **`dut_interface` (Virtual Interface):** Bundles the physical APB signals. Virtual interfaces are passed to the class-based environment to drive and sample pins dynamically without hardcoding hierarchical paths.
